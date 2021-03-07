@@ -6,6 +6,51 @@ import math
 from mpl_toolkits.mplot3d import Axes3D  # noqa: F401 unused import
 import pandas as pd
 import scipy.stats as stats
+
+def arrayFill(CTNames, T1Names, T2Names, CTXPoints, CTYPoints, T1XPoints, T1YPoints, T2XPoints, T2YPoints):
+    T1NamesNew = [None] * len(CTNames)
+    T2NamesNew = [None] * len(CTNames)
+    T1XPointsNew = [None] * len(CTXPoints)
+    T2XPointsNew = [None] * len(CTYPoints)
+    T1YPointsNew = [None] * len(CTXPoints)
+    T2YPointsNew = [None] * len(CTYPoints)
+    counter = 0
+    counternew = 0
+    if len(T1Names) != 0:
+        for i in CTNames:
+            if (counter < len(T1Names)) and (i[:i.find('_')] != T1Names[counter][:T1Names[counter].find('_')]):
+                T1NamesNew[counternew] = None
+                T1XPointsNew[counternew] = None
+                T1YPointsNew[counternew] = None
+                counternew += 1
+            elif counter < len(T1Names):
+                T1NamesNew[counternew] = T1Names[counter]
+                T1XPointsNew[counternew] = T1XPoints[counter]
+                T1YPointsNew[counternew] = T1YPoints[counter]
+                counternew += 1
+                counter += 1
+    else:
+        print('К сожалению, на этом срезе отсутствуют контуры T1.')
+    counter = 0
+    counternew = 0
+    if len(T2Names) != 0:
+        for i in CTNames:
+            if (counter < len(T2Names)) and (i[:i.find('_')] not in T2Names[counter]):
+                T2NamesNew[counternew] = None
+                T2XPointsNew[counternew] = None
+                T2YPointsNew[counternew] = None
+                counternew += 1
+            elif counter < len(T2Names):
+                T2NamesNew[counternew] = T2Names[counter]
+                T2XPointsNew[counternew] = T2XPoints[counter]
+                T2YPointsNew[counternew] = T2YPoints[counter]
+                counternew += 1
+                counter += 1
+    else:
+        print('К сожалению, на этом срезе отсутствуют контуры T2.')
+    return T1NamesNew, T2NamesNew, T1XPointsNew, T1YPointsNew, T2XPointsNew, T2YPointsNew
+
+
 def countdistances(contour_dataset, image, zcoord, distancesCTT1, distancesCTT2):
     img_ID = image.SOPInstanceUID
     img = image
@@ -18,6 +63,10 @@ def countdistances(contour_dataset, image, zcoord, distancesCTT1, distancesCTT2)
     CTNumbers = []
     T1Numbers = []
     T2Numbers = []
+    CTNames = []
+    T1Names = []
+    T2Names = []
+
     # массивы контуров
     CTX = []
     CTY = []
@@ -78,6 +127,8 @@ def countdistances(contour_dataset, image, zcoord, distancesCTT1, distancesCTT2)
                         CTYT.append((y - origin_y) / y_spacing)
                         # этот блок ниже отвечает за прорисовку контура
                         if tempry != ROIContourSequenceNumber.ReferencedROINumber:
+                            CTNames.append(contour_dataset.RTROIObservationsSequence[
+                                               ROIContourSequenceNumber.ReferencedROINumber - 1].ROIObservationLabel)
                             xt = CTXT[-1]
                             yt = CTYT[-1]
                             CTXT.pop()  # ПОСЛЕДНИЙ ЭЛЕМЕНТ НАДО ПЕРЕНЕСТИ В НАЧАЛО СЛЕДУЮЩЕГО КОНТУРА
@@ -86,6 +137,9 @@ def countdistances(contour_dataset, image, zcoord, distancesCTT1, distancesCTT2)
                             if len(CTXT) != 0:
                                 CTXPoints.append(sum(CTXT) / len(CTXT))
                                 CTYPoints.append(sum(CTYT) / len(CTYT))
+                            else:
+                                CTXPoints.append(None)
+                                CTYPoints.append(None)
                             CTXT.clear()
                             CTYT.clear()
                             CTXT.append(xt)
@@ -97,6 +151,8 @@ def countdistances(contour_dataset, image, zcoord, distancesCTT1, distancesCTT2)
                         T1YT.append((y - origin_y) / y_spacing)
                         # этот блок ниже отвечает за прорисовку контура
                         if tempry != ROIContourSequenceNumber.ReferencedROINumber:
+                            T1Names.append(contour_dataset.RTROIObservationsSequence[
+                                               ROIContourSequenceNumber.ReferencedROINumber - 1].ROIObservationLabel)
                             xt = T1XT[-1]
                             yt = T1YT[-1]
                             T1XT.pop()
@@ -105,6 +161,9 @@ def countdistances(contour_dataset, image, zcoord, distancesCTT1, distancesCTT2)
                             if len(T1XT) != 0:
                                 T1XPoints.append(sum(T1XT) / len(T1XT))
                                 T1YPoints.append(sum(T1YT) / len(T1YT))
+                            else:
+                                T1XPoints.append(None)
+                                T1YPoints.append(None)
                             T1XT.clear()
                             T1YT.clear()
                             T1XT.append(xt)
@@ -116,6 +175,8 @@ def countdistances(contour_dataset, image, zcoord, distancesCTT1, distancesCTT2)
                         T2YT.append((y - origin_y) / y_spacing)
                         # этот блок ниже отвечает за прорисовку контура
                         if tempry != ROIContourSequenceNumber.ReferencedROINumber:
+                            T2Names.append(contour_dataset.RTROIObservationsSequence[
+                                               ROIContourSequenceNumber.ReferencedROINumber - 1].ROIObservationLabel)
                             xt = T2XT[-1]
                             yt = T2YT[-1]
                             T2XT.pop()
@@ -124,12 +185,14 @@ def countdistances(contour_dataset, image, zcoord, distancesCTT1, distancesCTT2)
                             if len(T2XT) != 0:
                                 T2XPoints.append(sum(T2XT) / len(T2XT))
                                 T2YPoints.append(sum(T2YT) / len(T2YT))
+                            else:
+                                T2XPoints.append(None)
+                                T2YPoints.append(None)
                             T2XT.clear()
                             T2YT.clear()
                             T2XT.append(xt)
                             T2YT.append(yt)
                     tempry = ROIContourSequenceNumber.ReferencedROINumber
-                tempry = ROIContourSequenceNumber.ReferencedROINumber
             pixel_coordinates = [(np.round((y - origin_y) / y_spacing), np.round((x - origin_x) / x_spacing)) for
                                  x, y, _ in coordinates]
             for i, j in list(set(pixel_coordinates)):
@@ -138,14 +201,45 @@ def countdistances(contour_dataset, image, zcoord, distancesCTT1, distancesCTT2)
             contour_arr = csc_matrix((np.ones_like(rows), (rows, cols)), dtype=np.int8,
                                      shape=(img_arr.shape[0], img_arr.shape[1])).toarray()
 
-    # обсчет точек по тройкам CT-T1 CT-T2 T1-T2
-    # начинается не от 0, а от 3, потому что отброшены первые три значения
-    for i in range(3, len(T1XPoints)):
-        distancesCTT1.append(math.sqrt((CTXPoints[i] - T1XPoints[i]) ** 2 + (CTYPoints[i] - T1YPoints[i]) ** 2))
-    for i in range(3, len(T2XPoints)):
-        distancesCTT2.append(math.sqrt((CTXPoints[i] - T2XPoints[i]) ** 2 + (CTYPoints[i] - T2YPoints[i]) ** 2))
+    CTNames = CTNames[4:]
+    T1Names = T1Names[4:]
+    T2Names = T2Names[4:]
+
+    array = arrayFill(CTNames, T1Names, T2Names, CTXPoints, CTYPoints, T1XPoints, T1YPoints, T2XPoints, T2YPoints)
+    print('CTNames: ', CTNames)
+    print('T1Names: ', array[0])
+    print('T2Names: ', array[1])
+
+    T1XPoints = array[2].copy()
+    T1YPoints = array[3].copy()
+    T2XPoints = array[4].copy()
+    T2YPoints = array[5].copy()
+
+    print('CT CENTERS: ', len(CTXPoints), '  ', CTXPoints[4:])
+    print('CT CENTERS: ', len(CTYPoints), '  ', CTYPoints[4:])
+
+    print('T1 CENTERS: ', len(T1XPoints), '  ', T1XPoints[4:])
+    print('T1 CENTERS: ', len(T1YPoints), '  ', T1YPoints[4:])
+
+    print('T2 CENTERS: ', len(T2XPoints), '  ', T2XPoints[4:])
+    print('T2 CENTERS: ', len(T2YPoints), '  ', T2YPoints[4:])
+
+    # обсчет точек по тройкам CT-T1 CT-T2
+    for i in range(4, len(T1XPoints)):
+        if (CTXPoints[i] != None) and (CTYPoints[i] != None) and (T1XPoints[i] != None) and (T1YPoints[i] != None):
+            dist = math.sqrt((CTXPoints[i] - T1XPoints[i]) ** 2 + (CTYPoints[i] - T1YPoints[i]) ** 2)
+            if dist < 10:
+                distancesCTT1.append(dist)
+    for i in range(4, len(T2XPoints)):
+        if (CTXPoints[i] != None) and (CTYPoints[i] != None) and (T2XPoints[i] != None) and (T2YPoints[i] != None):
+            dist = math.sqrt((CTXPoints[i] - T2XPoints[i]) ** 2 + (CTYPoints[i] - T2YPoints[i]) ** 2)
+            if dist < 10:
+                distancesCTT2.append(dist)
+    print('CT T1 DISTANCES: ', distancesCTT1)
+    print('CT T2 DISTANCES: ', distancesCTT2)
 
     return distancesCTT1, distancesCTT2
+
 
 def funSelection(contour_dataset, image, zcoord, selection05, selection1):
     img_ID = image.SOPInstanceUID
@@ -302,13 +396,14 @@ def funSelection(contour_dataset, image, zcoord, selection05, selection1):
     plt.scatter(T1XPoints, T1YPoints, color='r', marker='.')
     plt.scatter(T2XPoints, T2YPoints, color='b', marker='.')
     for q in selection05:
-        plt.scatter(CTXPoints[q-3], CTYPoints[q-3], color='k', marker='o', alpha=.3, s=1000)
-    #fig = plt.gcf()
+        plt.scatter(CTXPoints[q - 3], CTYPoints[q - 3], color='k', marker='o', alpha=.3, s=1000)
+    # fig = plt.gcf()
     plt.show()
     # plt.draw()
     # fig.savefig('contours.png', dpi=300)
 
     return 1
+
 
 def fun(contour_dataset, image, zcoord):
     img_ID = image.SOPInstanceUID
@@ -318,34 +413,34 @@ def fun(contour_dataset, image, zcoord):
     origin_x, origin_y, _ = img.ImagePositionPatient
     rows = []
     cols = []
-    #массивы для хранения номеров контуров
+    # массивы для хранения номеров контуров
     CTNumbers = []
     T1Numbers = []
     T2Numbers = []
-    #массивы контуров
+    # массивы контуров
     CTX = []
     CTY = []
     T1X = []
     T1Y = []
     T2X = []
     T2Y = []
-    #буфер
+    # буфер
     CTXT = []
     CTYT = []
     T1XT = []
     T1YT = []
     T2XT = []
     T2YT = []
-    #массивы для центров контуров
+    # массивы для центров контуров
     CTXPoints = []
     T1XPoints = []
     T2XPoints = []
     CTYPoints = []
     T1YPoints = []
     T2YPoints = []
-    #инициализация графиков
+    # инициализация графиков
     fig, ax = plt.subplots(1, figsize=(60, 50))
-    #заполнение массивов номерами контуров, чтобы произвести дальнейшее распределение контуров по своим массивам, согласно их номераам
+    # заполнение массивов номерами контуров, чтобы произвести дальнейшее распределение контуров по своим массивам, согласно их номераам
     for ObservationT in contour_dataset.RTROIObservationsSequence:
         if 'CT' in ObservationT.ROIObservationLabel:
             CTNumbers.append(int(ObservationT.ReferencedROINumber))
@@ -353,7 +448,7 @@ def fun(contour_dataset, image, zcoord):
             T1Numbers.append(int(ObservationT.ReferencedROINumber))
         if 'T2' in ObservationT.ROIObservationLabel:
             T2Numbers.append(int(ObservationT.ReferencedROINumber))
-#обработка данных
+    # обработка данных
     for ROIContourSequenceNumber in contour_dataset.ROIContourSequence:
         for t in range(0, len(ROIContourSequenceNumber.ContourSequence)):
             contour_coordinates = ROIContourSequenceNumber.ContourSequence[t].ContourData
@@ -365,7 +460,7 @@ def fun(contour_dataset, image, zcoord):
 
             if (contour_coordinates[2] == zcoord):
                 tempry = -1
-                #преобразование
+                # преобразование
                 for i in range(0, len(contour_coordinates), 3):
                     x = contour_coordinates[i]
                     y = contour_coordinates[i + 1]
@@ -377,26 +472,25 @@ def fun(contour_dataset, image, zcoord):
                     x0 = x
                     y0 = y
                     z0 = z
-                    #заполнение массивов контуров CT T1 T2
+                    # заполнение массивов контуров CT T1 T2
                     if ROIContourSequenceNumber.ReferencedROINumber in CTNumbers:
                         CTX.append((x - origin_x) / x_spacing)
                         CTY.append((y - origin_y) / y_spacing)
                         CTXT.append((x - origin_x) / x_spacing)
                         CTYT.append((y - origin_y) / y_spacing)
-                        #этот блок ниже отвечает за прорисовку контура
+                        # этот блок ниже отвечает за прорисовку контура
                         if tempry != ROIContourSequenceNumber.ReferencedROINumber:
                             xt = CTXT[-1]
                             yt = CTYT[-1]
-                            CTXT.pop() #ПОСЛЕДНИЙ ЭЛЕМЕНТ НАДО ПЕРЕНЕСТИ В НАЧАЛО СЛЕДУЮЩЕГО КОНТУРА
+                            CTXT.pop()  # ПОСЛЕДНИЙ ЭЛЕМЕНТ НАДО ПЕРЕНЕСТИ В НАЧАЛО СЛЕДУЮЩЕГО КОНТУРА
                             CTYT.pop()
                             # на ноль делить нельзя, поэтому откидываем эти варианты (это не выкинет точки, все на месте)
                             if len(CTXT) != 0:
                                 CTXPoints.append(sum(CTXT) / len(CTXT))
                                 CTYPoints.append(sum(CTYT) / len(CTYT))
-                            # if len(CTXT) == 0:
-                            #     CTXPoints.append(sum(CTX) / len(CTX))
-                            # if len(CTYT) == 0:
-                            #     CTYPoints.append(sum(CTY) / len(CTY))
+                            else:
+                                CTXPoints.append(None)
+                                CTYPoints.append(None)
                             ax.plot(CTXT, CTYT, color='g', linestyle='-')
                             CTXT.clear()
                             CTYT.clear()
@@ -413,14 +507,13 @@ def fun(contour_dataset, image, zcoord):
                             yt = T1YT[-1]
                             T1XT.pop()
                             T1YT.pop()
-                            #на ноль делить нельзя, поэтому откидываем эти варианты (это не выкинет точки, все на месте)
-                            if len(T1XT) != 0 :
+                            # на ноль делить нельзя, поэтому откидываем эти варианты (это не выкинет точки, все на месте)
+                            if len(T1XT) != 0:
                                 T1XPoints.append(sum(T1XT) / len(T1XT))
                                 T1YPoints.append(sum(T1YT) / len(T1YT))
-                            # if len(T1XT) == 0:
-                            #     T1XPoints.append(sum(T1X) / len(T1X))
-                            # if len(CTYT) == 0:
-                            #     T1YPoints.append(sum(T1Y) / len(T1Y))
+                            else:
+                                T1XPoints.append(None)
+                                T1YPoints.append(None)
                             ax.plot(T1XT, T1YT, color='r', linestyle='-')
                             T1XT.clear()
                             T1YT.clear()
@@ -441,10 +534,9 @@ def fun(contour_dataset, image, zcoord):
                             if len(T2XT) != 0:
                                 T2XPoints.append(sum(T2XT) / len(T2XT))
                                 T2YPoints.append(sum(T2YT) / len(T2YT))
-                            # if len(T2XT) == 0:
-                            #     T2XPoints.append(sum(T2X) / len(T2X))
-                            # if len(CTYT) == 0:
-                            #     T2YPoints.append(sum(T2Y) / len(T2Y))
+                            else:
+                                T2XPoints.append(None)
+                                T2YPoints.append(None)
                             ax.plot(T2XT, T2YT, color='b', linestyle='-')
                             T2XT.clear()
                             T2YT.clear()
@@ -452,13 +544,15 @@ def fun(contour_dataset, image, zcoord):
                             T2YT.append(yt)
                     tempry = ROIContourSequenceNumber.ReferencedROINumber
                 tempry = ROIContourSequenceNumber.ReferencedROINumber
-            pixel_coordinates = [(np.round((y - origin_y) / y_spacing), np.round((x - origin_x) / x_spacing)) for x, y, _ in coordinates]
+            pixel_coordinates = [(np.round((y - origin_y) / y_spacing), np.round((x - origin_x) / x_spacing)) for
+                                 x, y, _ in coordinates]
             for i, j in list(set(pixel_coordinates)):
                 rows.append(i)
                 cols.append(j)
-            contour_arr = csc_matrix((np.ones_like(rows), (rows, cols)), dtype=np.int8, shape=(img_arr.shape[0], img_arr.shape[1])).toarray()
+            contour_arr = csc_matrix((np.ones_like(rows), (rows, cols)), dtype=np.int8,
+                                     shape=(img_arr.shape[0], img_arr.shape[1])).toarray()
 
-    #графики для центров контуров
+    # графики для центров контуров
     plt.scatter(CTXPoints, CTYPoints, color='g', marker='.')
     plt.scatter(T1XPoints, T1YPoints, color='r', marker='.')
     plt.scatter(T2XPoints, T2YPoints, color='b', marker='.')
@@ -493,8 +587,8 @@ def fun(contour_dataset, image, zcoord):
     print(len(distancesCTT1), "/ 88")
     print(distancesCTT2)
     print(len(distancesCTT2), "/ 88")
-    #число точек, чье отклонение больше 0.5 и 1 мм
-    selection05 = [] #массив номеров точек, которые надо выделить 0.5 mm
+    # число точек, чье отклонение больше 0.5 и 1 мм
+    selection05 = []  # массив номеров точек, которые надо выделить 0.5 mm
     selection1 = []  # массив номеров точек, которые надо выделить 1 mm
     more05T1 = 0
     more1T1 = 0
@@ -546,7 +640,8 @@ def fun(contour_dataset, image, zcoord):
 
     return img_arr, contour_arr, img_ID, CTX, CTY, T1X, T1Y, T2X, T2Y, selection05, selection1
 
-#найти все доступные координаты z контуров
+
+# найти все доступные координаты z контуров
 def zcoords(contour_dataset):
     print("Possible z coordinates")
     possibleZ = []
@@ -559,21 +654,24 @@ def zcoords(contour_dataset):
     possibleZ = list(set(possibleZ))
     possibleZ.sort()
     for x in possibleZ: print(x)
+    return possibleZ
+
 
 if __name__ == "__main__":
-    #путь до папки
-    path = 'C:\\Users\\bzavo\\PycharmProjects\\MainProject\\DICOM\\'
+    # путь до папки
+    path = 'DICOM/'
     filename = 'RTSS.dcm'
     image = 'IMG0000000100.dcm'
     ds = dcmread(path + filename)
     image = dcmread(path + image)
-    #все данные есть при z=-14
+    # все данные есть при z=-14
 
-    zcoords(ds)
+    zinterest = zcoords(ds)
     print("z от -29 до -5.25 это область интереса")
     # zcoord = float(input("Enter Z coordinate from the list above \n"))
-    #-22.75 выпало
-    zinterest = {-5.25, -6.5, -7.75, -9, -10.25, -11.5, -12.75, -14, -15.25, -16.5, -17.75, -19, -20.25, -21.5, -24, -25.25, -26.5, -27.75, -29}
+    # -22.75 выпало
+    # zinterest = {-5.25, -6.5, -7.75, -9, -10.25, -11.5, -12.75, -14, -15.25, -16.5, -17.75, -19, -20.25, -21.5, -24, -25.25, -26.5, -27.75, -29}
+    # zinterest = {-59}
     distancesCTT1 = []
     distancesCTT2 = []
     for z in zinterest:
@@ -628,12 +726,14 @@ if __name__ == "__main__":
         d = dict(T1=np.array(distancesCTT1), T2=np.array(distancesCTT2))
         df = pd.DataFrame(dict([(k, pd.Series(v)) for k, v in d.items()]))
         df = df.plot.kde()
+
     # df = pd.DataFrame({
     #     'T1': distancesCTT1,
     #     'T2': distancesCTT2,
     # })
+
     plt.show()
 
-    # t = fun(ds, image, zcoord)
+    # t = fun(ds, image, -24)
 
-    # funSelection(ds, image, zcoord, t[9], t[10])
+    # funSelection(ds, image, -24, t[9], t[10])
