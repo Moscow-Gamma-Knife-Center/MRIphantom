@@ -3,9 +3,7 @@ import numpy as np
 from scipy.sparse import csc_matrix
 import matplotlib.pyplot as plt
 import math
-from mpl_toolkits.mplot3d import Axes3D  # noqa: F401 unused import
 import pandas as pd
-import scipy.stats as stats
 
 def arrayFill(CTNames, T1Names, T2Names, CTXPoints, CTYPoints, T1XPoints, T1YPoints, T2XPoints, T2YPoints):
     T1NamesNew = [None] * len(CTNames)
@@ -30,7 +28,7 @@ def arrayFill(CTNames, T1Names, T2Names, CTXPoints, CTYPoints, T1XPoints, T1YPoi
                 counternew += 1
                 counter += 1
     else:
-        print('К сожалению, на этом срезе отсутствуют контуры T1.')
+        print('Unfortunately, there are no T1 contours on this slice.')
     counter = 0
     counternew = 0
     if len(T2Names) != 0:
@@ -47,12 +45,10 @@ def arrayFill(CTNames, T1Names, T2Names, CTXPoints, CTYPoints, T1XPoints, T1YPoi
                 counternew += 1
                 counter += 1
     else:
-        print('К сожалению, на этом срезе отсутствуют контуры T2.')
+        print('Unfortunately, there are no T2 contours on this slice.')
     return T1NamesNew, T2NamesNew, T1XPointsNew, T1YPointsNew, T2XPointsNew, T2YPointsNew
 
-
-def countdistances(contour_dataset, image, zcoord, distancesCTT1, distancesCTT2):
-    img_ID = image.SOPInstanceUID
+def countDistances(contour_dataset, image, zcoord, distancesCTT1, distancesCTT2):
     img = image
     img_arr = img.pixel_array
     x_spacing, y_spacing = float(img.PixelSpacing[0]), float(img.PixelSpacing[1])
@@ -240,9 +236,7 @@ def countdistances(contour_dataset, image, zcoord, distancesCTT1, distancesCTT2)
 
     return distancesCTT1, distancesCTT2
 
-
-def funSelection(contour_dataset, image, zcoord, selection05, selection1):
-    img_ID = image.SOPInstanceUID
+def selectPoints(contour_dataset, image, zcoord, selection05, selection1):
     img = image
     img_arr = img.pixel_array
     x_spacing, y_spacing = float(img.PixelSpacing[0]), float(img.PixelSpacing[1])
@@ -390,22 +384,16 @@ def funSelection(contour_dataset, image, zcoord, selection05, selection1):
                 cols.append(j)
             contour_arr = csc_matrix((np.ones_like(rows), (rows, cols)), dtype=np.int8,
                                      shape=(img_arr.shape[0], img_arr.shape[1])).toarray()
-
     # графики для центров контуров
     plt.scatter(CTXPoints, CTYPoints, color='g', marker='.')
     plt.scatter(T1XPoints, T1YPoints, color='r', marker='.')
     plt.scatter(T2XPoints, T2YPoints, color='b', marker='.')
     for q in selection05:
         plt.scatter(CTXPoints[q - 3], CTYPoints[q - 3], color='k', marker='o', alpha=.3, s=1000)
-    # fig = plt.gcf()
     plt.show()
-    # plt.draw()
-    # fig.savefig('contours.png', dpi=300)
-
     return 1
 
-
-def fun(contour_dataset, image, zcoord):
+def plotContours(contour_dataset, image, zcoord):
     img_ID = image.SOPInstanceUID
     img = image
     img_arr = img.pixel_array
@@ -640,10 +628,8 @@ def fun(contour_dataset, image, zcoord):
 
     return img_arr, contour_arr, img_ID, CTX, CTY, T1X, T1Y, T2X, T2Y, selection05, selection1
 
-
-# найти все доступные координаты z контуров
-def zcoords(contour_dataset):
-    print("Possible z coordinates")
+def findPossibleZ(contour_dataset):
+    print("Possible slices: ")
     possibleZ = []
     for q in range(0, len(contour_dataset.ROIContourSequence)):
         for p in range(0, len(contour_dataset.ROIContourSequence[q].ContourSequence)):
@@ -656,27 +642,20 @@ def zcoords(contour_dataset):
     for x in possibleZ: print(x)
     return possibleZ
 
-
 if __name__ == "__main__":
-    # путь до папки
     path = 'DICOM/'
     filename = 'RTSS.dcm'
     image = 'IMG0000000100.dcm'
     ds = dcmread(path + filename)
     image = dcmread(path + image)
-    # все данные есть при z=-14
 
-    zinterest = zcoords(ds)
-    print("z от -29 до -5.25 это область интереса")
-    # zcoord = float(input("Enter Z coordinate from the list above \n"))
-    # -22.75 выпало
-    # zinterest = {-5.25, -6.5, -7.75, -9, -10.25, -11.5, -12.75, -14, -15.25, -16.5, -17.75, -19, -20.25, -21.5, -24, -25.25, -26.5, -27.75, -29}
-    # zinterest = {-59}
+    zinterest = findPossibleZ(ds)
+
     distancesCTT1 = []
     distancesCTT2 = []
-    for z in zinterest:
-        print(z, " mm обрабатываем")
-        countdistances(ds, image, z, distancesCTT1, distancesCTT2)
+    for zslice in zinterest:
+        print(zslice, " mm обрабатываем")
+        countDistances(ds, image, zslice, distancesCTT1, distancesCTT2)
 
     # число точек, чье отклонение больше 0.5 и 1 мм
     selection05 = []  # массив номеров точек, которые надо выделить 0.5 mm
@@ -726,14 +705,8 @@ if __name__ == "__main__":
         d = dict(T1=np.array(distancesCTT1), T2=np.array(distancesCTT2))
         df = pd.DataFrame(dict([(k, pd.Series(v)) for k, v in d.items()]))
         df = df.plot.kde()
-
-    # df = pd.DataFrame({
-    #     'T1': distancesCTT1,
-    #     'T2': distancesCTT2,
-    # })
-
     plt.show()
 
-    # t = fun(ds, image, -24)
+    # t = plotContours(ds, image, -24)
 
-    # funSelection(ds, image, -24, t[9], t[10])
+    # selectPoints(ds, image, -24, t[9], t[10])
