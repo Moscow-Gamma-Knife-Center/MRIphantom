@@ -388,7 +388,7 @@ def selectPoints(contour_dataset, image, zcoord, selection05, selection1):
     plt.scatter(CTXPoints, CTYPoints, color='g', marker='.')
     plt.scatter(T1XPoints, T1YPoints, color='r', marker='.')
     plt.scatter(T2XPoints, T2YPoints, color='b', marker='.')
-    for q in selection05:
+    for q in selection1:
         plt.scatter(CTXPoints[q - 3], CTYPoints[q - 3], color='k', marker='o', alpha=.3, s=1000)
     plt.show()
     return 1
@@ -654,7 +654,7 @@ if __name__ == "__main__":
     distancesCTT1 = []
     distancesCTT2 = []
     for zslice in zinterest:
-        print(zslice, " mm обрабатываем")
+        print("Z = ", zslice, " mm is processing")
         countDistances(ds, image, zslice, distancesCTT1, distancesCTT2)
 
     # число точек, чье отклонение больше 0.5 и 1 мм
@@ -707,6 +707,5 @@ if __name__ == "__main__":
         df = df.plot.kde()
     plt.show()
 
-    # t = plotContours(ds, image, -24)
-
-    # selectPoints(ds, image, -24, t[9], t[10])
+    t = plotContours(ds, image, 6)
+    selectPoints(ds, image, 6, t[9], t[10])
