@@ -4,8 +4,11 @@ from scipy.sparse import csc_matrix
 import matplotlib.pyplot as plt
 import math
 import os
+from datetime import datetime
 
-def plotContours(contour_dataset, image, zcoord):
+now = datetime.now()
+
+def plotContours(contour_dataset, image, zcoord, savingPath):
     img_ID = image.SOPInstanceUID
     img = image
     img_arr = img.pixel_array
@@ -157,8 +160,9 @@ def plotContours(contour_dataset, image, zcoord):
     plt.scatter(T1XPoints, T1YPoints, color='r', marker='.')
     plt.scatter(T2XPoints, T2YPoints, color='b', marker='.')
     fig = plt.gcf()
-    fig.savefig(f'pictures/slice{zcoord}.png')
+    fig.savefig(f'{savingPath}/slice{zcoord}.png')
     print(f'saved slice {zcoord}')
+    plt.close('all')
 
     return img_arr, contour_arr, img_ID, CTX, CTY, T1X, T1Y, T2X, T2Y
 
@@ -183,6 +187,10 @@ if __name__ == "__main__":
     except:
         print("The directory /pictures is already created")
 
+    #create a folder for current time
+    os.mkdir(currentPath + '/pictures/' + now.strftime("%d.%m.%Y.%H.%M.%S"))
+    savingPath = currentPath + '/pictures/' + now.strftime("%d.%m.%Y.%H.%M.%S")
+
     path = 'DICOM/'
     filename = 'RTSS.dcm'
     image = 'IMG0000000100.dcm'
@@ -190,6 +198,7 @@ if __name__ == "__main__":
     image = dcmread(path + image)
 
     zinterest = findPossibleZ(ds)
+    print("Starting saving images...")
     for z in zinterest:
-        plotContours(ds, image, z)
+        plotContours(ds, image, z, savingPath)
 
