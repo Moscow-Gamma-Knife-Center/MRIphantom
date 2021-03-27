@@ -3,6 +3,7 @@ import numpy as np
 from scipy.sparse import csc_matrix
 import matplotlib.pyplot as plt
 import math
+import os
 
 def plotContours(contour_dataset, image, zcoord):
     img_ID = image.SOPInstanceUID
@@ -176,6 +177,11 @@ def findPossibleZ(contour_dataset):
     return possibleZ
 
 if __name__ == "__main__":
+    currentPath = os.getcwd()
+    try:
+        os.mkdir(currentPath + '/pictures')
+    except:
+        print("The directory /pictures is already created")
 
     path = 'DICOM/'
     filename = 'RTSS.dcm'
