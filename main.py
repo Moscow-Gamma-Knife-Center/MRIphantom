@@ -5,6 +5,10 @@ import matplotlib.pyplot as plt
 import math
 import pandas as pd
 
+def drawArrow(x1, y1, x2, y2):
+    plt.arrow(x1, y1, x2 - x1, y2 - y1,
+              head_width=0.1, length_includes_head=True)
+
 def arrayFill(CTNames, T1Names, T2Names, CTXPoints, CTYPoints, T1XPoints, T1YPoints, T2XPoints, T2YPoints):
     T1NamesNew = [None] * len(CTNames)
     T2NamesNew = [None] * len(CTNames)
@@ -405,6 +409,10 @@ def plotContours(contour_dataset, image, zcoord):
     CTNumbers = []
     T1Numbers = []
     T2Numbers = []
+    CTNames = []
+    T1Names = []
+    T2Names = []
+
     # массивы контуров
     CTX = []
     CTY = []
@@ -472,7 +480,6 @@ def plotContours(contour_dataset, image, zcoord):
                             yt = CTYT[-1]
                             CTXT.pop()  # ПОСЛЕДНИЙ ЭЛЕМЕНТ НАДО ПЕРЕНЕСТИ В НАЧАЛО СЛЕДУЮЩЕГО КОНТУРА
                             CTYT.pop()
-                            # на ноль делить нельзя, поэтому откидываем эти варианты (это не выкинет точки, все на месте)
                             if len(CTXT) != 0:
                                 CTXPoints.append(sum(CTXT) / len(CTXT))
                                 CTYPoints.append(sum(CTYT) / len(CTYT))
@@ -495,7 +502,6 @@ def plotContours(contour_dataset, image, zcoord):
                             yt = T1YT[-1]
                             T1XT.pop()
                             T1YT.pop()
-                            # на ноль делить нельзя, поэтому откидываем эти варианты (это не выкинет точки, все на месте)
                             if len(T1XT) != 0:
                                 T1XPoints.append(sum(T1XT) / len(T1XT))
                                 T1YPoints.append(sum(T1YT) / len(T1YT))
@@ -518,7 +524,6 @@ def plotContours(contour_dataset, image, zcoord):
                             yt = T2YT[-1]
                             T2XT.pop()
                             T2YT.pop()
-                            # на ноль делить нельзя, поэтому откидываем эти варианты (это не выкинет точки, все на месте)
                             if len(T2XT) != 0:
                                 T2XPoints.append(sum(T2XT) / len(T2XT))
                                 T2YPoints.append(sum(T2YT) / len(T2YT))
@@ -540,32 +545,31 @@ def plotContours(contour_dataset, image, zcoord):
             contour_arr = csc_matrix((np.ones_like(rows), (rows, cols)), dtype=np.int8,
                                      shape=(img_arr.shape[0], img_arr.shape[1])).toarray()
 
+
+    print('CT CENTERS: ', len(CTXPoints), '  ', CTXPoints[4:])
+    print('CT CENTERS: ', len(CTYPoints), '  ', CTYPoints[4:])
+
+    print('T1 CENTERS: ', len(T1XPoints), '  ', T1XPoints[4:])
+    print('T1 CENTERS: ', len(T1YPoints), '  ', T1YPoints[4:])
+
+    print('T2 CENTERS: ', len(T2XPoints), '  ', T2XPoints[4:])
+    print('T2 CENTERS: ', len(T2YPoints), '  ', T2YPoints[4:])
+
     # графики для центров контуров
     plt.scatter(CTXPoints, CTYPoints, color='g', marker='.')
     plt.scatter(T1XPoints, T1YPoints, color='r', marker='.')
     plt.scatter(T2XPoints, T2YPoints, color='b', marker='.')
-    # fig = plt.gcf()
+
+    #draw arrows
+    for i in range(4, len(T1XPoints)):
+        drawArrow(CTXPoints[i], CTYPoints[i], T1XPoints[i], T1YPoints[i])
+
     plt.show()
-    # plt.draw()
-    # fig.savefig('contours.png', dpi=300)
     plt.figure(1)
     # обсчет точек по тройкам CT-T1 CT-T2 T1-T2
     distancesCTT1 = []
     distancesCTT2 = []
-    # ручная обработка первых трех выбивающихся точек (не очень сработало :с )
-    # xa = CTXPoints[0]
-    # ya = CTYPoints[0]
-    # xb = CTXPoints[1]
-    # yb = CTYPoints[1]
-    #
-    # CTXPoints[0] = CTXPoints[2]
-    # CTYPoints[0] = CTYPoints[2]
-    # CTXPoints[2] = xa
-    # CTYPoints[2] = ya
-    # CTXPoints[1] = CTXPoints[0]
-    # CTYPoints[1] = CTYPoints[0]
-    # CTXPoints[0] = xb
-    # CTYPoints[0] = yb
+
     # начинается не от 0, а от 3, потому что отброшены первые три значения
     for i in range(3, len(T1XPoints)):
         distancesCTT1.append(math.sqrt((CTXPoints[i] - T1XPoints[i]) ** 2 + (CTYPoints[i] - T1YPoints[i]) ** 2))
@@ -620,10 +624,6 @@ def plotContours(contour_dataset, image, zcoord):
         d = dict(T1=np.array(distancesCTT1), T2=np.array(distancesCTT2))
         df = pd.DataFrame(dict([(k, pd.Series(v)) for k, v in d.items()]))
         df = df.plot.kde()
-    # df = pd.DataFrame({
-    #     'T1': distancesCTT1,
-    #     'T2': distancesCTT2,
-    # })
     plt.show()
 
     return img_arr, contour_arr, img_ID, CTX, CTY, T1X, T1Y, T2X, T2Y, selection05, selection1
@@ -649,8 +649,8 @@ if __name__ == "__main__":
     ds = dcmread(path + filename)
     image = dcmread(path + image)
 
-    zinterest = findPossibleZ(ds)
-
+    # zinterest = findPossibleZ(ds)
+    zinterest = {-9}
     distancesCTT1 = []
     distancesCTT2 = []
     for zslice in zinterest:
@@ -707,5 +707,5 @@ if __name__ == "__main__":
         df = df.plot.kde()
     plt.show()
 
-    t = plotContours(ds, image, 6)
-    selectPoints(ds, image, 6, t[9], t[10])
+    t = plotContours(ds, image, -9)
+    # selectPoints(ds, image, 6, t[9], t[10])

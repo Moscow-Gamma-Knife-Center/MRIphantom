@@ -22,10 +22,13 @@ height = int(img.shape[0] * scale_percent / 100)
 dim = (width, height)
 # resizing the image
 img = cv2.resize(img, dim, interpolation = cv2.INTER_AREA)
+img = img[1250:4000, 1100:3800]
 cimg = cv2.cvtColor(img, cv2.COLOR_GRAY2BGR)
+hsv = cv2.cvtColor(cimg, cv2.COLOR_BGR2HSV)
+mask = cv2.inRange(hsv, (150, 150, 150), (190, 190, 190))
 
 
-circles = cv2.HoughCircles(img, cv2.HOUGH_GRADIENT, 1, 10,
+circles = cv2.HoughCircles(img, cv2.HOUGH_GRADIENT, 1, 200,
                             param1 = 1, param2 = 8, minRadius = 20, maxRadius = 30)
 
 circles = np.uint16(np.around(circles))
