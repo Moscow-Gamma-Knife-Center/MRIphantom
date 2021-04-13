@@ -470,6 +470,8 @@ def plotContours(contour_dataset, image, zcoord):
                     z0 = z
                     # заполнение массивов контуров CT T1 T2
                     if ROIContourSequenceNumber.ReferencedROINumber in CTNumbers:
+                        CTNames.append(contour_dataset.RTROIObservationsSequence[
+                                           ROIContourSequenceNumber.ReferencedROINumber - 1].ROIObservationLabel)
                         CTX.append((x - origin_x) / x_spacing)
                         CTY.append((y - origin_y) / y_spacing)
                         CTXT.append((x - origin_x) / x_spacing)
@@ -498,6 +500,8 @@ def plotContours(contour_dataset, image, zcoord):
                         T1YT.append((y - origin_y) / y_spacing)
                         # этот блок ниже отвечает за прорисовку контура
                         if tempry != ROIContourSequenceNumber.ReferencedROINumber:
+                            T1Names.append(contour_dataset.RTROIObservationsSequence[
+                                               ROIContourSequenceNumber.ReferencedROINumber - 1].ROIObservationLabel)
                             xt = T1XT[-1]
                             yt = T1YT[-1]
                             T1XT.pop()
@@ -520,6 +524,8 @@ def plotContours(contour_dataset, image, zcoord):
                         T2YT.append((y - origin_y) / y_spacing)
                         # этот блок ниже отвечает за прорисовку контура
                         if tempry != ROIContourSequenceNumber.ReferencedROINumber:
+                            T2Names.append(contour_dataset.RTROIObservationsSequence[
+                                               ROIContourSequenceNumber.ReferencedROINumber - 1].ROIObservationLabel)
                             xt = T2XT[-1]
                             yt = T2YT[-1]
                             T2XT.pop()

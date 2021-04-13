@@ -8,6 +8,54 @@ from datetime import datetime
 
 now = datetime.now()
 
+#we multiply dx and dy by 1.01 for easier visual representation
+def drawArrow(x1, y1, x2, y2):
+    plt.arrow(x1, y1, 10*(x2 - x1), 10*(y2 - y1),
+              head_width=0.1, length_includes_head=True)
+
+def arrayFill(CTNames, T1Names, T2Names, CTXPoints, CTYPoints, T1XPoints, T1YPoints, T2XPoints, T2YPoints):
+    T1NamesNew = [None] * len(CTNames)
+    T2NamesNew = [None] * len(CTNames)
+    T1XPointsNew = [None] * len(CTXPoints)
+    T2XPointsNew = [None] * len(CTYPoints)
+    T1YPointsNew = [None] * len(CTXPoints)
+    T2YPointsNew = [None] * len(CTYPoints)
+    counter = 0
+    counternew = 0
+    if len(T1Names) != 0:
+        for i in CTNames:
+            if (counter < len(T1Names)) and (i[:i.find('_')] != T1Names[counter][:T1Names[counter].find('_')]):
+                T1NamesNew[counternew] = None
+                T1XPointsNew[counternew] = None
+                T1YPointsNew[counternew] = None
+                counternew += 1
+            elif counter < len(T1Names):
+                T1NamesNew[counternew] = T1Names[counter]
+                T1XPointsNew[counternew] = T1XPoints[counter]
+                T1YPointsNew[counternew] = T1YPoints[counter]
+                counternew += 1
+                counter += 1
+    else:
+        print('Unfortunately, there are no T1 contours on this slice.')
+    counter = 0
+    counternew = 0
+    if len(T2Names) != 0:
+        for i in CTNames:
+            if (counter < len(T2Names)) and (i[:i.find('_')] not in T2Names[counter]):
+                T2NamesNew[counternew] = None
+                T2XPointsNew[counternew] = None
+                T2YPointsNew[counternew] = None
+                counternew += 1
+            elif counter < len(T2Names):
+                T2NamesNew[counternew] = T2Names[counter]
+                T2XPointsNew[counternew] = T2XPoints[counter]
+                T2YPointsNew[counternew] = T2YPoints[counter]
+                counternew += 1
+                counter += 1
+    else:
+        print('Unfortunately, there are no T2 contours on this slice.')
+    return T1NamesNew, T2NamesNew, T1XPointsNew, T1YPointsNew, T2XPointsNew, T2YPointsNew
+
 def plotContours(contour_dataset, image, zcoord, savingPath):
     img_ID = image.SOPInstanceUID
     img = image
@@ -20,6 +68,9 @@ def plotContours(contour_dataset, image, zcoord, savingPath):
     CTNumbers = []
     T1Numbers = []
     T2Numbers = []
+    CTNames = []
+    T1Names = []
+    T2Names = []
     # массивы контуров
     CTX = []
     CTY = []
@@ -83,6 +134,8 @@ def plotContours(contour_dataset, image, zcoord, savingPath):
                         CTYT.append((y - origin_y) / y_spacing)
                         # этот блок ниже отвечает за прорисовку контура
                         if tempry != ROIContourSequenceNumber.ReferencedROINumber:
+                            CTNames.append(contour_dataset.RTROIObservationsSequence[
+                                               ROIContourSequenceNumber.ReferencedROINumber - 1].ROIObservationLabel)
                             xt = CTXT[-1]
                             yt = CTYT[-1]
                             CTXT.pop()  # ПОСЛЕДНИЙ ЭЛЕМЕНТ НАДО ПЕРЕНЕСТИ В НАЧАЛО СЛЕДУЮЩЕГО КОНТУРА
@@ -106,6 +159,8 @@ def plotContours(contour_dataset, image, zcoord, savingPath):
                         T1YT.append((y - origin_y) / y_spacing)
                         # этот блок ниже отвечает за прорисовку контура
                         if tempry != ROIContourSequenceNumber.ReferencedROINumber:
+                            T1Names.append(contour_dataset.RTROIObservationsSequence[
+                                               ROIContourSequenceNumber.ReferencedROINumber - 1].ROIObservationLabel)
                             xt = T1XT[-1]
                             yt = T1YT[-1]
                             T1XT.pop()
@@ -129,6 +184,8 @@ def plotContours(contour_dataset, image, zcoord, savingPath):
                         T2YT.append((y - origin_y) / y_spacing)
                         # этот блок ниже отвечает за прорисовку контура
                         if tempry != ROIContourSequenceNumber.ReferencedROINumber:
+                            T2Names.append(contour_dataset.RTROIObservationsSequence[
+                                               ROIContourSequenceNumber.ReferencedROINumber - 1].ROIObservationLabel)
                             xt = T2XT[-1]
                             yt = T2YT[-1]
                             T2XT.pop()
@@ -159,6 +216,40 @@ def plotContours(contour_dataset, image, zcoord, savingPath):
     plt.scatter(CTXPoints, CTYPoints, color='g', marker='.')
     plt.scatter(T1XPoints, T1YPoints, color='r', marker='.')
     plt.scatter(T2XPoints, T2YPoints, color='b', marker='.')
+
+    CTNames = CTNames[4:]
+    T1Names = T1Names[4:]
+    T2Names = T2Names[4:]
+
+    array = arrayFill(CTNames, T1Names, T2Names, CTXPoints, CTYPoints, T1XPoints, T1YPoints, T2XPoints, T2YPoints)
+    print('CTNames: ', CTNames)
+    print('T1Names: ', array[0])
+    print('T2Names: ', array[1])
+
+    T1XPoints = array[2].copy()
+    T1YPoints = array[3].copy()
+    T2XPoints = array[4].copy()
+    T2YPoints = array[5].copy()
+
+    print('CT CENTERS: ', len(CTXPoints), '  ', CTXPoints[:])
+    print('CT CENTERS: ', len(CTYPoints), '  ', CTYPoints[:])
+
+    print('T1 CENTERS: ', len(T1XPoints), '  ', T1XPoints[:])
+    print('T1 CENTERS: ', len(T1YPoints), '  ', T1YPoints[:])
+
+    print('T2 CENTERS: ', len(T2XPoints), '  ', T2XPoints[:])
+    print('T2 CENTERS: ', len(T2YPoints), '  ', T2YPoints[:])
+
+
+
+    # draw arrows
+    for i in range(4, len(T1XPoints)):
+        if (T1XPoints[i] is not None) and (math.sqrt((CTXPoints[i] - T1XPoints[i]) ** 2 + (CTYPoints[i] - T1YPoints[i]) ** 2) < 10):
+            drawArrow(CTXPoints[i], CTYPoints[i], T1XPoints[i], T1YPoints[i])
+    for i in range(4, len(T2XPoints)):
+        if (T2XPoints[i] is not None) and (math.sqrt((CTXPoints[i] - T2XPoints[i]) ** 2 + (CTYPoints[i] - T2YPoints[i]) ** 2) < 10):
+            drawArrow(CTXPoints[i], CTYPoints[i], T2XPoints[i], T2YPoints[i])
+
     fig = plt.gcf()
     fig.savefig(f'{savingPath}/slice{zcoord}.png')
     print(f'saved slice {zcoord}')
