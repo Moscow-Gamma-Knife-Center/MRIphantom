@@ -1,0 +1,23 @@
+<GreyscalePipeline>
+   <Modality>
+	  <LUT>
+		  <Curve name="DCM">
+			 <CurveType>DICOMModality</CurveType>
+		</Curve>
+	  </LUT>
+   </Modality>
+   <VOI>
+	  <LUT>
+		 <Curve name="DCM">
+			 <CurveType>DICOMVOI</CurveType>
+		</Curve>
+	  </LUT>
+   </VOI>
+   <Presentation>
+	  <LUT>
+		  <Curve name="ID">
+			  <CurveType>Identity</CurveType>
+		  </Curve>
+	  </LUT>
+   </Presentation>
+</GreyscalePipeline>

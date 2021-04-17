@@ -98,108 +98,109 @@ def countDistances(contour_dataset, image, zcoord, distancesCTT1, distancesCTT2)
             T2Numbers.append(int(ObservationT.ReferencedROINumber))
     # обработка данных
     for ROIContourSequenceNumber in contour_dataset.ROIContourSequence:
-        for t in range(0, len(ROIContourSequenceNumber.ContourSequence)):
-            contour_coordinates = ROIContourSequenceNumber.ContourSequence[t].ContourData
-            # x, y, z координаты контура в миллиметрах
-            x0 = contour_coordinates[len(contour_coordinates) - 3]
-            y0 = contour_coordinates[len(contour_coordinates) - 2]
-            z0 = contour_coordinates[len(contour_coordinates) - 1]
-            coordinates = []
-            if (contour_coordinates[2] == zcoord):
-                tempry = -1
-                # преобразование
-                for i in range(0, len(contour_coordinates), 3):
-                    x = contour_coordinates[i]
-                    y = contour_coordinates[i + 1]
-                    z = contour_coordinates[i + 2]
-                    l = math.sqrt((x - x0) * (x - x0) + (y - y0) * (y - y0) + (z - z0) * (z - z0))
-                    l = math.ceil(l * 2) + 1
-                    for k in range(1, l + 1):
-                        coordinates.append([(x - x0) * k / l + x0, (y - y0) * k / l + y0, (z - z0) * k / l + z0])
-                    x0 = x
-                    y0 = y
-                    z0 = z
-                    # заполнение массивов контуров CT T1 T2
-                    if ROIContourSequenceNumber.ReferencedROINumber in CTNumbers:
-                        CTX.append((x - origin_x) / x_spacing)
-                        CTY.append((y - origin_y) / y_spacing)
-                        CTXT.append((x - origin_x) / x_spacing)
-                        CTYT.append((y - origin_y) / y_spacing)
-                        # этот блок ниже отвечает за прорисовку контура
-                        if tempry != ROIContourSequenceNumber.ReferencedROINumber:
-                            CTNames.append(contour_dataset.RTROIObservationsSequence[
-                                               ROIContourSequenceNumber.ReferencedROINumber - 1].ROIObservationLabel)
-                            xt = CTXT[-1]
-                            yt = CTYT[-1]
-                            CTXT.pop()  # ПОСЛЕДНИЙ ЭЛЕМЕНТ НАДО ПЕРЕНЕСТИ В НАЧАЛО СЛЕДУЮЩЕГО КОНТУРА
-                            CTYT.pop()
-                            # на ноль делить нельзя, поэтому откидываем эти варианты (это не выкинет точки, все на месте)
-                            if len(CTXT) != 0:
-                                CTXPoints.append(sum(CTXT) / len(CTXT))
-                                CTYPoints.append(sum(CTYT) / len(CTYT))
-                            else:
-                                CTXPoints.append(None)
-                                CTYPoints.append(None)
-                            CTXT.clear()
-                            CTYT.clear()
-                            CTXT.append(xt)
-                            CTYT.append(yt)
-                    if ROIContourSequenceNumber.ReferencedROINumber in T1Numbers:
-                        T1X.append((x - origin_x) / x_spacing)
-                        T1Y.append((y - origin_y) / y_spacing)
-                        T1XT.append((x - origin_x) / x_spacing)
-                        T1YT.append((y - origin_y) / y_spacing)
-                        # этот блок ниже отвечает за прорисовку контура
-                        if tempry != ROIContourSequenceNumber.ReferencedROINumber:
-                            T1Names.append(contour_dataset.RTROIObservationsSequence[
-                                               ROIContourSequenceNumber.ReferencedROINumber - 1].ROIObservationLabel)
-                            xt = T1XT[-1]
-                            yt = T1YT[-1]
-                            T1XT.pop()
-                            T1YT.pop()
-                            # на ноль делить нельзя, поэтому откидываем эти варианты (это не выкинет точки, все на месте)
-                            if len(T1XT) != 0:
-                                T1XPoints.append(sum(T1XT) / len(T1XT))
-                                T1YPoints.append(sum(T1YT) / len(T1YT))
-                            else:
-                                T1XPoints.append(None)
-                                T1YPoints.append(None)
-                            T1XT.clear()
-                            T1YT.clear()
-                            T1XT.append(xt)
-                            T1YT.append(yt)
-                    if ROIContourSequenceNumber.ReferencedROINumber in T2Numbers:
-                        T2X.append((x - origin_x) / x_spacing)
-                        T2Y.append((y - origin_y) / y_spacing)
-                        T2XT.append((x - origin_x) / x_spacing)
-                        T2YT.append((y - origin_y) / y_spacing)
-                        # этот блок ниже отвечает за прорисовку контура
-                        if tempry != ROIContourSequenceNumber.ReferencedROINumber:
-                            T2Names.append(contour_dataset.RTROIObservationsSequence[
-                                               ROIContourSequenceNumber.ReferencedROINumber - 1].ROIObservationLabel)
-                            xt = T2XT[-1]
-                            yt = T2YT[-1]
-                            T2XT.pop()
-                            T2YT.pop()
-                            # на ноль делить нельзя, поэтому откидываем эти варианты (это не выкинет точки, все на месте)
-                            if len(T2XT) != 0:
-                                T2XPoints.append(sum(T2XT) / len(T2XT))
-                                T2YPoints.append(sum(T2YT) / len(T2YT))
-                            else:
-                                T2XPoints.append(None)
-                                T2YPoints.append(None)
-                            T2XT.clear()
-                            T2YT.clear()
-                            T2XT.append(xt)
-                            T2YT.append(yt)
-                    tempry = ROIContourSequenceNumber.ReferencedROINumber
-            pixel_coordinates = [(np.round((y - origin_y) / y_spacing), np.round((x - origin_x) / x_spacing)) for
-                                 x, y, _ in coordinates]
-            for i, j in list(set(pixel_coordinates)):
-                rows.append(i)
-                cols.append(j)
-            contour_arr = csc_matrix((np.ones_like(rows), (rows, cols)), dtype=np.int8,
-                                     shape=(img_arr.shape[0], img_arr.shape[1])).toarray()
+        if "ContourSequence" in ROIContourSequenceNumber.dir():
+            for t in range(0, len(ROIContourSequenceNumber.ContourSequence)):
+                contour_coordinates = ROIContourSequenceNumber.ContourSequence[t].ContourData
+                # x, y, z координаты контура в миллиметрах
+                x0 = contour_coordinates[len(contour_coordinates) - 3]
+                y0 = contour_coordinates[len(contour_coordinates) - 2]
+                z0 = contour_coordinates[len(contour_coordinates) - 1]
+                coordinates = []
+                if (contour_coordinates[2] == zcoord):
+                    tempry = -1
+                    # преобразование
+                    for i in range(0, len(contour_coordinates), 3):
+                        x = contour_coordinates[i]
+                        y = contour_coordinates[i + 1]
+                        z = contour_coordinates[i + 2]
+                        l = math.sqrt((x - x0) * (x - x0) + (y - y0) * (y - y0) + (z - z0) * (z - z0))
+                        l = math.ceil(l * 2) + 1
+                        for k in range(1, l + 1):
+                            coordinates.append([(x - x0) * k / l + x0, (y - y0) * k / l + y0, (z - z0) * k / l + z0])
+                        x0 = x
+                        y0 = y
+                        z0 = z
+                        # заполнение массивов контуров CT T1 T2
+                        if ROIContourSequenceNumber.ReferencedROINumber in CTNumbers:
+                            CTX.append((x - origin_x) / x_spacing)
+                            CTY.append((y - origin_y) / y_spacing)
+                            CTXT.append((x - origin_x) / x_spacing)
+                            CTYT.append((y - origin_y) / y_spacing)
+                            # этот блок ниже отвечает за прорисовку контура
+                            if tempry != ROIContourSequenceNumber.ReferencedROINumber:
+                                CTNames.append(contour_dataset.RTROIObservationsSequence[
+                                                   ROIContourSequenceNumber.ReferencedROINumber - 1].ROIObservationLabel)
+                                xt = CTXT[-1]
+                                yt = CTYT[-1]
+                                CTXT.pop()  # ПОСЛЕДНИЙ ЭЛЕМЕНТ НАДО ПЕРЕНЕСТИ В НАЧАЛО СЛЕДУЮЩЕГО КОНТУРА
+                                CTYT.pop()
+                                # на ноль делить нельзя, поэтому откидываем эти варианты (это не выкинет точки, все на месте)
+                                if len(CTXT) != 0:
+                                    CTXPoints.append(sum(CTXT) / len(CTXT))
+                                    CTYPoints.append(sum(CTYT) / len(CTYT))
+                                else:
+                                    CTXPoints.append(None)
+                                    CTYPoints.append(None)
+                                CTXT.clear()
+                                CTYT.clear()
+                                CTXT.append(xt)
+                                CTYT.append(yt)
+                        if ROIContourSequenceNumber.ReferencedROINumber in T1Numbers:
+                            T1X.append((x - origin_x) / x_spacing)
+                            T1Y.append((y - origin_y) / y_spacing)
+                            T1XT.append((x - origin_x) / x_spacing)
+                            T1YT.append((y - origin_y) / y_spacing)
+                            # этот блок ниже отвечает за прорисовку контура
+                            if tempry != ROIContourSequenceNumber.ReferencedROINumber:
+                                T1Names.append(contour_dataset.RTROIObservationsSequence[
+                                                   ROIContourSequenceNumber.ReferencedROINumber - 1].ROIObservationLabel)
+                                xt = T1XT[-1]
+                                yt = T1YT[-1]
+                                T1XT.pop()
+                                T1YT.pop()
+                                # на ноль делить нельзя, поэтому откидываем эти варианты (это не выкинет точки, все на месте)
+                                if len(T1XT) != 0:
+                                    T1XPoints.append(sum(T1XT) / len(T1XT))
+                                    T1YPoints.append(sum(T1YT) / len(T1YT))
+                                else:
+                                    T1XPoints.append(None)
+                                    T1YPoints.append(None)
+                                T1XT.clear()
+                                T1YT.clear()
+                                T1XT.append(xt)
+                                T1YT.append(yt)
+                        if ROIContourSequenceNumber.ReferencedROINumber in T2Numbers:
+                            T2X.append((x - origin_x) / x_spacing)
+                            T2Y.append((y - origin_y) / y_spacing)
+                            T2XT.append((x - origin_x) / x_spacing)
+                            T2YT.append((y - origin_y) / y_spacing)
+                            # этот блок ниже отвечает за прорисовку контура
+                            if tempry != ROIContourSequenceNumber.ReferencedROINumber:
+                                T2Names.append(contour_dataset.RTROIObservationsSequence[
+                                                   ROIContourSequenceNumber.ReferencedROINumber - 1].ROIObservationLabel)
+                                xt = T2XT[-1]
+                                yt = T2YT[-1]
+                                T2XT.pop()
+                                T2YT.pop()
+                                # на ноль делить нельзя, поэтому откидываем эти варианты (это не выкинет точки, все на месте)
+                                if len(T2XT) != 0:
+                                    T2XPoints.append(sum(T2XT) / len(T2XT))
+                                    T2YPoints.append(sum(T2YT) / len(T2YT))
+                                else:
+                                    T2XPoints.append(None)
+                                    T2YPoints.append(None)
+                                T2XT.clear()
+                                T2YT.clear()
+                                T2XT.append(xt)
+                                T2YT.append(yt)
+                        tempry = ROIContourSequenceNumber.ReferencedROINumber
+                pixel_coordinates = [(np.round((y - origin_y) / y_spacing), np.round((x - origin_x) / x_spacing)) for
+                                     x, y, _ in coordinates]
+                for i, j in list(set(pixel_coordinates)):
+                    rows.append(i)
+                    cols.append(j)
+                contour_arr = csc_matrix((np.ones_like(rows), (rows, cols)), dtype=np.int8,
+                                         shape=(img_arr.shape[0], img_arr.shape[1])).toarray()
 
     CTNames = CTNames[4:]
     T1Names = T1Names[4:]
@@ -284,110 +285,111 @@ def selectPoints(contour_dataset, image, zcoord, selection05, selection1):
             T2Numbers.append(int(ObservationT.ReferencedROINumber))
     # обработка данных
     for ROIContourSequenceNumber in contour_dataset.ROIContourSequence:
-        for t in range(0, len(ROIContourSequenceNumber.ContourSequence)):
-            contour_coordinates = ROIContourSequenceNumber.ContourSequence[t].ContourData
-            # x, y, z координаты контура в миллиметрах
-            x0 = contour_coordinates[len(contour_coordinates) - 3]
-            y0 = contour_coordinates[len(contour_coordinates) - 2]
-            z0 = contour_coordinates[len(contour_coordinates) - 1]
-            coordinates = []
+        if "ContourSequence" in ROIContourSequenceNumber.dir():
+            for t in range(0, len(ROIContourSequenceNumber.ContourSequence)):
+                contour_coordinates = ROIContourSequenceNumber.ContourSequence[t].ContourData
+                # x, y, z координаты контура в миллиметрах
+                x0 = contour_coordinates[len(contour_coordinates) - 3]
+                y0 = contour_coordinates[len(contour_coordinates) - 2]
+                z0 = contour_coordinates[len(contour_coordinates) - 1]
+                coordinates = []
 
-            if (contour_coordinates[2] == zcoord):
-                tempry = -1
-                # преобразование
-                for i in range(0, len(contour_coordinates), 3):
-                    x = contour_coordinates[i]
-                    y = contour_coordinates[i + 1]
-                    z = contour_coordinates[i + 2]
-                    l = math.sqrt((x - x0) * (x - x0) + (y - y0) * (y - y0) + (z - z0) * (z - z0))
-                    l = math.ceil(l * 2) + 1
-                    for k in range(1, l + 1):
-                        coordinates.append([(x - x0) * k / l + x0, (y - y0) * k / l + y0, (z - z0) * k / l + z0])
-                    x0 = x
-                    y0 = y
-                    z0 = z
-                    # заполнение массивов контуров CT T1 T2
-                    if ROIContourSequenceNumber.ReferencedROINumber in CTNumbers:
-                        CTX.append((x - origin_x) / x_spacing)
-                        CTY.append((y - origin_y) / y_spacing)
-                        CTXT.append((x - origin_x) / x_spacing)
-                        CTYT.append((y - origin_y) / y_spacing)
-                        # этот блок ниже отвечает за прорисовку контура
-                        if tempry != ROIContourSequenceNumber.ReferencedROINumber:
-                            xt = CTXT[-1]
-                            yt = CTYT[-1]
-                            CTXT.pop()  # ПОСЛЕДНИЙ ЭЛЕМЕНТ НАДО ПЕРЕНЕСТИ В НАЧАЛО СЛЕДУЮЩЕГО КОНТУРА
-                            CTYT.pop()
-                            # на ноль делить нельзя, поэтому откидываем эти варианты (это не выкинет точки, все на месте)
-                            if len(CTXT) != 0:
-                                CTXPoints.append(sum(CTXT) / len(CTXT))
-                                CTYPoints.append(sum(CTYT) / len(CTYT))
-                            # if len(CTXT) == 0:
-                            #     CTXPoints.append(sum(CTX) / len(CTX))
-                            # if len(CTYT) == 0:
-                            #     CTYPoints.append(sum(CTY) / len(CTY))
-                            ax1.plot(CTXT, CTYT, color='g', linestyle='-')
-                            CTXT.clear()
-                            CTYT.clear()
-                            CTXT.append(xt)
-                            CTYT.append(yt)
-                    if ROIContourSequenceNumber.ReferencedROINumber in T1Numbers:
-                        T1X.append((x - origin_x) / x_spacing)
-                        T1Y.append((y - origin_y) / y_spacing)
-                        T1XT.append((x - origin_x) / x_spacing)
-                        T1YT.append((y - origin_y) / y_spacing)
-                        # этот блок ниже отвечает за прорисовку контура
-                        if tempry != ROIContourSequenceNumber.ReferencedROINumber:
-                            xt = T1XT[-1]
-                            yt = T1YT[-1]
-                            T1XT.pop()
-                            T1YT.pop()
-                            # на ноль делить нельзя, поэтому откидываем эти варианты (это не выкинет точки, все на месте)
-                            if len(T1XT) != 0:
-                                T1XPoints.append(sum(T1XT) / len(T1XT))
-                                T1YPoints.append(sum(T1YT) / len(T1YT))
-                            # if len(T1XT) == 0:
-                            #     T1XPoints.append(sum(T1X) / len(T1X))
-                            # if len(CTYT) == 0:
-                            #     T1YPoints.append(sum(T1Y) / len(T1Y))
-                            ax1.plot(T1XT, T1YT, color='r', linestyle='-')
-                            T1XT.clear()
-                            T1YT.clear()
-                            T1XT.append(xt)
-                            T1YT.append(yt)
-                    if ROIContourSequenceNumber.ReferencedROINumber in T2Numbers:
-                        T2X.append((x - origin_x) / x_spacing)
-                        T2Y.append((y - origin_y) / y_spacing)
-                        T2XT.append((x - origin_x) / x_spacing)
-                        T2YT.append((y - origin_y) / y_spacing)
-                        # этот блок ниже отвечает за прорисовку контура
-                        if tempry != ROIContourSequenceNumber.ReferencedROINumber:
-                            xt = T2XT[-1]
-                            yt = T2YT[-1]
-                            T2XT.pop()
-                            T2YT.pop()
-                            # на ноль делить нельзя, поэтому откидываем эти варианты (это не выкинет точки, все на месте)
-                            if len(T2XT) != 0:
-                                T2XPoints.append(sum(T2XT) / len(T2XT))
-                                T2YPoints.append(sum(T2YT) / len(T2YT))
-                            # if len(T2XT) == 0:
-                            #     T2XPoints.append(sum(T2X) / len(T2X))
-                            # if len(CTYT) == 0:
-                            #     T2YPoints.append(sum(T2Y) / len(T2Y))
-                            ax1.plot(T2XT, T2YT, color='b', linestyle='-')
-                            T2XT.clear()
-                            T2YT.clear()
-                            T2XT.append(xt)
-                            T2YT.append(yt)
+                if (contour_coordinates[2] == zcoord):
+                    tempry = -1
+                    # преобразование
+                    for i in range(0, len(contour_coordinates), 3):
+                        x = contour_coordinates[i]
+                        y = contour_coordinates[i + 1]
+                        z = contour_coordinates[i + 2]
+                        l = math.sqrt((x - x0) * (x - x0) + (y - y0) * (y - y0) + (z - z0) * (z - z0))
+                        l = math.ceil(l * 2) + 1
+                        for k in range(1, l + 1):
+                            coordinates.append([(x - x0) * k / l + x0, (y - y0) * k / l + y0, (z - z0) * k / l + z0])
+                        x0 = x
+                        y0 = y
+                        z0 = z
+                        # заполнение массивов контуров CT T1 T2
+                        if ROIContourSequenceNumber.ReferencedROINumber in CTNumbers:
+                            CTX.append((x - origin_x) / x_spacing)
+                            CTY.append((y - origin_y) / y_spacing)
+                            CTXT.append((x - origin_x) / x_spacing)
+                            CTYT.append((y - origin_y) / y_spacing)
+                            # этот блок ниже отвечает за прорисовку контура
+                            if tempry != ROIContourSequenceNumber.ReferencedROINumber:
+                                xt = CTXT[-1]
+                                yt = CTYT[-1]
+                                CTXT.pop()  # ПОСЛЕДНИЙ ЭЛЕМЕНТ НАДО ПЕРЕНЕСТИ В НАЧАЛО СЛЕДУЮЩЕГО КОНТУРА
+                                CTYT.pop()
+                                # на ноль делить нельзя, поэтому откидываем эти варианты (это не выкинет точки, все на месте)
+                                if len(CTXT) != 0:
+                                    CTXPoints.append(sum(CTXT) / len(CTXT))
+                                    CTYPoints.append(sum(CTYT) / len(CTYT))
+                                # if len(CTXT) == 0:
+                                #     CTXPoints.append(sum(CTX) / len(CTX))
+                                # if len(CTYT) == 0:
+                                #     CTYPoints.append(sum(CTY) / len(CTY))
+                                ax1.plot(CTXT, CTYT, color='g', linestyle='-')
+                                CTXT.clear()
+                                CTYT.clear()
+                                CTXT.append(xt)
+                                CTYT.append(yt)
+                        if ROIContourSequenceNumber.ReferencedROINumber in T1Numbers:
+                            T1X.append((x - origin_x) / x_spacing)
+                            T1Y.append((y - origin_y) / y_spacing)
+                            T1XT.append((x - origin_x) / x_spacing)
+                            T1YT.append((y - origin_y) / y_spacing)
+                            # этот блок ниже отвечает за прорисовку контура
+                            if tempry != ROIContourSequenceNumber.ReferencedROINumber:
+                                xt = T1XT[-1]
+                                yt = T1YT[-1]
+                                T1XT.pop()
+                                T1YT.pop()
+                                # на ноль делить нельзя, поэтому откидываем эти варианты (это не выкинет точки, все на месте)
+                                if len(T1XT) != 0:
+                                    T1XPoints.append(sum(T1XT) / len(T1XT))
+                                    T1YPoints.append(sum(T1YT) / len(T1YT))
+                                # if len(T1XT) == 0:
+                                #     T1XPoints.append(sum(T1X) / len(T1X))
+                                # if len(CTYT) == 0:
+                                #     T1YPoints.append(sum(T1Y) / len(T1Y))
+                                ax1.plot(T1XT, T1YT, color='r', linestyle='-')
+                                T1XT.clear()
+                                T1YT.clear()
+                                T1XT.append(xt)
+                                T1YT.append(yt)
+                        if ROIContourSequenceNumber.ReferencedROINumber in T2Numbers:
+                            T2X.append((x - origin_x) / x_spacing)
+                            T2Y.append((y - origin_y) / y_spacing)
+                            T2XT.append((x - origin_x) / x_spacing)
+                            T2YT.append((y - origin_y) / y_spacing)
+                            # этот блок ниже отвечает за прорисовку контура
+                            if tempry != ROIContourSequenceNumber.ReferencedROINumber:
+                                xt = T2XT[-1]
+                                yt = T2YT[-1]
+                                T2XT.pop()
+                                T2YT.pop()
+                                # на ноль делить нельзя, поэтому откидываем эти варианты (это не выкинет точки, все на месте)
+                                if len(T2XT) != 0:
+                                    T2XPoints.append(sum(T2XT) / len(T2XT))
+                                    T2YPoints.append(sum(T2YT) / len(T2YT))
+                                # if len(T2XT) == 0:
+                                #     T2XPoints.append(sum(T2X) / len(T2X))
+                                # if len(CTYT) == 0:
+                                #     T2YPoints.append(sum(T2Y) / len(T2Y))
+                                ax1.plot(T2XT, T2YT, color='b', linestyle='-')
+                                T2XT.clear()
+                                T2YT.clear()
+                                T2XT.append(xt)
+                                T2YT.append(yt)
+                        tempry = ROIContourSequenceNumber.ReferencedROINumber
                     tempry = ROIContourSequenceNumber.ReferencedROINumber
-                tempry = ROIContourSequenceNumber.ReferencedROINumber
-            pixel_coordinates = [(np.round((y - origin_y) / y_spacing), np.round((x - origin_x) / x_spacing)) for
-                                 x, y, _ in coordinates]
-            for i, j in list(set(pixel_coordinates)):
-                rows.append(i)
-                cols.append(j)
-            contour_arr = csc_matrix((np.ones_like(rows), (rows, cols)), dtype=np.int8,
-                                     shape=(img_arr.shape[0], img_arr.shape[1])).toarray()
+                pixel_coordinates = [(np.round((y - origin_y) / y_spacing), np.round((x - origin_x) / x_spacing)) for
+                                     x, y, _ in coordinates]
+                for i, j in list(set(pixel_coordinates)):
+                    rows.append(i)
+                    cols.append(j)
+                contour_arr = csc_matrix((np.ones_like(rows), (rows, cols)), dtype=np.int8,
+                                         shape=(img_arr.shape[0], img_arr.shape[1])).toarray()
     # графики для центров контуров
     plt.scatter(CTXPoints, CTYPoints, color='g', marker='.')
     plt.scatter(T1XPoints, T1YPoints, color='r', marker='.')
@@ -446,110 +448,111 @@ def plotContours(contour_dataset, image, zcoord):
             T2Numbers.append(int(ObservationT.ReferencedROINumber))
     # обработка данных
     for ROIContourSequenceNumber in contour_dataset.ROIContourSequence:
-        for t in range(0, len(ROIContourSequenceNumber.ContourSequence)):
-            contour_coordinates = ROIContourSequenceNumber.ContourSequence[t].ContourData
-            # x, y, z координаты контура в миллиметрах
-            x0 = contour_coordinates[len(contour_coordinates) - 3]
-            y0 = contour_coordinates[len(contour_coordinates) - 2]
-            z0 = contour_coordinates[len(contour_coordinates) - 1]
-            coordinates = []
+        if "ContourSequence" in ROIContourSequenceNumber.dir():
+            for t in range(0, len(ROIContourSequenceNumber.ContourSequence)):
+                contour_coordinates = ROIContourSequenceNumber.ContourSequence[t].ContourData
+                # x, y, z координаты контура в миллиметрах
+                x0 = contour_coordinates[len(contour_coordinates) - 3]
+                y0 = contour_coordinates[len(contour_coordinates) - 2]
+                z0 = contour_coordinates[len(contour_coordinates) - 1]
+                coordinates = []
 
-            if (contour_coordinates[2] == zcoord):
-                tempry = -1
-                # преобразование
-                for i in range(0, len(contour_coordinates), 3):
-                    x = contour_coordinates[i]
-                    y = contour_coordinates[i + 1]
-                    z = contour_coordinates[i + 2]
-                    l = math.sqrt((x - x0) * (x - x0) + (y - y0) * (y - y0) + (z - z0) * (z - z0))
-                    l = math.ceil(l * 2) + 1
-                    for k in range(1, l + 1):
-                        coordinates.append([(x - x0) * k / l + x0, (y - y0) * k / l + y0, (z - z0) * k / l + z0])
-                    x0 = x
-                    y0 = y
-                    z0 = z
-                    # заполнение массивов контуров CT T1 T2
-                    if ROIContourSequenceNumber.ReferencedROINumber in CTNumbers:
-                        CTNames.append(contour_dataset.RTROIObservationsSequence[
-                                           ROIContourSequenceNumber.ReferencedROINumber - 1].ROIObservationLabel)
-                        CTX.append((x - origin_x) / x_spacing)
-                        CTY.append((y - origin_y) / y_spacing)
-                        CTXT.append((x - origin_x) / x_spacing)
-                        CTYT.append((y - origin_y) / y_spacing)
-                        # этот блок ниже отвечает за прорисовку контура
-                        if tempry != ROIContourSequenceNumber.ReferencedROINumber:
-                            xt = CTXT[-1]
-                            yt = CTYT[-1]
-                            CTXT.pop()  # ПОСЛЕДНИЙ ЭЛЕМЕНТ НАДО ПЕРЕНЕСТИ В НАЧАЛО СЛЕДУЮЩЕГО КОНТУРА
-                            CTYT.pop()
-                            if len(CTXT) != 0:
-                                CTXPoints.append(sum(CTXT) / len(CTXT))
-                                CTYPoints.append(sum(CTYT) / len(CTYT))
-                            else:
-                                CTXPoints.append(None)
-                                CTYPoints.append(None)
-                            ax.plot(CTXT, CTYT, color='g', linestyle='-')
-                            CTXT.clear()
-                            CTYT.clear()
-                            CTXT.append(xt)
-                            CTYT.append(yt)
-                    if ROIContourSequenceNumber.ReferencedROINumber in T1Numbers:
-                        T1X.append((x - origin_x) / x_spacing)
-                        T1Y.append((y - origin_y) / y_spacing)
-                        T1XT.append((x - origin_x) / x_spacing)
-                        T1YT.append((y - origin_y) / y_spacing)
-                        # этот блок ниже отвечает за прорисовку контура
-                        if tempry != ROIContourSequenceNumber.ReferencedROINumber:
-                            T1Names.append(contour_dataset.RTROIObservationsSequence[
+                if (contour_coordinates[2] == zcoord):
+                    tempry = -1
+                    # преобразование
+                    for i in range(0, len(contour_coordinates), 3):
+                        x = contour_coordinates[i]
+                        y = contour_coordinates[i + 1]
+                        z = contour_coordinates[i + 2]
+                        l = math.sqrt((x - x0) * (x - x0) + (y - y0) * (y - y0) + (z - z0) * (z - z0))
+                        l = math.ceil(l * 2) + 1
+                        for k in range(1, l + 1):
+                            coordinates.append([(x - x0) * k / l + x0, (y - y0) * k / l + y0, (z - z0) * k / l + z0])
+                        x0 = x
+                        y0 = y
+                        z0 = z
+                        # заполнение массивов контуров CT T1 T2
+                        if ROIContourSequenceNumber.ReferencedROINumber in CTNumbers:
+                            CTNames.append(contour_dataset.RTROIObservationsSequence[
                                                ROIContourSequenceNumber.ReferencedROINumber - 1].ROIObservationLabel)
-                            xt = T1XT[-1]
-                            yt = T1YT[-1]
-                            T1XT.pop()
-                            T1YT.pop()
-                            if len(T1XT) != 0:
-                                T1XPoints.append(sum(T1XT) / len(T1XT))
-                                T1YPoints.append(sum(T1YT) / len(T1YT))
-                            else:
-                                T1XPoints.append(None)
-                                T1YPoints.append(None)
-                            ax.plot(T1XT, T1YT, color='r', linestyle='-')
-                            T1XT.clear()
-                            T1YT.clear()
-                            T1XT.append(xt)
-                            T1YT.append(yt)
-                    if ROIContourSequenceNumber.ReferencedROINumber in T2Numbers:
-                        T2X.append((x - origin_x) / x_spacing)
-                        T2Y.append((y - origin_y) / y_spacing)
-                        T2XT.append((x - origin_x) / x_spacing)
-                        T2YT.append((y - origin_y) / y_spacing)
-                        # этот блок ниже отвечает за прорисовку контура
-                        if tempry != ROIContourSequenceNumber.ReferencedROINumber:
-                            T2Names.append(contour_dataset.RTROIObservationsSequence[
-                                               ROIContourSequenceNumber.ReferencedROINumber - 1].ROIObservationLabel)
-                            xt = T2XT[-1]
-                            yt = T2YT[-1]
-                            T2XT.pop()
-                            T2YT.pop()
-                            if len(T2XT) != 0:
-                                T2XPoints.append(sum(T2XT) / len(T2XT))
-                                T2YPoints.append(sum(T2YT) / len(T2YT))
-                            else:
-                                T2XPoints.append(None)
-                                T2YPoints.append(None)
-                            ax.plot(T2XT, T2YT, color='b', linestyle='-')
-                            T2XT.clear()
-                            T2YT.clear()
-                            T2XT.append(xt)
-                            T2YT.append(yt)
+                            CTX.append((x - origin_x) / x_spacing)
+                            CTY.append((y - origin_y) / y_spacing)
+                            CTXT.append((x - origin_x) / x_spacing)
+                            CTYT.append((y - origin_y) / y_spacing)
+                            # этот блок ниже отвечает за прорисовку контура
+                            if tempry != ROIContourSequenceNumber.ReferencedROINumber:
+                                xt = CTXT[-1]
+                                yt = CTYT[-1]
+                                CTXT.pop()  # ПОСЛЕДНИЙ ЭЛЕМЕНТ НАДО ПЕРЕНЕСТИ В НАЧАЛО СЛЕДУЮЩЕГО КОНТУРА
+                                CTYT.pop()
+                                if len(CTXT) != 0:
+                                    CTXPoints.append(sum(CTXT) / len(CTXT))
+                                    CTYPoints.append(sum(CTYT) / len(CTYT))
+                                else:
+                                    CTXPoints.append(None)
+                                    CTYPoints.append(None)
+                                ax.plot(CTXT, CTYT, color='g', linestyle='-')
+                                CTXT.clear()
+                                CTYT.clear()
+                                CTXT.append(xt)
+                                CTYT.append(yt)
+                        if ROIContourSequenceNumber.ReferencedROINumber in T1Numbers:
+                            T1X.append((x - origin_x) / x_spacing)
+                            T1Y.append((y - origin_y) / y_spacing)
+                            T1XT.append((x - origin_x) / x_spacing)
+                            T1YT.append((y - origin_y) / y_spacing)
+                            # этот блок ниже отвечает за прорисовку контура
+                            if tempry != ROIContourSequenceNumber.ReferencedROINumber:
+                                T1Names.append(contour_dataset.RTROIObservationsSequence[
+                                                   ROIContourSequenceNumber.ReferencedROINumber - 1].ROIObservationLabel)
+                                xt = T1XT[-1]
+                                yt = T1YT[-1]
+                                T1XT.pop()
+                                T1YT.pop()
+                                if len(T1XT) != 0:
+                                    T1XPoints.append(sum(T1XT) / len(T1XT))
+                                    T1YPoints.append(sum(T1YT) / len(T1YT))
+                                else:
+                                    T1XPoints.append(None)
+                                    T1YPoints.append(None)
+                                ax.plot(T1XT, T1YT, color='r', linestyle='-')
+                                T1XT.clear()
+                                T1YT.clear()
+                                T1XT.append(xt)
+                                T1YT.append(yt)
+                        if ROIContourSequenceNumber.ReferencedROINumber in T2Numbers:
+                            T2X.append((x - origin_x) / x_spacing)
+                            T2Y.append((y - origin_y) / y_spacing)
+                            T2XT.append((x - origin_x) / x_spacing)
+                            T2YT.append((y - origin_y) / y_spacing)
+                            # этот блок ниже отвечает за прорисовку контура
+                            if tempry != ROIContourSequenceNumber.ReferencedROINumber:
+                                T2Names.append(contour_dataset.RTROIObservationsSequence[
+                                                   ROIContourSequenceNumber.ReferencedROINumber - 1].ROIObservationLabel)
+                                xt = T2XT[-1]
+                                yt = T2YT[-1]
+                                T2XT.pop()
+                                T2YT.pop()
+                                if len(T2XT) != 0:
+                                    T2XPoints.append(sum(T2XT) / len(T2XT))
+                                    T2YPoints.append(sum(T2YT) / len(T2YT))
+                                else:
+                                    T2XPoints.append(None)
+                                    T2YPoints.append(None)
+                                ax.plot(T2XT, T2YT, color='b', linestyle='-')
+                                T2XT.clear()
+                                T2YT.clear()
+                                T2XT.append(xt)
+                                T2YT.append(yt)
+                        tempry = ROIContourSequenceNumber.ReferencedROINumber
                     tempry = ROIContourSequenceNumber.ReferencedROINumber
-                tempry = ROIContourSequenceNumber.ReferencedROINumber
-            pixel_coordinates = [(np.round((y - origin_y) / y_spacing), np.round((x - origin_x) / x_spacing)) for
-                                 x, y, _ in coordinates]
-            for i, j in list(set(pixel_coordinates)):
-                rows.append(i)
-                cols.append(j)
-            contour_arr = csc_matrix((np.ones_like(rows), (rows, cols)), dtype=np.int8,
-                                     shape=(img_arr.shape[0], img_arr.shape[1])).toarray()
+                pixel_coordinates = [(np.round((y - origin_y) / y_spacing), np.round((x - origin_x) / x_spacing)) for
+                                     x, y, _ in coordinates]
+                for i, j in list(set(pixel_coordinates)):
+                    rows.append(i)
+                    cols.append(j)
+                contour_arr = csc_matrix((np.ones_like(rows), (rows, cols)), dtype=np.int8,
+                                         shape=(img_arr.shape[0], img_arr.shape[1])).toarray()
 
 
     print('CT CENTERS: ', len(CTXPoints), '  ', CTXPoints[4:])
@@ -638,25 +641,26 @@ def findPossibleZ(contour_dataset):
     print("Possible slices: ")
     possibleZ = []
     for q in range(0, len(contour_dataset.ROIContourSequence)):
-        for p in range(0, len(contour_dataset.ROIContourSequence[q].ContourSequence)):
-            contour_coordinates = contour_dataset.ROIContourSequence[q].ContourSequence[p].ContourData
-            for i in range(0, len(contour_coordinates), 3):
-                z = contour_coordinates[i + 2]
-                possibleZ.append(z)
+        if "ContourSequence" in ds.ROIContourSequence[q].dir():
+            for p in range(0, len(contour_dataset.ROIContourSequence[q].ContourSequence)):
+                contour_coordinates = contour_dataset.ROIContourSequence[q].ContourSequence[p].ContourData
+                for i in range(0, len(contour_coordinates), 3):
+                    z = contour_coordinates[i + 2]
+                    possibleZ.append(z)
     possibleZ = list(set(possibleZ))
     possibleZ.sort()
     for x in possibleZ: print(x)
     return possibleZ
 
 if __name__ == "__main__":
-    path = 'DICOM/'
+    path = 'MR_Phantom_scans/DICOM_RT_CT_fusion_September/'
     filename = 'RTSS.dcm'
     image = 'IMG0000000100.dcm'
     ds = dcmread(path + filename)
     image = dcmread(path + image)
 
-    # zinterest = findPossibleZ(ds)
-    zinterest = {-9}
+    zinterest = findPossibleZ(ds)
+    # zinterest = {-9}
     distancesCTT1 = []
     distancesCTT2 = []
     for zslice in zinterest:
@@ -713,5 +717,5 @@ if __name__ == "__main__":
         df = df.plot.kde()
     plt.show()
 
-    t = plotContours(ds, image, -9)
+    # t = plotContours(ds, image, -9)
     # selectPoints(ds, image, 6, t[9], t[10])

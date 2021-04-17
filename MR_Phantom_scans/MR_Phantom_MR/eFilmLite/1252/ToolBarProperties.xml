@@ -1,0 +1,1487 @@
+<?xml version="1.0" encoding="ISO8859-1"?>
+<TOOLBARPROPERTIES xmlns:dt="urn:schemas-microsoft-com:datatypes" Version="3.1.0">
+	<ITEM>
+		<ID dt:dt="int">6301</ID>
+		<NAME dt:dt="string">Search</NAME>
+		<MENUSTRING dt:dt="string">Main Bar\Search</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Buscar</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Buscar</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">FALSE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6337</ID>
+		<NAME dt:dt="string">Close Window</NAME>
+		<MENUSTRING dt:dt="string">Main Bar\Close Window</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Cerrar</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Cerrar</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6338</ID>
+		<NAME dt:dt="string">Send/Receive Log</NAME>
+		<MENUSTRING dt:dt="string">Main Bar\Send/Receive Log</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Enviar/Recibir registro</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Enviar/Recibir registro</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">FALSE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">57601</ID>
+		<NAME dt:dt="string">Open</NAME>
+		<MENUSTRING dt:dt="string">Main Bar\Open...</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Abrir un documento existente</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Abrir un documento existente</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">FALSE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6458</ID>
+		<NAME dt:dt="string">Log In New User</NAME>
+		<MENUSTRING dt:dt="string">Main Bar\Log In New User</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Iniciar sesión como usuario nuevo</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Iniciar sesión como usuario nuevo</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">FALSE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6372</ID>
+		<NAME dt:dt="string">Create Scrapbook</NAME>
+		<MENUSTRING dt:dt="string">Main Bar\Create Scrapbook</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Crear álbum</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Crear álbum</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">FALSE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6323</ID>
+		<NAME dt:dt="string">Select All Visible Series</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Select All Visible Series</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Seleccionar todas las series visibles</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Seleccionar todas las series visibles</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">FALSE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6322</ID>
+		<NAME dt:dt="string">Select/Deselect All Images In Selected Series</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Select/Deselect All Images In Selected Series</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Seleccionar/Cancelar selección de todas las imágenes en la serie seleccionada</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Seleccionar/Cancelar selección de todas las imágenes en la serie seleccionada</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">FALSE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6329</ID>
+		<NAME dt:dt="string">Stack</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Stack</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Apilar</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Apilar</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">ENABLE</UP>
+			<DOWN dt:dt="string">ENABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">TRUE</CANLOCKMOUSEMOVE>
+		<SUBITEM>
+			<ID dt:dt="int">8116</ID>
+			<NAME dt:dt="string">Image Number</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Stack Options\Image Number</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">Número de imagen</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">Número de imagen</STATUSSTRING>
+		</SUBITEM>
+		<SUBITEM>
+			<ID dt:dt="int">8117</ID>
+			<NAME dt:dt="string">Slice Location</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Stack Options\Slice Location</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">Ubicación del sector</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">Ubicación del sector</STATUSSTRING>
+		</SUBITEM>
+		<SUBITEM>
+			<ID dt:dt="int">8118</ID>
+			<NAME dt:dt="string">Reverse Slice Location</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Stack Options\Reverse Slice Location</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">Revertir ubicación del sector</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">Revertir ubicación del sector</STATUSSTRING>
+		</SUBITEM>
+		<SUBITEM>
+			<ID dt:dt="int">8119</ID>
+			<NAME dt:dt="string">Acquisition Time</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Stack Options\Acquisition Time</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">Tiempo de adquisición</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">Tiempo de adquisición</STATUSSTRING>
+		</SUBITEM>
+		<SUBITEM>
+			<ID dt:dt="int">8120</ID>
+			<NAME dt:dt="string">Image Time</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Stack Options\Image Time</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">Tiempo de la imagen</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">Tiempo de la imagen</STATUSSTRING>
+		</SUBITEM>
+		<SUBITEM>
+			<ID dt:dt="int">6123</ID>
+			<NAME dt:dt="string">Goto Image...</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Stack Options\Goto Image...</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">Ir a Imagen...</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">Ir a Imagen...</STATUSSTRING>
+		</SUBITEM>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6309</ID>
+		<NAME dt:dt="string">Window/Level</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Window/Level</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Ventana/Nivel</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Ventana/Nivel</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">ENABLE</UP>
+			<DOWN dt:dt="string">ENABLE</DOWN>
+			<LEFT dt:dt="string">ENABLE</LEFT>
+			<RIGHT dt:dt="string">ENABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">TRUE</CANLOCKMOUSEMOVE>
+		<SUBITEM>
+			<ID dt:dt="int">8100</ID>
+			<NAME dt:dt="string">Linear</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Window/Level Options\Linear</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">Lineal</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">Lineal</STATUSSTRING>
+		</SUBITEM>
+		<SUBITEM>
+			<ID dt:dt="int">8101</ID>
+			<NAME dt:dt="string">Sigmoidal</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Window/Level Options\Sigmoidal</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">Sigmoideo </TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">Sigmoideo </STATUSSTRING>
+		</SUBITEM>
+		<SUBITEM>
+			<ID dt:dt="int">8121</ID>
+			<NAME dt:dt="string">Other LUTs...</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Window/Level Options\Other LUTs...</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">Otras tablas de búsqueda</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">Otras tablas de búsqueda</STATUSSTRING>
+		</SUBITEM>
+		<SUBITEM>
+			<ID dt:dt="int">6122</ID>
+			<NAME dt:dt="string">Custom...</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Window/Level Options\Custom...</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">Personalizar ventana/nivel</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">Personalizar ventana/nivel</STATUSSTRING>
+		</SUBITEM>
+		<SUBITEM>
+			<ID dt:dt="int">6124</ID>
+			<NAME dt:dt="string">Sensitivity...</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Window/Level Options\Sensitivity...</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">Sensibilidad de la Ventana/Nivel</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">Sensibilidad de la Ventana/Nivel</STATUSSTRING>
+		</SUBITEM>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6440</ID>
+		<NAME dt:dt="string">Alpha (Coherence)/Beta (Black/White Bias)</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Alpha (Coherence)/Beta (Black/White Bias)</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Alfa (Coherence)/Beta (Tendencia Negro/Blanco)</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Alfa (Coherence)/Beta (Tendencia Negro/Blanco)</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">ENABLE</UP>
+			<DOWN dt:dt="string">ENABLE</DOWN>
+			<LEFT dt:dt="string">ENABLE</LEFT>
+			<RIGHT dt:dt="string">ENABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6303</ID>
+		<NAME dt:dt="string">Magnification</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Magnification</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Ampliación</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Ampliación</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">ENABLE</UP>
+			<DOWN dt:dt="string">ENABLE</DOWN>
+			<LEFT dt:dt="string">ENABLE</LEFT>
+			<RIGHT dt:dt="string">ENABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+		<SUBITEM>
+			<ID dt:dt="int">8400</ID>
+			<NAME dt:dt="string">200%</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Magnification Options\200%</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">200%</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">200%</STATUSSTRING>
+		</SUBITEM>
+		<SUBITEM>
+			<ID dt:dt="int">8401</ID>
+			<NAME dt:dt="string">400%</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Magnification Options\400%</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">400%</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">400%</STATUSSTRING>
+		</SUBITEM>
+		<SUBITEM>
+			<ID dt:dt="int">8402</ID>
+			<NAME dt:dt="string">600%</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Magnification Options\600%</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">600%</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">600%</STATUSSTRING>
+		</SUBITEM>
+		<SUBITEM>
+			<ID dt:dt="int">8403</ID>
+			<NAME dt:dt="string">800%</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Magnification Options\800%</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">800%</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">800%</STATUSSTRING>
+		</SUBITEM>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6304</ID>
+		<NAME dt:dt="string">Pan</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Pan</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Panorámica</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Panorámica</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">ENABLE</UP>
+			<DOWN dt:dt="string">ENABLE</DOWN>
+			<LEFT dt:dt="string">ENABLE</LEFT>
+			<RIGHT dt:dt="string">ENABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6311</ID>
+		<NAME dt:dt="string">Zoom</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Zoom</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Zoom</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Zoom</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">ENABLE</UP>
+			<DOWN dt:dt="string">ENABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+		<SUBITEM>
+			<ID dt:dt="int">6127</ID>
+			<NAME dt:dt="string">100%</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Zoom Options\100%</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">100%</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">100%</STATUSSTRING>
+		</SUBITEM>
+		<SUBITEM>
+			<ID dt:dt="int">6128</ID>
+			<NAME dt:dt="string">200%</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Zoom Options\200%</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">200%</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">200%</STATUSSTRING>
+		</SUBITEM>
+		<SUBITEM>
+			<ID dt:dt="int">6129</ID>
+			<NAME dt:dt="string">400%</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Zoom Options\400%</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">400%</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">400%</STATUSSTRING>
+		</SUBITEM>
+		<SUBITEM>
+			<ID dt:dt="int">6130</ID>
+			<NAME dt:dt="string">Custom...</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Zoom Options\Custom...</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">Personalizar...</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">Personalizar...</STATUSSTRING>
+		</SUBITEM>
+		<SUBITEM>
+			<ID dt:dt="int">6131</ID>
+			<NAME dt:dt="string">Pixel-for-Pixel</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Zoom Options\Pixel-for-Pixel</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">Píxel por píxel</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">Píxel por píxel</STATUSSTRING>
+		</SUBITEM>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6330</ID>
+		<NAME dt:dt="string">Reset Image Settings</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Reset Image Settings</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Restablecer configuración de imagen</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Restablecer configuración de imagen</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6331</ID>
+		<NAME dt:dt="string">Toggle Overlay</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Toggle Overlay</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Alternar superposición</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Alternar superposición</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+		<SUBITEM>
+			<ID dt:dt="int">8500</ID>
+			<NAME dt:dt="string">Off</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Toggle Overlay\Off</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">Overlay Off</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">Overlay Off</STATUSSTRING>
+		</SUBITEM>
+		<SUBITEM>
+			<ID dt:dt="int">8501</ID>
+			<NAME dt:dt="string">Normal</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Toggle Overlay\Normal</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">Normal Overlay</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">Normal Overlay</STATUSSTRING>
+		</SUBITEM>
+		<SUBITEM>
+			<ID dt:dt="int">8502</ID>
+			<NAME dt:dt="string">Minimal</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Toggle Overlay\Minimal</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">Minimal Overlay</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">Minimal Overlay</STATUSSTRING>
+		</SUBITEM>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6380</ID>
+		<NAME dt:dt="string">Add User Annotation</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Add User Annotation</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Agregar anotación del usuario</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Agregar anotación del usuario</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6300</ID>
+		<NAME dt:dt="string">Cine</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Cine</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Película</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Película</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6310</ID>
+		<NAME dt:dt="string">Screen Layout</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Screen Layout</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Diseño de la pantalla</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Diseño de la pantalla</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6132</ID>
+		<NAME dt:dt="string">Toggle Survey/Explode Mode</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Toggle Survey/Explode Mode</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Alternar Modo Encuesta/Explotar</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Alternar Modo Encuesta/Explotar</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6336</ID>
+		<NAME dt:dt="string">Show Study Information</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Show Study Information</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Mostrar Información del estudio</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Mostrar Información del estudio</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6409</ID>
+		<NAME dt:dt="string">View Report</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\View Report</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Ver informe</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Ver informe</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6408</ID>
+		<NAME dt:dt="string">Create Report</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Create Report</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Crear informe</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Crear informe</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6307</ID>
+		<NAME dt:dt="string">Probe Tool</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Probe Tool</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Herramienta Sonda</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Herramienta Sonda</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">ENABLE</UP>
+			<DOWN dt:dt="string">ENABLE</DOWN>
+			<LEFT dt:dt="string">ENABLE</LEFT>
+			<RIGHT dt:dt="string">ENABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6413</ID>
+		<NAME dt:dt="string">Measurement Tool - Arrow</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Measurement Tool - Arrow</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Herramienta de medición - Flecha</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Herramienta de medición - Flecha</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">ENABLE</UP>
+			<DOWN dt:dt="string">ENABLE</DOWN>
+			<LEFT dt:dt="string">ENABLE</LEFT>
+			<RIGHT dt:dt="string">ENABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6327</ID>
+		<NAME dt:dt="string">Measurement Tool - Line</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Measurement Tool - Line</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Herramienta de medición - Línea</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Herramienta de medición - Línea</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">ENABLE</UP>
+			<DOWN dt:dt="string">ENABLE</DOWN>
+			<LEFT dt:dt="string">ENABLE</LEFT>
+			<RIGHT dt:dt="string">ENABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6333</ID>
+		<NAME dt:dt="string">Measurement Tool - Ellipse</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Measurement Tool - Ellipse</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Herramienta de medición - Elipse</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Herramienta de medición - Elipse</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">ENABLE</UP>
+			<DOWN dt:dt="string">ENABLE</DOWN>
+			<LEFT dt:dt="string">ENABLE</LEFT>
+			<RIGHT dt:dt="string">ENABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6419</ID>
+		<NAME dt:dt="string">Measurement Tool - Show Angles</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Measurement Tool - Show Angles</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Herramienta de medición - Mostrar ángulos</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Herramienta de medición - Mostrar ángulos</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6334</ID>
+		<NAME dt:dt="string">Clear Measurement Tools</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Clear Measurement Tools</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Borrar Herramientas de medición</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Borrar Herramientas de medición</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6365</ID>
+		<NAME dt:dt="string">Calibrate Measurements</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Calibrate Measurements</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Calibrar medidas</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Calibrar medidas</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6324</ID>
+		<NAME dt:dt="string">Show First and Last Reference Lines</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Show First and Last Reference Lines</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Mostrar la primera y la última línea de referencia</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Mostrar la primera y la última línea de referencia</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6335</ID>
+		<NAME dt:dt="string">Show All Reference Lines</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Show All Reference Lines</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Mostrar todas las líneas de referencia</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Mostrar todas las líneas de referencia</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6326</ID>
+		<NAME dt:dt="string">Show Current Reference Line</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Show Current Reference Line</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Mostrar línea de referencia actual</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Mostrar línea de referencia actual</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6312</ID>
+		<NAME dt:dt="string">Auto Series Synchronization</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Auto Series Synchronization</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Sincronización automática de la serie</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Sincronización automática de la serie</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6308</ID>
+		<NAME dt:dt="string">Manual Series Synchronization</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Manual Series Synchronization</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Sincronización manual de la serie</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Sincronización manual de la serie</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6383</ID>
+		<NAME dt:dt="string">3D Cursor</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\3D Cursor</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Cursor 3D</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Cursor 3D</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">ENABLE</UP>
+			<DOWN dt:dt="string">ENABLE</DOWN>
+			<LEFT dt:dt="string">ENABLE</LEFT>
+			<RIGHT dt:dt="string">ENABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6444</ID>
+		<NAME dt:dt="string">Measurement Tool - MPR</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Measurement Tool - MPR</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Herramienta de medición - MPR (Reformateo multiplanar)</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Herramienta de medición - MPR (Reformateo multiplanar)</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">ENABLE</UP>
+			<DOWN dt:dt="string">ENABLE</DOWN>
+			<LEFT dt:dt="string">ENABLE</LEFT>
+			<RIGHT dt:dt="string">ENABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6445</ID>
+		<NAME dt:dt="string">Auto-Generate Orthogonal MPR Tools</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Auto-Generate Orthogonal MPR Tools</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Generar automáticamente herramientas MPR ortogonales</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Generar automáticamente herramientas MPR ortogonales</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">ENABLE</UP>
+			<DOWN dt:dt="string">ENABLE</DOWN>
+			<LEFT dt:dt="string">ENABLE</LEFT>
+			<RIGHT dt:dt="string">ENABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6306</ID>
+		<NAME dt:dt="string">Flip Horizontal</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Flip Horizontal</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Voltear horizontalmente</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Voltear horizontalmente</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6305</ID>
+		<NAME dt:dt="string">Flip Vertical</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Flip Vertical</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Voltear verticalmente</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Voltear verticalmente</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6313</ID>
+		<NAME dt:dt="string">Rotate 90 Degrees Counter-Clockwise</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Rotate 90 Degrees Counter-Clockwise</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Girar 90 grados en el sentido contrario a las agujas del relo</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Girar 90 grados en el sentido contrario a las agujas del relo</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6316</ID>
+		<NAME dt:dt="string">Rotate 90 Degrees Clockwise</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Rotate 90 Degrees Clockwise</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Girar 90 grados en el sentido de las agujas del reloj</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Girar 90 grados en el sentido de las agujas del reloj</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6332</ID>
+		<NAME dt:dt="string">Invert</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Invert</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Invertir</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Invertir</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6371</ID>
+		<NAME dt:dt="string">Digital Subtraction Angiography</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Digital Subtraction Angiography</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Angiografía de substracción digital</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Angiografía de substracción digital</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6381</ID>
+		<NAME dt:dt="string">Toggle Shutter</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Toggle Shutter</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Alternar obturación</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Alternar obturación</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6384</ID>
+		<NAME dt:dt="string">Match Displayed Field of View</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Match Displayed Field of View</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Comparar el campo de visión visualizado</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Comparar el campo de visión visualizado</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6320</ID>
+		<NAME dt:dt="string">Previous Study</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Previous Study</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Estudio anterior</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Estudio anterior</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6321</ID>
+		<NAME dt:dt="string">Next Study</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Next Study</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Estudio sigiuente</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Estudio sigiuente</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6314</ID>
+		<NAME dt:dt="string">Previous Series</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Previous Series</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Serie anterior</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Serie anterior</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6317</ID>
+		<NAME dt:dt="string">Next Series</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Next Series</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Serie sigiuente</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Serie sigiuente</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6319</ID>
+		<NAME dt:dt="string">Previous Image</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Previous Image</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Imagen anterior</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Imagen anterior</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6318</ID>
+		<NAME dt:dt="string">Next Image</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Next Image</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Imagen sigiuente</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Imagen sigiuente</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6424</ID>
+		<NAME dt:dt="string">View 3D</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\View 3D</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Ver 3D</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Ver 3D</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">ENABLE</UP>
+			<DOWN dt:dt="string">ENABLE</DOWN>
+			<LEFT dt:dt="string">ENABLE</LEFT>
+			<RIGHT dt:dt="string">ENABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+		<SUBITEM>
+			<ID dt:dt="int">6431</ID>
+			<NAME dt:dt="string">Simgram Image</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\View 3D Options\Simgram Image</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">Imagen Simgram</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">Imagen Simgram</STATUSSTRING>
+		</SUBITEM>
+		<SUBITEM>
+			<ID dt:dt="int">6430</ID>
+			<NAME dt:dt="string">MIP</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\View 3D Options\MIP</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">MIP</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">MIP</STATUSSTRING>
+		</SUBITEM>
+		<SUBITEM>
+			<ID dt:dt="int">6449</ID>
+			<NAME dt:dt="string">Volume</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\View 3D Options\Volume</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">Volumen</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">Volumen</STATUSSTRING>
+		</SUBITEM>
+		<SUBITEM>
+			<ID dt:dt="int">6432</ID>
+			<NAME dt:dt="string">Black Outside Window</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\View 3D Options\Black Outside Window</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">Ventana exterior negra</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">Ventana exterior negra</STATUSSTRING>
+		</SUBITEM>
+		<SUBITEM>
+			<ID dt:dt="int">6422</ID>
+			<NAME dt:dt="string">Order Voxgram</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\View 3D Options\Order Voxgram</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">Ordenar Voxgram</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">Ordenar Voxgram</STATUSSTRING>
+		</SUBITEM>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6426</ID>
+		<NAME dt:dt="string">Rotate Volume</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Rotate Volume</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Girar el volumen</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Girar el volumen</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">ENABLE</UP>
+			<DOWN dt:dt="string">ENABLE</DOWN>
+			<LEFT dt:dt="string">ENABLE</LEFT>
+			<RIGHT dt:dt="string">ENABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+		<SUBITEM>
+			<ID dt:dt="int">6415</ID>
+			<NAME dt:dt="string">Anterior</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Rotate Volume\Anterior</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">Anterior</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">Anterior</STATUSSTRING>
+		</SUBITEM>
+		<SUBITEM>
+			<ID dt:dt="int">6416</ID>
+			<NAME dt:dt="string">Posterior</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Rotate Volume\Posterior</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">Posterior</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">Posterior</STATUSSTRING>
+		</SUBITEM>
+		<SUBITEM>
+			<ID dt:dt="int">6417</ID>
+			<NAME dt:dt="string">Left</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Rotate Volume\Left</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">Izquierdo</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">Izquierdo</STATUSSTRING>
+		</SUBITEM>
+		<SUBITEM>
+			<ID dt:dt="int">6418</ID>
+			<NAME dt:dt="string">Right</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Rotate Volume\Right</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">Derecho</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">Derecho</STATUSSTRING>
+		</SUBITEM>
+		<SUBITEM>
+			<ID dt:dt="int">6420</ID>
+			<NAME dt:dt="string">Head</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Rotate Volume\Head</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">Head</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">Head</STATUSSTRING>
+		</SUBITEM>
+		<SUBITEM>
+			<ID dt:dt="int">6421</ID>
+			<NAME dt:dt="string">Foot</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Rotate Volume\Foot</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">Foot</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">Foot</STATUSSTRING>
+		</SUBITEM>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6427</ID>
+		<NAME dt:dt="string">Crop Volume</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Crop Volume</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Recortar un volumen </TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Recortar un volumen </STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">ENABLE</UP>
+			<DOWN dt:dt="string">ENABLE</DOWN>
+			<LEFT dt:dt="string">ENABLE</LEFT>
+			<RIGHT dt:dt="string">ENABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+		<SUBITEM>
+			<ID dt:dt="int">6510</ID>
+			<NAME dt:dt="string">Reset Crop</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Crop Volume\Reset Crop</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">Restablecer Corte</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">Restablecer Corte</STATUSSTRING>
+		</SUBITEM>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6429</ID>
+		<NAME dt:dt="string">Toggle Stereo</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Toggle Stereo</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Alternar estéreo</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Alternar estéreo</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6436</ID>
+		<NAME dt:dt="string">Volume MPR</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Volume MPR</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Volumen MPR</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Volumen MPR</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6395</ID>
+		<NAME dt:dt="string">Apply Image Filter</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Apply Image Filter</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Aplicar filtro de imágenes</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Aplicar filtro de imágenes</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6397</ID>
+		<NAME dt:dt="string">Reload Original Image</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Reload Original Image</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Recargar imagen original</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Recargar imagen original</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6500</ID>
+		<NAME dt:dt="string">Opacity Settings</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Opacity Settings</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Configuración de opacidad</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Configuración de opacidad</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+		<SUBITEM>
+			<ID dt:dt="int">7001</ID>
+			<NAME dt:dt="string">First Preset</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Opacity Settings Options\First Preset</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">Preestablecido Primero</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">Preestablecido Primero</STATUSSTRING>
+		</SUBITEM>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6396</ID>
+		<NAME dt:dt="string">Change Filter Settings</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Change Filter Settings</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Cambiar la configuración del filtro</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Cambiar la configuración del filtro</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6394</ID>
+		<NAME dt:dt="string">Add New Filter</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Add New Filter</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Agregar filtro nuevo</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Agregar filtro nuevo</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6450</ID>
+		<NAME dt:dt="string">Thumbnail</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Thumbnail</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Vista en miniatura</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Vista en miniatura</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+		<SUBITEM>
+			<ID dt:dt="int">6459</ID>
+			<NAME dt:dt="string">Small</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Thumbnail Options\Small</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">Pequeño</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">Pequeño</STATUSSTRING>
+		</SUBITEM>
+		<SUBITEM>
+			<ID dt:dt="int">6460</ID>
+			<NAME dt:dt="string">Medium</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Thumbnail Options\Medium</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">Mediano</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">Mediano</STATUSSTRING>
+		</SUBITEM>
+		<SUBITEM>
+			<ID dt:dt="int">6461</ID>
+			<NAME dt:dt="string">Large</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Thumbnail Options\Large</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">Grande</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">Grande</STATUSSTRING>
+		</SUBITEM>
+		<SUBITEM>
+			<ID dt:dt="int">6462</ID>
+			<NAME dt:dt="string">Auto Size</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Thumbnail Options\Auto Size</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">Tamaño automáticamente </TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">Tamaño automáticamente </STATUSSTRING>
+		</SUBITEM>
+		<SUBITEM>
+			<ID dt:dt="int">8503</ID>
+			<NAME dt:dt="string">Docking</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Thumbnail Options\Docking</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">Docking</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">Docking</STATUSSTRING>
+		</SUBITEM>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6451</ID>
+		<NAME dt:dt="string">Mark Key Image</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Mark Key Image</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Marcar imagen relevante</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Marcar imagen relevante</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6452</ID>
+		<NAME dt:dt="string">Save Key Image</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Save Key Image</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Guardar imagen relevante</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Guardar imagen relevante</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6471</ID>
+		<NAME dt:dt="string">Delete Key Image</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Delete Key Image</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Delete Key Image</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Delete Key Image</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+		<SUBITEM>
+			<ID dt:dt="int">6472</ID>
+			<NAME dt:dt="string">Delete</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Delete Key Image Options\Delete</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">Delete</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">Delete</STATUSSTRING>
+		</SUBITEM>
+		<SUBITEM>
+			<ID dt:dt="int">6473</ID>
+			<NAME dt:dt="string">Delete Manager</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Delete Key Image Options\Delete Manager</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">Delete Manager</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">Delete Manager</STATUSSTRING>
+		</SUBITEM>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6453</ID>
+		<NAME dt:dt="string">View Key Image</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\View Key Image</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Ver imagen relevante</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Ver imagen relevante</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6454</ID>
+		<NAME dt:dt="string">Previous Layout</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Previous Layout</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Diseño Anterior</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Diseño Anterior</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6455</ID>
+		<NAME dt:dt="string">Next Layout</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Next Layout</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Diseño Siguiente</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Diseño Siguiente</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6456</ID>
+		<NAME dt:dt="string">Hanging Protocol Builder</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Hanging Protocol Builder</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Generador Protocolo de clasificación</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Generador Protocolo de clasificación</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+		<SUBITEM>
+			<ID dt:dt="int">6463</ID>
+			<NAME dt:dt="string">Hanging Protocol Manager</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Hanging Protocol Builder\Hanging Protocol Manager</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">Administrador Protocolo de clasificación</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">Administrador Protocolo de clasificación</STATUSSTRING>
+		</SUBITEM>
+		<SUBITEM>
+			<ID dt:dt="int">65000</ID>
+			<NAME dt:dt="string">No Protocol</NAME>
+			<TOOLTIPSTRING dt:dt="string">Ningúno Protocolo de clasificación</TOOLTIPSTRING>
+			<MENUSTRING dt:dt="string">&amp;Tools\Hanging Protocol Builder\No Protocol</MENUSTRING>
+			<STATUSSTRING dt:dt="string">Ningúno Protocolo de clasificación</STATUSSTRING>
+		</SUBITEM>
+		<SUBITEM>
+			<ID dt:dt="int">225</ID>
+			<NAME dt:dt="string">Reset Layout</NAME>
+			<TOOLTIPSTRING dt:dt="string">Reajuste Diseño</TOOLTIPSTRING>
+			<MENUSTRING dt:dt="string">&amp;Tools\Hanging Protocol Builder\Reset Layout</MENUSTRING>
+			<STATUSSTRING dt:dt="string">Reajuste Diseño</STATUSSTRING>
+		</SUBITEM>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6457</ID>
+		<NAME dt:dt="string">Image Fusion</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Image Fusion</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Fusión de imágenes</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Fusión de imágenes</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+		<SUBITEM>
+			<ID dt:dt="int">8790</ID>
+			<NAME dt:dt="string">Alpha Blend</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Image Fusion\Alpha Blend</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">Mezca Alfa</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">Mezca Alfa</STATUSSTRING>
+		</SUBITEM>
+		<SUBITEM>
+			<ID dt:dt="int">8791</ID>
+			<NAME dt:dt="string">Image Fusion Pipeline</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\Image Fusion\Image Fusion Pipeline</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">Conducto de fusión de imagen</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">Conducto de fusión de imagen</STATUSSTRING>
+		</SUBITEM>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6464</ID>
+		<NAME dt:dt="string">eFilm Advanced Visualization Tools</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\eFilm Advanced Visualization Tools</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">eFilm complementos de visualización avanzada</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">eFilm complementos de visualización avanzada</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+		<SUBITEM>
+			<ID dt:dt="int">227</ID>
+			<NAME dt:dt="string">eFilm Advanced Visualization Tools</NAME>
+			<MENUSTRING dt:dt="string">&amp;Tools\eFilm Advanced Visualization Tools\eFilm Advanced Visualization Tools</MENUSTRING>
+			<TOOLTIPSTRING dt:dt="string">eFilm complementos de visualización avanzada</TOOLTIPSTRING>
+			<STATUSSTRING dt:dt="string">eFilm complementos de visualización avanzada</STATUSSTRING>
+		</SUBITEM>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6465</ID>
+		<NAME dt:dt="string">Manually Split Multiphase Series</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Manually Split Multiphase Series</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Dividir Serie multifases manualmente</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Dividir Serie multifases manualmente</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6466</ID>
+		<NAME dt:dt="string">Cardiothoracic Ratio</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Cardiothoracic Ratio</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Cardiothoracic Ratio</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Cardiothoracic Ratio</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6467</ID>
+		<NAME dt:dt="string">Show/Hide Tool Annotation</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Show/Hide Tool Annotation</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Show/Hide Tool Annotation</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Show/Hide Tool Annotation</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+	<ITEM>
+		<ID dt:dt="int">6468</ID>
+		<NAME dt:dt="string">Label</NAME>
+		<MENUSTRING dt:dt="string">&amp;Tools\Label</MENUSTRING>
+		<TOOLTIPSTRING dt:dt="string">Label</TOOLTIPSTRING>
+		<STATUSSTRING dt:dt="string">Label</STATUSSTRING>
+		<ENABLEMOUSEMOVEMAP>
+			<UP dt:dt="string">DISABLE</UP>
+			<DOWN dt:dt="string">DISABLE</DOWN>
+			<LEFT dt:dt="string">DISABLE</LEFT>
+			<RIGHT dt:dt="string">DISABLE</RIGHT>
+		</ENABLEMOUSEMOVEMAP>
+		<MODALITYRELATE dt:dt="string">TRUE</MODALITYRELATE>
+		<CANLOCKMOUSEMOVE dt:dt="string">FALSE</CANLOCKMOUSEMOVE>
+	</ITEM>
+</TOOLBARPROPERTIES>

@@ -1,0 +1,6238 @@
+<?xml version="1.0" encoding="ISO8859-1"?>
+<TOOLBARS xmlns:dt="urn:schemas-microsoft-com:datatypes" Version="3.1.0">
+	<TOOLBARSETTINGS>
+		<AUTOHIDE dt:dt="boolean">0</AUTOHIDE>
+		<DEFAULTDOCKID dt:dt="int">1</DEFAULTDOCKID>
+		<GRAYSCALE dt:dt="boolean">0</GRAYSCALE>
+		<SIZE dt:dt="int">1</SIZE>
+	</TOOLBARSETTINGS>
+	<TOOLBARCONFIGURATION>
+		<ITEM id="6301" index="0">
+			<NAME dt:dt="string">Search</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+		</ITEM>
+		<ITEM id="6337" index="1">
+			<NAME dt:dt="string">Close Window</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6338" index="2">
+			<NAME dt:dt="string">Send/Receive Log</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+		</ITEM>
+		<ITEM id="57601" index="3">
+			<NAME dt:dt="string">Open</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+		</ITEM>
+		<ITEM id="6458" index="4">
+			<NAME dt:dt="string">Log In New User</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+		</ITEM>
+		<ITEM id="6372" index="5">
+			<NAME dt:dt="string">Create Scrapbook</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+		</ITEM>
+		<ITEM id="6329" index="6">
+			<NAME dt:dt="string">Stack</NAME>
+			<TYPE dt:dt="int">1</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP>
+				<UP dt:dt="int">33</UP>
+				<DOWN dt:dt="int">34</DOWN>
+			</MOUSEMOVEMAP>
+			<MOUSEMOVELOCKENABLED dt:dt="boolean">0</MOUSEMOVELOCKENABLED>
+			<MODALITY>
+				<BI dt:dt="boolean">1</BI>
+				<CD dt:dt="boolean">1</CD>
+				<CR dt:dt="boolean">1</CR>
+				<CT dt:dt="boolean">1</CT>
+				<DD dt:dt="boolean">1</DD>
+				<DG dt:dt="boolean">1</DG>
+				<DR dt:dt="boolean">1</DR>
+				<DX dt:dt="boolean">1</DX>
+				<ES dt:dt="boolean">1</ES>
+				<GM dt:dt="boolean">1</GM>
+				<HC dt:dt="boolean">1</HC>
+				<IO dt:dt="boolean">1</IO>
+				<LS dt:dt="boolean">1</LS>
+				<MA dt:dt="boolean">1</MA>
+				<MG dt:dt="boolean">1</MG>
+				<MR dt:dt="boolean">1</MR>
+				<MS dt:dt="boolean">1</MS>
+				<NM dt:dt="boolean">1</NM>
+				<OT dt:dt="boolean">1</OT>
+				<PT dt:dt="boolean">1</PT>
+				<PX dt:dt="boolean">1</PX>
+				<RF dt:dt="boolean">1</RF>
+				<RG dt:dt="boolean">1</RG>
+				<RT dt:dt="boolean">1</RT>
+				<SC dt:dt="boolean">1</SC>
+				<SM dt:dt="boolean">1</SM>
+				<ST dt:dt="boolean">1</ST>
+				<TG dt:dt="boolean">1</TG>
+				<US dt:dt="boolean">1</US>
+				<XA dt:dt="boolean">1</XA>
+				<XC dt:dt="boolean">1</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">1</BI>
+				<CD dt:dt="boolean">1</CD>
+				<CR dt:dt="boolean">1</CR>
+				<CT dt:dt="boolean">1</CT>
+				<DD dt:dt="boolean">1</DD>
+				<DG dt:dt="boolean">1</DG>
+				<DR dt:dt="boolean">1</DR>
+				<DX dt:dt="boolean">1</DX>
+				<ES dt:dt="boolean">1</ES>
+				<GM dt:dt="boolean">1</GM>
+				<HC dt:dt="boolean">1</HC>
+				<IO dt:dt="boolean">1</IO>
+				<LS dt:dt="boolean">1</LS>
+				<MA dt:dt="boolean">1</MA>
+				<MG dt:dt="boolean">1</MG>
+				<MR dt:dt="boolean">1</MR>
+				<MS dt:dt="boolean">1</MS>
+				<NM dt:dt="boolean">1</NM>
+				<OT dt:dt="boolean">1</OT>
+				<PT dt:dt="boolean">1</PT>
+				<PX dt:dt="boolean">1</PX>
+				<RF dt:dt="boolean">1</RF>
+				<RG dt:dt="boolean">1</RG>
+				<RT dt:dt="boolean">1</RT>
+				<SC dt:dt="boolean">1</SC>
+				<SM dt:dt="boolean">1</SM>
+				<ST dt:dt="boolean">1</ST>
+				<TG dt:dt="boolean">1</TG>
+				<US dt:dt="boolean">1</US>
+				<XA dt:dt="boolean">1</XA>
+				<XC dt:dt="boolean">1</XC>
+			</AUTOSELECT>
+			<SUBITEM id="8116">
+				<NAME dt:dt="string">Image Number</NAME>
+				<TYPE dt:dt="int">264</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+				<AUTOSELECT>
+					<BI dt:dt="boolean">1</BI>
+					<CD dt:dt="boolean">1</CD>
+					<CR dt:dt="boolean">1</CR>
+					<CT dt:dt="boolean">1</CT>
+					<DD dt:dt="boolean">1</DD>
+					<DG dt:dt="boolean">1</DG>
+					<DR dt:dt="boolean">1</DR>
+					<DX dt:dt="boolean">1</DX>
+					<ES dt:dt="boolean">1</ES>
+					<GM dt:dt="boolean">1</GM>
+					<HC dt:dt="boolean">1</HC>
+					<IO dt:dt="boolean">1</IO>
+					<LS dt:dt="boolean">1</LS>
+					<MA dt:dt="boolean">1</MA>
+					<MG dt:dt="boolean">1</MG>
+					<MR dt:dt="boolean">1</MR>
+					<MS dt:dt="boolean">1</MS>
+					<NM dt:dt="boolean">1</NM>
+					<OT dt:dt="boolean">1</OT>
+					<PT dt:dt="boolean">1</PT>
+					<PX dt:dt="boolean">1</PX>
+					<RF dt:dt="boolean">1</RF>
+					<RG dt:dt="boolean">1</RG>
+					<RT dt:dt="boolean">1</RT>
+					<SC dt:dt="boolean">1</SC>
+					<SM dt:dt="boolean">1</SM>
+					<ST dt:dt="boolean">1</ST>
+					<TG dt:dt="boolean">1</TG>
+					<US dt:dt="boolean">1</US>
+					<XA dt:dt="boolean">1</XA>
+					<XC dt:dt="boolean">1</XC>
+				</AUTOSELECT>
+			</SUBITEM>
+			<SUBITEM id="8117">
+				<NAME dt:dt="string">Slice Location</NAME>
+				<TYPE dt:dt="int">264</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+				<AUTOSELECT>
+					<BI dt:dt="boolean">0</BI>
+					<CD dt:dt="boolean">0</CD>
+					<CR dt:dt="boolean">0</CR>
+					<CT dt:dt="boolean">0</CT>
+					<DD dt:dt="boolean">0</DD>
+					<DG dt:dt="boolean">0</DG>
+					<DR dt:dt="boolean">0</DR>
+					<DX dt:dt="boolean">0</DX>
+					<ES dt:dt="boolean">0</ES>
+					<GM dt:dt="boolean">0</GM>
+					<HC dt:dt="boolean">0</HC>
+					<IO dt:dt="boolean">0</IO>
+					<LS dt:dt="boolean">0</LS>
+					<MA dt:dt="boolean">0</MA>
+					<MG dt:dt="boolean">0</MG>
+					<MR dt:dt="boolean">0</MR>
+					<MS dt:dt="boolean">0</MS>
+					<NM dt:dt="boolean">0</NM>
+					<OT dt:dt="boolean">0</OT>
+					<PT dt:dt="boolean">0</PT>
+					<PX dt:dt="boolean">0</PX>
+					<RF dt:dt="boolean">0</RF>
+					<RG dt:dt="boolean">0</RG>
+					<RT dt:dt="boolean">0</RT>
+					<SC dt:dt="boolean">0</SC>
+					<SM dt:dt="boolean">0</SM>
+					<ST dt:dt="boolean">0</ST>
+					<TG dt:dt="boolean">0</TG>
+					<US dt:dt="boolean">0</US>
+					<XA dt:dt="boolean">0</XA>
+					<XC dt:dt="boolean">0</XC>
+				</AUTOSELECT>
+			</SUBITEM>
+			<SUBITEM id="8118">
+				<NAME dt:dt="string">Reverse Slice Location</NAME>
+				<TYPE dt:dt="int">264</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+				<AUTOSELECT>
+					<BI dt:dt="boolean">0</BI>
+					<CD dt:dt="boolean">0</CD>
+					<CR dt:dt="boolean">0</CR>
+					<CT dt:dt="boolean">0</CT>
+					<DD dt:dt="boolean">0</DD>
+					<DG dt:dt="boolean">0</DG>
+					<DR dt:dt="boolean">0</DR>
+					<DX dt:dt="boolean">0</DX>
+					<ES dt:dt="boolean">0</ES>
+					<GM dt:dt="boolean">0</GM>
+					<HC dt:dt="boolean">0</HC>
+					<IO dt:dt="boolean">0</IO>
+					<LS dt:dt="boolean">0</LS>
+					<MA dt:dt="boolean">0</MA>
+					<MG dt:dt="boolean">0</MG>
+					<MR dt:dt="boolean">0</MR>
+					<MS dt:dt="boolean">0</MS>
+					<NM dt:dt="boolean">0</NM>
+					<OT dt:dt="boolean">0</OT>
+					<PT dt:dt="boolean">0</PT>
+					<PX dt:dt="boolean">0</PX>
+					<RF dt:dt="boolean">0</RF>
+					<RG dt:dt="boolean">0</RG>
+					<RT dt:dt="boolean">0</RT>
+					<SC dt:dt="boolean">0</SC>
+					<SM dt:dt="boolean">0</SM>
+					<ST dt:dt="boolean">0</ST>
+					<TG dt:dt="boolean">0</TG>
+					<US dt:dt="boolean">0</US>
+					<XA dt:dt="boolean">0</XA>
+					<XC dt:dt="boolean">0</XC>
+				</AUTOSELECT>
+			</SUBITEM>
+			<SUBITEM id="8119">
+				<NAME dt:dt="string">Acquisition Time</NAME>
+				<TYPE dt:dt="int">264</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+				<AUTOSELECT>
+					<BI dt:dt="boolean">0</BI>
+					<CD dt:dt="boolean">0</CD>
+					<CR dt:dt="boolean">0</CR>
+					<CT dt:dt="boolean">0</CT>
+					<DD dt:dt="boolean">0</DD>
+					<DG dt:dt="boolean">0</DG>
+					<DR dt:dt="boolean">0</DR>
+					<DX dt:dt="boolean">0</DX>
+					<ES dt:dt="boolean">0</ES>
+					<GM dt:dt="boolean">0</GM>
+					<HC dt:dt="boolean">0</HC>
+					<IO dt:dt="boolean">0</IO>
+					<LS dt:dt="boolean">0</LS>
+					<MA dt:dt="boolean">0</MA>
+					<MG dt:dt="boolean">0</MG>
+					<MR dt:dt="boolean">0</MR>
+					<MS dt:dt="boolean">0</MS>
+					<NM dt:dt="boolean">0</NM>
+					<OT dt:dt="boolean">0</OT>
+					<PT dt:dt="boolean">0</PT>
+					<PX dt:dt="boolean">0</PX>
+					<RF dt:dt="boolean">0</RF>
+					<RG dt:dt="boolean">0</RG>
+					<RT dt:dt="boolean">0</RT>
+					<SC dt:dt="boolean">0</SC>
+					<SM dt:dt="boolean">0</SM>
+					<ST dt:dt="boolean">0</ST>
+					<TG dt:dt="boolean">0</TG>
+					<US dt:dt="boolean">0</US>
+					<XA dt:dt="boolean">0</XA>
+					<XC dt:dt="boolean">0</XC>
+				</AUTOSELECT>
+			</SUBITEM>
+			<SUBITEM id="8120">
+				<NAME dt:dt="string">Image Time</NAME>
+				<TYPE dt:dt="int">264</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+				<AUTOSELECT>
+					<BI dt:dt="boolean">0</BI>
+					<CD dt:dt="boolean">0</CD>
+					<CR dt:dt="boolean">0</CR>
+					<CT dt:dt="boolean">0</CT>
+					<DD dt:dt="boolean">0</DD>
+					<DG dt:dt="boolean">0</DG>
+					<DR dt:dt="boolean">0</DR>
+					<DX dt:dt="boolean">0</DX>
+					<ES dt:dt="boolean">0</ES>
+					<GM dt:dt="boolean">0</GM>
+					<HC dt:dt="boolean">0</HC>
+					<IO dt:dt="boolean">0</IO>
+					<LS dt:dt="boolean">0</LS>
+					<MA dt:dt="boolean">0</MA>
+					<MG dt:dt="boolean">0</MG>
+					<MR dt:dt="boolean">0</MR>
+					<MS dt:dt="boolean">0</MS>
+					<NM dt:dt="boolean">0</NM>
+					<OT dt:dt="boolean">0</OT>
+					<PT dt:dt="boolean">0</PT>
+					<PX dt:dt="boolean">0</PX>
+					<RF dt:dt="boolean">0</RF>
+					<RG dt:dt="boolean">0</RG>
+					<RT dt:dt="boolean">0</RT>
+					<SC dt:dt="boolean">0</SC>
+					<SM dt:dt="boolean">0</SM>
+					<ST dt:dt="boolean">0</ST>
+					<TG dt:dt="boolean">0</TG>
+					<US dt:dt="boolean">0</US>
+					<XA dt:dt="boolean">0</XA>
+					<XC dt:dt="boolean">0</XC>
+				</AUTOSELECT>
+			</SUBITEM>
+			<SUBITEM id="6123">
+				<NAME dt:dt="string">Goto Image...</NAME>
+				<TYPE dt:dt="int">264</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+			</SUBITEM>
+		</ITEM>
+		<ITEM id="6309" index="7">
+			<NAME dt:dt="string">Window/Level</NAME>
+			<TYPE dt:dt="int">4</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP>
+				<UP dt:dt="int">38</UP>
+				<DOWN dt:dt="int">40</DOWN>
+				<LEFT dt:dt="int">37</LEFT>
+				<RIGHT dt:dt="int">39</RIGHT>
+			</MOUSEMOVEMAP>
+			<MOUSEMOVELOCKENABLED dt:dt="boolean">0</MOUSEMOVELOCKENABLED>
+			<MODALITY>
+				<BI dt:dt="boolean">1</BI>
+				<CD dt:dt="boolean">1</CD>
+				<CR dt:dt="boolean">1</CR>
+				<CT dt:dt="boolean">1</CT>
+				<DD dt:dt="boolean">1</DD>
+				<DG dt:dt="boolean">1</DG>
+				<DR dt:dt="boolean">1</DR>
+				<DX dt:dt="boolean">1</DX>
+				<ES dt:dt="boolean">1</ES>
+				<GM dt:dt="boolean">1</GM>
+				<HC dt:dt="boolean">1</HC>
+				<IO dt:dt="boolean">1</IO>
+				<LS dt:dt="boolean">1</LS>
+				<MA dt:dt="boolean">1</MA>
+				<MG dt:dt="boolean">1</MG>
+				<MR dt:dt="boolean">1</MR>
+				<MS dt:dt="boolean">1</MS>
+				<NM dt:dt="boolean">1</NM>
+				<OT dt:dt="boolean">1</OT>
+				<PT dt:dt="boolean">1</PT>
+				<PX dt:dt="boolean">1</PX>
+				<RF dt:dt="boolean">1</RF>
+				<RG dt:dt="boolean">1</RG>
+				<RT dt:dt="boolean">1</RT>
+				<SC dt:dt="boolean">1</SC>
+				<SM dt:dt="boolean">1</SM>
+				<ST dt:dt="boolean">1</ST>
+				<TG dt:dt="boolean">1</TG>
+				<US dt:dt="boolean">1</US>
+				<XA dt:dt="boolean">1</XA>
+				<XC dt:dt="boolean">1</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">1</BI>
+				<CD dt:dt="boolean">1</CD>
+				<CR dt:dt="boolean">1</CR>
+				<CT dt:dt="boolean">1</CT>
+				<DD dt:dt="boolean">1</DD>
+				<DG dt:dt="boolean">1</DG>
+				<DR dt:dt="boolean">1</DR>
+				<DX dt:dt="boolean">1</DX>
+				<ES dt:dt="boolean">1</ES>
+				<GM dt:dt="boolean">1</GM>
+				<HC dt:dt="boolean">1</HC>
+				<IO dt:dt="boolean">1</IO>
+				<LS dt:dt="boolean">1</LS>
+				<MA dt:dt="boolean">1</MA>
+				<MG dt:dt="boolean">1</MG>
+				<MR dt:dt="boolean">1</MR>
+				<MS dt:dt="boolean">1</MS>
+				<NM dt:dt="boolean">1</NM>
+				<OT dt:dt="boolean">1</OT>
+				<PT dt:dt="boolean">1</PT>
+				<PX dt:dt="boolean">1</PX>
+				<RF dt:dt="boolean">1</RF>
+				<RG dt:dt="boolean">1</RG>
+				<RT dt:dt="boolean">1</RT>
+				<SC dt:dt="boolean">1</SC>
+				<SM dt:dt="boolean">1</SM>
+				<ST dt:dt="boolean">1</ST>
+				<TG dt:dt="boolean">1</TG>
+				<US dt:dt="boolean">1</US>
+				<XA dt:dt="boolean">1</XA>
+				<XC dt:dt="boolean">1</XC>
+			</AUTOSELECT>
+			<SUBITEM id="8100">
+				<NAME dt:dt="string">Linear</NAME>
+				<TYPE dt:dt="int">264</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+			</SUBITEM>
+			<SUBITEM id="8101">
+				<NAME dt:dt="string">Sigmoidal</NAME>
+				<TYPE dt:dt="int">264</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+			</SUBITEM>
+			<SUBITEM id="8121">
+				<NAME dt:dt="string">Other LUTs...</NAME>
+				<TYPE dt:dt="int">256</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+			</SUBITEM>
+			<SUBITEM id="6122">
+				<NAME dt:dt="string">Custom...</NAME>
+				<TYPE dt:dt="int">256</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+			</SUBITEM>
+			<SUBITEM id="6124">
+				<NAME dt:dt="string">Sensitivity...</NAME>
+				<TYPE dt:dt="int">256</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+			</SUBITEM>
+		</ITEM>
+		<ITEM id="6440" index="8">
+			<NAME dt:dt="string">Alpha (Coherence)/Beta (Black/White Bias)</NAME>
+			<TYPE dt:dt="int">1</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP>
+				<UP dt:dt="int">0</UP>
+				<DOWN dt:dt="int">0</DOWN>
+				<LEFT dt:dt="int">0</LEFT>
+				<RIGHT dt:dt="int">0</RIGHT>
+			</MOUSEMOVEMAP>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6303" index="9">
+			<NAME dt:dt="string">Magnificate</NAME>
+			<TYPE dt:dt="int">1</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP>
+				<UP dt:dt="int">0</UP>
+				<DOWN dt:dt="int">0</DOWN>
+				<LEFT dt:dt="int">0</LEFT>
+				<RIGHT dt:dt="int">0</RIGHT>
+			</MOUSEMOVEMAP>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+			<SUBITEM id="8400">
+				<NAME dt:dt="string">200%</NAME>
+				<TYPE dt:dt="int">264</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+			</SUBITEM>
+			<SUBITEM id="8401">
+				<NAME dt:dt="string">400%</NAME>
+				<TYPE dt:dt="int">264</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+			</SUBITEM>
+			<SUBITEM id="8402">
+				<NAME dt:dt="string">600%</NAME>
+				<TYPE dt:dt="int">264</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+			</SUBITEM>
+			<SUBITEM id="8403">
+				<NAME dt:dt="string">800%</NAME>
+				<TYPE dt:dt="int">264</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+			</SUBITEM>
+		</ITEM>
+		<ITEM id="6304" index="10">
+			<NAME dt:dt="string">Pan</NAME>
+			<TYPE dt:dt="int">1</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP>
+				<UP dt:dt="int">0</UP>
+				<DOWN dt:dt="int">0</DOWN>
+				<LEFT dt:dt="int">0</LEFT>
+				<RIGHT dt:dt="int">0</RIGHT>
+			</MOUSEMOVEMAP>
+			<MODALITY>
+				<BI dt:dt="boolean">1</BI>
+				<CD dt:dt="boolean">1</CD>
+				<CR dt:dt="boolean">1</CR>
+				<CT dt:dt="boolean">1</CT>
+				<DD dt:dt="boolean">1</DD>
+				<DG dt:dt="boolean">1</DG>
+				<DR dt:dt="boolean">1</DR>
+				<DX dt:dt="boolean">1</DX>
+				<ES dt:dt="boolean">1</ES>
+				<GM dt:dt="boolean">1</GM>
+				<HC dt:dt="boolean">1</HC>
+				<IO dt:dt="boolean">1</IO>
+				<LS dt:dt="boolean">1</LS>
+				<MA dt:dt="boolean">1</MA>
+				<MG dt:dt="boolean">1</MG>
+				<MR dt:dt="boolean">1</MR>
+				<MS dt:dt="boolean">1</MS>
+				<NM dt:dt="boolean">1</NM>
+				<OT dt:dt="boolean">1</OT>
+				<PT dt:dt="boolean">1</PT>
+				<PX dt:dt="boolean">1</PX>
+				<RF dt:dt="boolean">1</RF>
+				<RG dt:dt="boolean">1</RG>
+				<RT dt:dt="boolean">1</RT>
+				<SC dt:dt="boolean">1</SC>
+				<SM dt:dt="boolean">1</SM>
+				<ST dt:dt="boolean">1</ST>
+				<TG dt:dt="boolean">1</TG>
+				<US dt:dt="boolean">1</US>
+				<XA dt:dt="boolean">1</XA>
+				<XC dt:dt="boolean">1</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6311" index="11">
+			<NAME dt:dt="string">Zoom</NAME>
+			<TYPE dt:dt="int">4</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP>
+				<UP dt:dt="int">0</UP>
+				<DOWN dt:dt="int">0</DOWN>
+			</MOUSEMOVEMAP>
+			<MODALITY>
+				<BI dt:dt="boolean">1</BI>
+				<CD dt:dt="boolean">1</CD>
+				<CR dt:dt="boolean">1</CR>
+				<CT dt:dt="boolean">1</CT>
+				<DD dt:dt="boolean">1</DD>
+				<DG dt:dt="boolean">1</DG>
+				<DR dt:dt="boolean">1</DR>
+				<DX dt:dt="boolean">1</DX>
+				<ES dt:dt="boolean">1</ES>
+				<GM dt:dt="boolean">1</GM>
+				<HC dt:dt="boolean">1</HC>
+				<IO dt:dt="boolean">1</IO>
+				<LS dt:dt="boolean">1</LS>
+				<MA dt:dt="boolean">1</MA>
+				<MG dt:dt="boolean">1</MG>
+				<MR dt:dt="boolean">1</MR>
+				<MS dt:dt="boolean">1</MS>
+				<NM dt:dt="boolean">1</NM>
+				<OT dt:dt="boolean">1</OT>
+				<PT dt:dt="boolean">1</PT>
+				<PX dt:dt="boolean">1</PX>
+				<RF dt:dt="boolean">1</RF>
+				<RG dt:dt="boolean">1</RG>
+				<RT dt:dt="boolean">1</RT>
+				<SC dt:dt="boolean">1</SC>
+				<SM dt:dt="boolean">1</SM>
+				<ST dt:dt="boolean">1</ST>
+				<TG dt:dt="boolean">1</TG>
+				<US dt:dt="boolean">1</US>
+				<XA dt:dt="boolean">1</XA>
+				<XC dt:dt="boolean">1</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+			<SUBITEM id="6127">
+				<NAME dt:dt="string">100%</NAME>
+				<TYPE dt:dt="int">256</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+				<AUTOSELECT>
+					<BI dt:dt="boolean">0</BI>
+					<CD dt:dt="boolean">0</CD>
+					<CR dt:dt="boolean">0</CR>
+					<CT dt:dt="boolean">0</CT>
+					<DD dt:dt="boolean">0</DD>
+					<DG dt:dt="boolean">0</DG>
+					<DR dt:dt="boolean">0</DR>
+					<DX dt:dt="boolean">0</DX>
+					<ES dt:dt="boolean">0</ES>
+					<GM dt:dt="boolean">0</GM>
+					<HC dt:dt="boolean">0</HC>
+					<IO dt:dt="boolean">0</IO>
+					<LS dt:dt="boolean">0</LS>
+					<MA dt:dt="boolean">0</MA>
+					<MG dt:dt="boolean">0</MG>
+					<MR dt:dt="boolean">0</MR>
+					<MS dt:dt="boolean">0</MS>
+					<NM dt:dt="boolean">0</NM>
+					<OT dt:dt="boolean">0</OT>
+					<PT dt:dt="boolean">0</PT>
+					<PX dt:dt="boolean">0</PX>
+					<RF dt:dt="boolean">0</RF>
+					<RG dt:dt="boolean">0</RG>
+					<RT dt:dt="boolean">0</RT>
+					<SC dt:dt="boolean">0</SC>
+					<SM dt:dt="boolean">0</SM>
+					<ST dt:dt="boolean">0</ST>
+					<TG dt:dt="boolean">0</TG>
+					<US dt:dt="boolean">0</US>
+					<XA dt:dt="boolean">0</XA>
+					<XC dt:dt="boolean">0</XC>
+				</AUTOSELECT>
+			</SUBITEM>
+			<SUBITEM id="6128">
+				<NAME dt:dt="string">200%</NAME>
+				<TYPE dt:dt="int">256</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+				<AUTOSELECT>
+					<BI dt:dt="boolean">0</BI>
+					<CD dt:dt="boolean">0</CD>
+					<CR dt:dt="boolean">0</CR>
+					<CT dt:dt="boolean">0</CT>
+					<DD dt:dt="boolean">0</DD>
+					<DG dt:dt="boolean">0</DG>
+					<DR dt:dt="boolean">0</DR>
+					<DX dt:dt="boolean">0</DX>
+					<ES dt:dt="boolean">0</ES>
+					<GM dt:dt="boolean">0</GM>
+					<HC dt:dt="boolean">0</HC>
+					<IO dt:dt="boolean">0</IO>
+					<LS dt:dt="boolean">0</LS>
+					<MA dt:dt="boolean">0</MA>
+					<MG dt:dt="boolean">0</MG>
+					<MR dt:dt="boolean">0</MR>
+					<MS dt:dt="boolean">0</MS>
+					<NM dt:dt="boolean">0</NM>
+					<OT dt:dt="boolean">0</OT>
+					<PT dt:dt="boolean">0</PT>
+					<PX dt:dt="boolean">0</PX>
+					<RF dt:dt="boolean">0</RF>
+					<RG dt:dt="boolean">0</RG>
+					<RT dt:dt="boolean">0</RT>
+					<SC dt:dt="boolean">0</SC>
+					<SM dt:dt="boolean">0</SM>
+					<ST dt:dt="boolean">0</ST>
+					<TG dt:dt="boolean">0</TG>
+					<US dt:dt="boolean">0</US>
+					<XA dt:dt="boolean">0</XA>
+					<XC dt:dt="boolean">0</XC>
+				</AUTOSELECT>
+			</SUBITEM>
+			<SUBITEM id="6129">
+				<NAME dt:dt="string">400%</NAME>
+				<TYPE dt:dt="int">256</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+				<AUTOSELECT>
+					<BI dt:dt="boolean">0</BI>
+					<CD dt:dt="boolean">0</CD>
+					<CR dt:dt="boolean">0</CR>
+					<CT dt:dt="boolean">0</CT>
+					<DD dt:dt="boolean">0</DD>
+					<DG dt:dt="boolean">0</DG>
+					<DR dt:dt="boolean">0</DR>
+					<DX dt:dt="boolean">0</DX>
+					<ES dt:dt="boolean">0</ES>
+					<GM dt:dt="boolean">0</GM>
+					<HC dt:dt="boolean">0</HC>
+					<IO dt:dt="boolean">0</IO>
+					<LS dt:dt="boolean">0</LS>
+					<MA dt:dt="boolean">0</MA>
+					<MG dt:dt="boolean">0</MG>
+					<MR dt:dt="boolean">0</MR>
+					<MS dt:dt="boolean">0</MS>
+					<NM dt:dt="boolean">0</NM>
+					<OT dt:dt="boolean">0</OT>
+					<PT dt:dt="boolean">0</PT>
+					<PX dt:dt="boolean">0</PX>
+					<RF dt:dt="boolean">0</RF>
+					<RG dt:dt="boolean">0</RG>
+					<RT dt:dt="boolean">0</RT>
+					<SC dt:dt="boolean">0</SC>
+					<SM dt:dt="boolean">0</SM>
+					<ST dt:dt="boolean">0</ST>
+					<TG dt:dt="boolean">0</TG>
+					<US dt:dt="boolean">0</US>
+					<XA dt:dt="boolean">0</XA>
+					<XC dt:dt="boolean">0</XC>
+				</AUTOSELECT>
+			</SUBITEM>
+			<SUBITEM id="6130">
+				<NAME dt:dt="string">Custom...</NAME>
+				<TYPE dt:dt="int">256</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+				<AUTOSELECT>
+					<BI dt:dt="boolean">0</BI>
+					<CD dt:dt="boolean">0</CD>
+					<CR dt:dt="boolean">0</CR>
+					<CT dt:dt="boolean">0</CT>
+					<DD dt:dt="boolean">0</DD>
+					<DG dt:dt="boolean">0</DG>
+					<DR dt:dt="boolean">0</DR>
+					<DX dt:dt="boolean">0</DX>
+					<ES dt:dt="boolean">0</ES>
+					<GM dt:dt="boolean">0</GM>
+					<HC dt:dt="boolean">0</HC>
+					<IO dt:dt="boolean">0</IO>
+					<LS dt:dt="boolean">0</LS>
+					<MA dt:dt="boolean">0</MA>
+					<MG dt:dt="boolean">0</MG>
+					<MR dt:dt="boolean">0</MR>
+					<MS dt:dt="boolean">0</MS>
+					<NM dt:dt="boolean">0</NM>
+					<OT dt:dt="boolean">0</OT>
+					<PT dt:dt="boolean">0</PT>
+					<PX dt:dt="boolean">0</PX>
+					<RF dt:dt="boolean">0</RF>
+					<RG dt:dt="boolean">0</RG>
+					<RT dt:dt="boolean">0</RT>
+					<SC dt:dt="boolean">0</SC>
+					<SM dt:dt="boolean">0</SM>
+					<ST dt:dt="boolean">0</ST>
+					<TG dt:dt="boolean">0</TG>
+					<US dt:dt="boolean">0</US>
+					<XA dt:dt="boolean">0</XA>
+					<XC dt:dt="boolean">0</XC>
+				</AUTOSELECT>
+			</SUBITEM>
+			<SUBITEM id="6131">
+				<NAME dt:dt="string">Pixel-for-Pixel</NAME>
+				<TYPE dt:dt="int">256</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+				<AUTOSELECT>
+					<BI dt:dt="boolean">0</BI>
+					<CD dt:dt="boolean">0</CD>
+					<CR dt:dt="boolean">0</CR>
+					<CT dt:dt="boolean">0</CT>
+					<DD dt:dt="boolean">0</DD>
+					<DG dt:dt="boolean">0</DG>
+					<DR dt:dt="boolean">0</DR>
+					<DX dt:dt="boolean">0</DX>
+					<ES dt:dt="boolean">0</ES>
+					<GM dt:dt="boolean">0</GM>
+					<HC dt:dt="boolean">0</HC>
+					<IO dt:dt="boolean">0</IO>
+					<LS dt:dt="boolean">0</LS>
+					<MA dt:dt="boolean">0</MA>
+					<MG dt:dt="boolean">0</MG>
+					<MR dt:dt="boolean">0</MR>
+					<MS dt:dt="boolean">0</MS>
+					<NM dt:dt="boolean">0</NM>
+					<OT dt:dt="boolean">0</OT>
+					<PT dt:dt="boolean">0</PT>
+					<PX dt:dt="boolean">0</PX>
+					<RF dt:dt="boolean">0</RF>
+					<RG dt:dt="boolean">0</RG>
+					<RT dt:dt="boolean">0</RT>
+					<SC dt:dt="boolean">0</SC>
+					<SM dt:dt="boolean">0</SM>
+					<ST dt:dt="boolean">0</ST>
+					<TG dt:dt="boolean">0</TG>
+					<US dt:dt="boolean">0</US>
+					<XA dt:dt="boolean">0</XA>
+					<XC dt:dt="boolean">0</XC>
+				</AUTOSELECT>
+			</SUBITEM>
+		</ITEM>
+		<ITEM id="6330" index="12">
+			<NAME dt:dt="string">Reset Image Settings</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">1</BI>
+				<CD dt:dt="boolean">1</CD>
+				<CR dt:dt="boolean">1</CR>
+				<CT dt:dt="boolean">1</CT>
+				<DD dt:dt="boolean">1</DD>
+				<DG dt:dt="boolean">1</DG>
+				<DR dt:dt="boolean">1</DR>
+				<DX dt:dt="boolean">1</DX>
+				<ES dt:dt="boolean">1</ES>
+				<GM dt:dt="boolean">1</GM>
+				<HC dt:dt="boolean">1</HC>
+				<IO dt:dt="boolean">1</IO>
+				<LS dt:dt="boolean">1</LS>
+				<MA dt:dt="boolean">1</MA>
+				<MG dt:dt="boolean">1</MG>
+				<MR dt:dt="boolean">1</MR>
+				<MS dt:dt="boolean">1</MS>
+				<NM dt:dt="boolean">1</NM>
+				<OT dt:dt="boolean">1</OT>
+				<PT dt:dt="boolean">1</PT>
+				<PX dt:dt="boolean">1</PX>
+				<RF dt:dt="boolean">1</RF>
+				<RG dt:dt="boolean">1</RG>
+				<RT dt:dt="boolean">1</RT>
+				<SC dt:dt="boolean">1</SC>
+				<SM dt:dt="boolean">1</SM>
+				<ST dt:dt="boolean">1</ST>
+				<TG dt:dt="boolean">1</TG>
+				<US dt:dt="boolean">1</US>
+				<XA dt:dt="boolean">1</XA>
+				<XC dt:dt="boolean">1</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6331" index="13">
+			<NAME dt:dt="string">Toggle Overlay</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">1</BI>
+				<CD dt:dt="boolean">1</CD>
+				<CR dt:dt="boolean">1</CR>
+				<CT dt:dt="boolean">1</CT>
+				<DD dt:dt="boolean">1</DD>
+				<DG dt:dt="boolean">1</DG>
+				<DR dt:dt="boolean">1</DR>
+				<DX dt:dt="boolean">1</DX>
+				<ES dt:dt="boolean">1</ES>
+				<GM dt:dt="boolean">1</GM>
+				<HC dt:dt="boolean">1</HC>
+				<IO dt:dt="boolean">1</IO>
+				<LS dt:dt="boolean">1</LS>
+				<MA dt:dt="boolean">1</MA>
+				<MG dt:dt="boolean">1</MG>
+				<MR dt:dt="boolean">1</MR>
+				<MS dt:dt="boolean">1</MS>
+				<NM dt:dt="boolean">1</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">1</PT>
+				<PX dt:dt="boolean">1</PX>
+				<RF dt:dt="boolean">1</RF>
+				<RG dt:dt="boolean">1</RG>
+				<RT dt:dt="boolean">1</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">1</SM>
+				<ST dt:dt="boolean">1</ST>
+				<TG dt:dt="boolean">1</TG>
+				<US dt:dt="boolean">1</US>
+				<XA dt:dt="boolean">1</XA>
+				<XC dt:dt="boolean">1</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+			<SUBITEM id="8500">
+				<NAME dt:dt="string">Off</NAME>
+				<TYPE dt:dt="int">264</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+			</SUBITEM>
+			<SUBITEM id="8501">
+				<NAME dt:dt="string">Normal</NAME>
+				<TYPE dt:dt="int">264</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+			</SUBITEM>
+			<SUBITEM id="8502">
+				<NAME dt:dt="string">Minimal</NAME>
+				<TYPE dt:dt="int">264</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+			</SUBITEM>
+		</ITEM>
+		<ITEM id="6380" index="14">
+			<NAME dt:dt="string">Add User Annotation</NAME>
+			<TYPE dt:dt="int">1</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6300" index="15">
+			<NAME dt:dt="string">Cine</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6310" index="16">
+			<NAME dt:dt="string">Screen Layout</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">1</BI>
+				<CD dt:dt="boolean">1</CD>
+				<CR dt:dt="boolean">1</CR>
+				<CT dt:dt="boolean">1</CT>
+				<DD dt:dt="boolean">1</DD>
+				<DG dt:dt="boolean">1</DG>
+				<DR dt:dt="boolean">1</DR>
+				<DX dt:dt="boolean">1</DX>
+				<ES dt:dt="boolean">1</ES>
+				<GM dt:dt="boolean">1</GM>
+				<HC dt:dt="boolean">1</HC>
+				<IO dt:dt="boolean">1</IO>
+				<LS dt:dt="boolean">1</LS>
+				<MA dt:dt="boolean">1</MA>
+				<MG dt:dt="boolean">1</MG>
+				<MR dt:dt="boolean">1</MR>
+				<MS dt:dt="boolean">1</MS>
+				<NM dt:dt="boolean">1</NM>
+				<OT dt:dt="boolean">1</OT>
+				<PT dt:dt="boolean">1</PT>
+				<PX dt:dt="boolean">1</PX>
+				<RF dt:dt="boolean">1</RF>
+				<RG dt:dt="boolean">1</RG>
+				<RT dt:dt="boolean">1</RT>
+				<SC dt:dt="boolean">1</SC>
+				<SM dt:dt="boolean">1</SM>
+				<ST dt:dt="boolean">1</ST>
+				<TG dt:dt="boolean">1</TG>
+				<US dt:dt="boolean">1</US>
+				<XA dt:dt="boolean">1</XA>
+				<XC dt:dt="boolean">1</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6132" index="17">
+			<NAME dt:dt="string">Toggle Survey/Explode Mode</NAME>
+			<TYPE dt:dt="int">8</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6323" index="18">
+			<NAME dt:dt="string">Select All Visible Series</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6322" index="19">
+			<NAME dt:dt="string">Select/Deselect All Images In Selected Series</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6336" index="20">
+			<NAME dt:dt="string">Show Study Information</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">1</BI>
+				<CD dt:dt="boolean">1</CD>
+				<CR dt:dt="boolean">1</CR>
+				<CT dt:dt="boolean">1</CT>
+				<DD dt:dt="boolean">1</DD>
+				<DG dt:dt="boolean">1</DG>
+				<DR dt:dt="boolean">1</DR>
+				<DX dt:dt="boolean">1</DX>
+				<ES dt:dt="boolean">1</ES>
+				<GM dt:dt="boolean">1</GM>
+				<HC dt:dt="boolean">1</HC>
+				<IO dt:dt="boolean">1</IO>
+				<LS dt:dt="boolean">1</LS>
+				<MA dt:dt="boolean">1</MA>
+				<MG dt:dt="boolean">1</MG>
+				<MR dt:dt="boolean">1</MR>
+				<MS dt:dt="boolean">1</MS>
+				<NM dt:dt="boolean">1</NM>
+				<OT dt:dt="boolean">1</OT>
+				<PT dt:dt="boolean">1</PT>
+				<PX dt:dt="boolean">1</PX>
+				<RF dt:dt="boolean">1</RF>
+				<RG dt:dt="boolean">1</RG>
+				<RT dt:dt="boolean">1</RT>
+				<SC dt:dt="boolean">1</SC>
+				<SM dt:dt="boolean">1</SM>
+				<ST dt:dt="boolean">1</ST>
+				<TG dt:dt="boolean">1</TG>
+				<US dt:dt="boolean">1</US>
+				<XA dt:dt="boolean">1</XA>
+				<XC dt:dt="boolean">1</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6409" index="21">
+			<NAME dt:dt="string">View Report</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6408" index="22">
+			<NAME dt:dt="string">Create Report</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6320" index="23">
+			<NAME dt:dt="string">Previous Study</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">1</BI>
+				<CD dt:dt="boolean">1</CD>
+				<CR dt:dt="boolean">1</CR>
+				<CT dt:dt="boolean">1</CT>
+				<DD dt:dt="boolean">1</DD>
+				<DG dt:dt="boolean">1</DG>
+				<DR dt:dt="boolean">1</DR>
+				<DX dt:dt="boolean">1</DX>
+				<ES dt:dt="boolean">1</ES>
+				<GM dt:dt="boolean">1</GM>
+				<HC dt:dt="boolean">1</HC>
+				<IO dt:dt="boolean">1</IO>
+				<LS dt:dt="boolean">1</LS>
+				<MA dt:dt="boolean">1</MA>
+				<MG dt:dt="boolean">1</MG>
+				<MR dt:dt="boolean">1</MR>
+				<MS dt:dt="boolean">1</MS>
+				<NM dt:dt="boolean">1</NM>
+				<OT dt:dt="boolean">1</OT>
+				<PT dt:dt="boolean">1</PT>
+				<PX dt:dt="boolean">1</PX>
+				<RF dt:dt="boolean">1</RF>
+				<RG dt:dt="boolean">1</RG>
+				<RT dt:dt="boolean">1</RT>
+				<SC dt:dt="boolean">1</SC>
+				<SM dt:dt="boolean">1</SM>
+				<ST dt:dt="boolean">1</ST>
+				<TG dt:dt="boolean">1</TG>
+				<US dt:dt="boolean">1</US>
+				<XA dt:dt="boolean">1</XA>
+				<XC dt:dt="boolean">1</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6321" index="24">
+			<NAME dt:dt="string">Next Study</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">1</BI>
+				<CD dt:dt="boolean">1</CD>
+				<CR dt:dt="boolean">1</CR>
+				<CT dt:dt="boolean">1</CT>
+				<DD dt:dt="boolean">1</DD>
+				<DG dt:dt="boolean">1</DG>
+				<DR dt:dt="boolean">1</DR>
+				<DX dt:dt="boolean">1</DX>
+				<ES dt:dt="boolean">1</ES>
+				<GM dt:dt="boolean">1</GM>
+				<HC dt:dt="boolean">1</HC>
+				<IO dt:dt="boolean">1</IO>
+				<LS dt:dt="boolean">1</LS>
+				<MA dt:dt="boolean">1</MA>
+				<MG dt:dt="boolean">1</MG>
+				<MR dt:dt="boolean">1</MR>
+				<MS dt:dt="boolean">1</MS>
+				<NM dt:dt="boolean">1</NM>
+				<OT dt:dt="boolean">1</OT>
+				<PT dt:dt="boolean">1</PT>
+				<PX dt:dt="boolean">1</PX>
+				<RF dt:dt="boolean">1</RF>
+				<RG dt:dt="boolean">1</RG>
+				<RT dt:dt="boolean">1</RT>
+				<SC dt:dt="boolean">1</SC>
+				<SM dt:dt="boolean">1</SM>
+				<ST dt:dt="boolean">1</ST>
+				<TG dt:dt="boolean">1</TG>
+				<US dt:dt="boolean">1</US>
+				<XA dt:dt="boolean">1</XA>
+				<XC dt:dt="boolean">1</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6314" index="25">
+			<NAME dt:dt="string">Previous Series</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string">'NPad -'</ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">1</BI>
+				<CD dt:dt="boolean">1</CD>
+				<CR dt:dt="boolean">1</CR>
+				<CT dt:dt="boolean">1</CT>
+				<DD dt:dt="boolean">1</DD>
+				<DG dt:dt="boolean">1</DG>
+				<DR dt:dt="boolean">1</DR>
+				<DX dt:dt="boolean">1</DX>
+				<ES dt:dt="boolean">1</ES>
+				<GM dt:dt="boolean">1</GM>
+				<HC dt:dt="boolean">1</HC>
+				<IO dt:dt="boolean">1</IO>
+				<LS dt:dt="boolean">1</LS>
+				<MA dt:dt="boolean">1</MA>
+				<MG dt:dt="boolean">1</MG>
+				<MR dt:dt="boolean">1</MR>
+				<MS dt:dt="boolean">1</MS>
+				<NM dt:dt="boolean">1</NM>
+				<OT dt:dt="boolean">1</OT>
+				<PT dt:dt="boolean">1</PT>
+				<PX dt:dt="boolean">1</PX>
+				<RF dt:dt="boolean">1</RF>
+				<RG dt:dt="boolean">1</RG>
+				<RT dt:dt="boolean">1</RT>
+				<SC dt:dt="boolean">1</SC>
+				<SM dt:dt="boolean">1</SM>
+				<ST dt:dt="boolean">1</ST>
+				<TG dt:dt="boolean">1</TG>
+				<US dt:dt="boolean">1</US>
+				<XA dt:dt="boolean">1</XA>
+				<XC dt:dt="boolean">1</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6317" index="26">
+			<NAME dt:dt="string">Next Series</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string">'NPad +'</ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">1</BI>
+				<CD dt:dt="boolean">1</CD>
+				<CR dt:dt="boolean">1</CR>
+				<CT dt:dt="boolean">1</CT>
+				<DD dt:dt="boolean">1</DD>
+				<DG dt:dt="boolean">1</DG>
+				<DR dt:dt="boolean">1</DR>
+				<DX dt:dt="boolean">1</DX>
+				<ES dt:dt="boolean">1</ES>
+				<GM dt:dt="boolean">1</GM>
+				<HC dt:dt="boolean">1</HC>
+				<IO dt:dt="boolean">1</IO>
+				<LS dt:dt="boolean">1</LS>
+				<MA dt:dt="boolean">1</MA>
+				<MG dt:dt="boolean">1</MG>
+				<MR dt:dt="boolean">1</MR>
+				<MS dt:dt="boolean">1</MS>
+				<NM dt:dt="boolean">1</NM>
+				<OT dt:dt="boolean">1</OT>
+				<PT dt:dt="boolean">1</PT>
+				<PX dt:dt="boolean">1</PX>
+				<RF dt:dt="boolean">1</RF>
+				<RG dt:dt="boolean">1</RG>
+				<RT dt:dt="boolean">1</RT>
+				<SC dt:dt="boolean">1</SC>
+				<SM dt:dt="boolean">1</SM>
+				<ST dt:dt="boolean">1</ST>
+				<TG dt:dt="boolean">1</TG>
+				<US dt:dt="boolean">1</US>
+				<XA dt:dt="boolean">1</XA>
+				<XC dt:dt="boolean">1</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6319" index="27">
+			<NAME dt:dt="string">Previous Image</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">1</BI>
+				<CD dt:dt="boolean">1</CD>
+				<CR dt:dt="boolean">1</CR>
+				<CT dt:dt="boolean">1</CT>
+				<DD dt:dt="boolean">1</DD>
+				<DG dt:dt="boolean">1</DG>
+				<DR dt:dt="boolean">1</DR>
+				<DX dt:dt="boolean">1</DX>
+				<ES dt:dt="boolean">1</ES>
+				<GM dt:dt="boolean">1</GM>
+				<HC dt:dt="boolean">1</HC>
+				<IO dt:dt="boolean">1</IO>
+				<LS dt:dt="boolean">1</LS>
+				<MA dt:dt="boolean">1</MA>
+				<MG dt:dt="boolean">1</MG>
+				<MR dt:dt="boolean">1</MR>
+				<MS dt:dt="boolean">1</MS>
+				<NM dt:dt="boolean">1</NM>
+				<OT dt:dt="boolean">1</OT>
+				<PT dt:dt="boolean">1</PT>
+				<PX dt:dt="boolean">1</PX>
+				<RF dt:dt="boolean">1</RF>
+				<RG dt:dt="boolean">1</RG>
+				<RT dt:dt="boolean">1</RT>
+				<SC dt:dt="boolean">1</SC>
+				<SM dt:dt="boolean">1</SM>
+				<ST dt:dt="boolean">1</ST>
+				<TG dt:dt="boolean">1</TG>
+				<US dt:dt="boolean">1</US>
+				<XA dt:dt="boolean">1</XA>
+				<XC dt:dt="boolean">1</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6318" index="28">
+			<NAME dt:dt="string">Next Image</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">1</BI>
+				<CD dt:dt="boolean">1</CD>
+				<CR dt:dt="boolean">1</CR>
+				<CT dt:dt="boolean">1</CT>
+				<DD dt:dt="boolean">1</DD>
+				<DG dt:dt="boolean">1</DG>
+				<DR dt:dt="boolean">1</DR>
+				<DX dt:dt="boolean">1</DX>
+				<ES dt:dt="boolean">1</ES>
+				<GM dt:dt="boolean">1</GM>
+				<HC dt:dt="boolean">1</HC>
+				<IO dt:dt="boolean">1</IO>
+				<LS dt:dt="boolean">1</LS>
+				<MA dt:dt="boolean">1</MA>
+				<MG dt:dt="boolean">1</MG>
+				<MR dt:dt="boolean">1</MR>
+				<MS dt:dt="boolean">1</MS>
+				<NM dt:dt="boolean">1</NM>
+				<OT dt:dt="boolean">1</OT>
+				<PT dt:dt="boolean">1</PT>
+				<PX dt:dt="boolean">1</PX>
+				<RF dt:dt="boolean">1</RF>
+				<RG dt:dt="boolean">1</RG>
+				<RT dt:dt="boolean">1</RT>
+				<SC dt:dt="boolean">1</SC>
+				<SM dt:dt="boolean">1</SM>
+				<ST dt:dt="boolean">1</ST>
+				<TG dt:dt="boolean">1</TG>
+				<US dt:dt="boolean">1</US>
+				<XA dt:dt="boolean">1</XA>
+				<XC dt:dt="boolean">1</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6307" index="29">
+			<NAME dt:dt="string">Probe Tool</NAME>
+			<TYPE dt:dt="int">1</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP>
+				<UP dt:dt="int">0</UP>
+				<DOWN dt:dt="int">0</DOWN>
+				<LEFT dt:dt="int">0</LEFT>
+				<RIGHT dt:dt="int">0</RIGHT>
+			</MOUSEMOVEMAP>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6413" index="30">
+			<NAME dt:dt="string">Measurement Tool - Arrow</NAME>
+			<TYPE dt:dt="int">4</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP>
+				<UP dt:dt="int">0</UP>
+				<DOWN dt:dt="int">0</DOWN>
+				<LEFT dt:dt="int">0</LEFT>
+				<RIGHT dt:dt="int">0</RIGHT>
+			</MOUSEMOVEMAP>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6327" index="31">
+			<NAME dt:dt="string">Measurement Tool - Line</NAME>
+			<TYPE dt:dt="int">4</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP>
+				<UP dt:dt="int">0</UP>
+				<DOWN dt:dt="int">0</DOWN>
+				<LEFT dt:dt="int">0</LEFT>
+				<RIGHT dt:dt="int">0</RIGHT>
+			</MOUSEMOVEMAP>
+			<MODALITY>
+				<BI dt:dt="boolean">1</BI>
+				<CD dt:dt="boolean">1</CD>
+				<CR dt:dt="boolean">1</CR>
+				<CT dt:dt="boolean">1</CT>
+				<DD dt:dt="boolean">1</DD>
+				<DG dt:dt="boolean">1</DG>
+				<DR dt:dt="boolean">1</DR>
+				<DX dt:dt="boolean">1</DX>
+				<ES dt:dt="boolean">1</ES>
+				<GM dt:dt="boolean">1</GM>
+				<HC dt:dt="boolean">1</HC>
+				<IO dt:dt="boolean">1</IO>
+				<LS dt:dt="boolean">1</LS>
+				<MA dt:dt="boolean">1</MA>
+				<MG dt:dt="boolean">1</MG>
+				<MR dt:dt="boolean">1</MR>
+				<MS dt:dt="boolean">1</MS>
+				<NM dt:dt="boolean">1</NM>
+				<OT dt:dt="boolean">1</OT>
+				<PT dt:dt="boolean">1</PT>
+				<PX dt:dt="boolean">1</PX>
+				<RF dt:dt="boolean">1</RF>
+				<RG dt:dt="boolean">1</RG>
+				<RT dt:dt="boolean">1</RT>
+				<SC dt:dt="boolean">1</SC>
+				<SM dt:dt="boolean">1</SM>
+				<ST dt:dt="boolean">1</ST>
+				<TG dt:dt="boolean">1</TG>
+				<US dt:dt="boolean">1</US>
+				<XA dt:dt="boolean">1</XA>
+				<XC dt:dt="boolean">1</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6333" index="32">
+			<NAME dt:dt="string">Measurement Tool - Ellipse</NAME>
+			<TYPE dt:dt="int">4</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP>
+				<UP dt:dt="int">0</UP>
+				<DOWN dt:dt="int">0</DOWN>
+				<LEFT dt:dt="int">0</LEFT>
+				<RIGHT dt:dt="int">0</RIGHT>
+			</MOUSEMOVEMAP>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6419" index="33">
+			<NAME dt:dt="string">Measurement Tool - Show Angles</NAME>
+			<TYPE dt:dt="int">8</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6334" index="34">
+			<NAME dt:dt="string">Clear Measurement Tools</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">1</BI>
+				<CD dt:dt="boolean">1</CD>
+				<CR dt:dt="boolean">1</CR>
+				<CT dt:dt="boolean">1</CT>
+				<DD dt:dt="boolean">1</DD>
+				<DG dt:dt="boolean">1</DG>
+				<DR dt:dt="boolean">1</DR>
+				<DX dt:dt="boolean">1</DX>
+				<ES dt:dt="boolean">1</ES>
+				<GM dt:dt="boolean">1</GM>
+				<HC dt:dt="boolean">1</HC>
+				<IO dt:dt="boolean">1</IO>
+				<LS dt:dt="boolean">1</LS>
+				<MA dt:dt="boolean">1</MA>
+				<MG dt:dt="boolean">1</MG>
+				<MR dt:dt="boolean">1</MR>
+				<MS dt:dt="boolean">1</MS>
+				<NM dt:dt="boolean">1</NM>
+				<OT dt:dt="boolean">1</OT>
+				<PT dt:dt="boolean">1</PT>
+				<PX dt:dt="boolean">1</PX>
+				<RF dt:dt="boolean">1</RF>
+				<RG dt:dt="boolean">1</RG>
+				<RT dt:dt="boolean">1</RT>
+				<SC dt:dt="boolean">1</SC>
+				<SM dt:dt="boolean">1</SM>
+				<ST dt:dt="boolean">1</ST>
+				<TG dt:dt="boolean">1</TG>
+				<US dt:dt="boolean">1</US>
+				<XA dt:dt="boolean">1</XA>
+				<XC dt:dt="boolean">1</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6365" index="35">
+			<NAME dt:dt="string">Calibrate Measurements</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6335" index="36">
+			<NAME dt:dt="string">Show All Reference Lines</NAME>
+			<TYPE dt:dt="int">8</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6324" index="37">
+			<NAME dt:dt="string">Show First and Last Reference Lines</NAME>
+			<TYPE dt:dt="int">8</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6326" index="38">
+			<NAME dt:dt="string">Show Current Reference Line</NAME>
+			<TYPE dt:dt="int">8</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6312" index="39">
+			<NAME dt:dt="string">Auto Series Synchronization</NAME>
+			<TYPE dt:dt="int">8</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6308" index="40">
+			<NAME dt:dt="string">Manual Series Synchronization</NAME>
+			<TYPE dt:dt="int">8</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6383" index="41">
+			<NAME dt:dt="string">3D Cursor</NAME>
+			<TYPE dt:dt="int">4</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP>
+				<UP dt:dt="int">0</UP>
+				<DOWN dt:dt="int">0</DOWN>
+				<LEFT dt:dt="int">0</LEFT>
+				<RIGHT dt:dt="int">0</RIGHT>
+			</MOUSEMOVEMAP>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6444" index="42">
+			<NAME dt:dt="string">Measurement Tool - MPR</NAME>
+			<TYPE dt:dt="int">4</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP>
+				<UP dt:dt="int">0</UP>
+				<DOWN dt:dt="int">0</DOWN>
+				<LEFT dt:dt="int">0</LEFT>
+				<RIGHT dt:dt="int">0</RIGHT>
+			</MOUSEMOVEMAP>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6445" index="43">
+			<NAME dt:dt="string">Auto-Generate Orthogonal MPR Tools</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP>
+				<UP dt:dt="int">0</UP>
+				<DOWN dt:dt="int">0</DOWN>
+				<LEFT dt:dt="int">0</LEFT>
+				<RIGHT dt:dt="int">0</RIGHT>
+			</MOUSEMOVEMAP>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6306" index="44">
+			<NAME dt:dt="string">Flip Horizontal</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6305" index="45">
+			<NAME dt:dt="string">Flip Vertical</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6313" index="46">
+			<NAME dt:dt="string">Rotate Left 90 Degrees</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6316" index="47">
+			<NAME dt:dt="string">Rotate Right 90 Degrees</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6332" index="48">
+			<NAME dt:dt="string">Invert</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6371" index="49">
+			<NAME dt:dt="string">Digital Subtraction Angiography</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6381" index="50">
+			<NAME dt:dt="string">Toggle Shutter</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6384" index="51">
+			<NAME dt:dt="string">Match Displayed Field of View</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6395" index="52">
+			<NAME dt:dt="string">Apply Image Filter</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6397" index="53">
+			<NAME dt:dt="string">Reload Original Image</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6396" index="54">
+			<NAME dt:dt="string">Change Filter Settings</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6394" index="55">
+			<NAME dt:dt="string">Add New Filter</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6424" index="56">
+			<NAME dt:dt="string">View 3D</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP>
+				<UP dt:dt="int">0</UP>
+				<DOWN dt:dt="int">0</DOWN>
+				<LEFT dt:dt="int">0</LEFT>
+				<RIGHT dt:dt="int">0</RIGHT>
+			</MOUSEMOVEMAP>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+			<SUBITEM id="6431">
+				<NAME dt:dt="string">Simgram Image</NAME>
+				<TYPE dt:dt="int">264</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+			</SUBITEM>
+			<SUBITEM id="6430">
+				<NAME dt:dt="string">MIP</NAME>
+				<TYPE dt:dt="int">264</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+			</SUBITEM>
+			<SUBITEM id="6449">
+				<NAME dt:dt="string">Volume</NAME>
+				<TYPE dt:dt="int">264</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+			</SUBITEM>
+			<SUBITEM id="6432">
+				<NAME dt:dt="string">Black Outside Window</NAME>
+				<TYPE dt:dt="int">264</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+			</SUBITEM>			
+		</ITEM>
+		<ITEM id="6427" index="57">
+			<NAME dt:dt="string">Crop Volume</NAME>
+			<TYPE dt:dt="int">8</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP>
+				<UP dt:dt="int">0</UP>
+				<DOWN dt:dt="int">0</DOWN>
+				<LEFT dt:dt="int">0</LEFT>
+				<RIGHT dt:dt="int">0</RIGHT>
+			</MOUSEMOVEMAP>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+			<SUBITEM id="6510">
+				<NAME dt:dt="string">Reset Crop</NAME>
+				<TYPE dt:dt="int">264</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+			</SUBITEM>
+		</ITEM>
+		<ITEM id="6426" index="58">
+			<NAME dt:dt="string">Rotate Volume</NAME>
+			<TYPE dt:dt="int">1</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP>
+				<UP dt:dt="int">0</UP>
+				<DOWN dt:dt="int">0</DOWN>
+				<LEFT dt:dt="int">0</LEFT>
+				<RIGHT dt:dt="int">0</RIGHT>
+			</MOUSEMOVEMAP>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+			<SUBITEM id="6415">
+				<NAME dt:dt="string">Anterior</NAME>
+				<TYPE dt:dt="int">256</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+			</SUBITEM>
+			<SUBITEM id="6416">
+				<NAME dt:dt="string">Posterior</NAME>
+				<TYPE dt:dt="int">256</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+			</SUBITEM>
+			<SUBITEM id="6417">
+				<NAME dt:dt="string">Left</NAME>
+				<TYPE dt:dt="int">256</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+			</SUBITEM>
+			<SUBITEM id="6418">
+				<NAME dt:dt="string">Right</NAME>
+				<TYPE dt:dt="int">256</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+			</SUBITEM>
+			<SUBITEM id="6420">
+				<NAME dt:dt="string">Head</NAME>
+				<TYPE dt:dt="int">256</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+			</SUBITEM>
+			<SUBITEM id="6421">
+				<NAME dt:dt="string">Foot</NAME>
+				<TYPE dt:dt="int">256</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+			</SUBITEM>
+		</ITEM>
+		<ITEM id="6429" index="59">
+			<NAME dt:dt="string">Toggle Stereo</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6436" index="60">
+			<NAME dt:dt="string">Volume MPR</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6500" index="61">
+			<NAME dt:dt="string">Opacity Settings</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+			<SUBITEM id="7001">
+				<NAME dt:dt="string">First Preset	</NAME>
+				<TYPE dt:dt="int">264</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+			</SUBITEM>
+		</ITEM>
+		<ITEM id="6450" index="62">
+			<NAME dt:dt="string">Thumbnail</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+			<SUBITEM id="6459">
+				<NAME dt:dt="string">Small</NAME>
+				<TYPE dt:dt="int">264</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+			</SUBITEM>
+			<SUBITEM id="6460">
+				<NAME dt:dt="string">Medium</NAME>
+				<TYPE dt:dt="int">264</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+			</SUBITEM>
+			<SUBITEM id="6461">
+				<NAME dt:dt="string">Large</NAME>
+				<TYPE dt:dt="int">264</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+			</SUBITEM>
+			<SUBITEM id="6462">
+				<NAME dt:dt="string">Auto Size</NAME>
+				<TYPE dt:dt="int">264</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+			</SUBITEM>
+		</ITEM>
+		<ITEM id="6451" index="63">
+			<NAME dt:dt="string">Mark Key Image</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6452" index="64">
+			<NAME dt:dt="string">Save Key Image</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+			
+		</ITEM>
+		<ITEM id="6471" index="65">
+			<NAME dt:dt="string">Delete Key Image</NAME>
+			<TYPE dt:dt="int">-1</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+			<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+			<SUBITEM id="6472">
+			<NAME dt:dt="string">Delete</NAME>
+			<TYPE dt:dt="int">264</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+				<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+			</SUBITEM>
+			<SUBITEM id="6473">
+			<NAME dt:dt="string">Delete Manager</NAME>
+			<TYPE dt:dt="int">264</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+				<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+				</AUTOSELECT>
+			</SUBITEM>
+		</ITEM>
+		<ITEM id="6453" index="66">
+			<NAME dt:dt="string">View Key Image</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6454" index="67">
+			<NAME dt:dt="string">Previous Layout</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6455" index="68">
+			<NAME dt:dt="string">Next Layout</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6456" index="69">
+			<NAME dt:dt="string">Hanging Protocol Builder</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+			<SUBITEM id="6463">
+				<NAME dt:dt="string">Hanging Protocol Manager</NAME>
+				<TYPE dt:dt="int">256</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+			</SUBITEM>
+			<SUBITEM id="65000">
+				<NAME dt:dt="string">No Protocol</NAME>
+				<TYPE dt:dt="int">256</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+			</SUBITEM>
+			<SUBITEM id="225">
+				<NAME dt:dt="string">Reset Layout</NAME>
+				<TYPE dt:dt="int">256</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+			</SUBITEM>
+		</ITEM>
+		<ITEM id="6457" index="70">
+			<NAME dt:dt="string">Image Fusion</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+			<SUBITEM id="8790">
+				<NAME dt:dt="string">Alpha Blend</NAME>
+				<TYPE dt:dt="int">256</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+			</SUBITEM>
+			<SUBITEM id="8791">
+				<NAME dt:dt="string">Image Fusion Pipeline</NAME>
+				<TYPE dt:dt="int">256</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+			</SUBITEM>
+		</ITEM>
+		<ITEM id="6464" index="71">
+			<NAME dt:dt="string">eFilm Advanced Visualization Tools</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">1</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">1</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">1</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">1</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">1</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">1</US>
+				<XA dt:dt="boolean">1</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+			<SUBITEM id="227">
+				<NAME dt:dt="string">eFilm Advanced Visualization Tools</NAME>
+				<TYPE dt:dt="int">256</TYPE>
+				<ACCELKEY dt:dt="string"></ACCELKEY>
+				<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+				<HIDDEN dt:dt="boolean">0</HIDDEN>
+			</SUBITEM>
+		</ITEM>
+		<ITEM id="6465" index="72">
+			<NAME dt:dt="string">Manually Split Multiphase Series</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP />
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6466" index="73">
+			<NAME dt:dt="string">Cardiothoracic Ratio</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP/>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6467" index="74">
+			<NAME dt:dt="string">Show/Hide Tool Annotation</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP />
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6468" index="75">
+			<NAME dt:dt="string">Label</NAME>
+			<TYPE dt:dt="int">1</TYPE>
+			<ACCELKEY dt:dt="string"></ACCELKEY>
+			<ACCELFLAG dt:dt="int">0</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP>
+				<UP dt:dt="int">0</UP>
+				<DOWN dt:dt="int">0</DOWN>
+				<LEFT dt:dt="int">0</LEFT>
+				<RIGHT dt:dt="int">0</RIGHT>
+			</MOUSEMOVEMAP>
+			<MODALITY>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>
+		</ITEM>
+		<ITEM id="6469" index="76">
+			<NAME dt:dt="string">View Report</NAME>
+			<TYPE dt:dt="int">256</TYPE>
+			<ACCELKEY dt:dt="string">R</ACCELKEY>
+			<ACCELFLAG dt:dt="int">2</ACCELFLAG>
+			<HIDDEN dt:dt="boolean">0</HIDDEN>
+			<MOUSEMOVEMAP>
+				<UP dt:dt="int">0</UP>
+				<DOWN dt:dt="int">0</DOWN>
+				<LEFT dt:dt="int">0</LEFT>
+				<RIGHT dt:dt="int">0</RIGHT>
+			</MOUSEMOVEMAP>
+			<MODALITY>
+				<BI dt:dt="boolean">1</BI>
+				<CD dt:dt="boolean">1</CD>
+				<CR dt:dt="boolean">1</CR>
+				<CT dt:dt="boolean">1</CT>
+				<DD dt:dt="boolean">1</DD>
+				<DG dt:dt="boolean">1</DG>
+				<DR dt:dt="boolean">1</DR>
+				<DX dt:dt="boolean">1</DX>
+				<ES dt:dt="boolean">1</ES>
+				<GM dt:dt="boolean">1</GM>
+				<HC dt:dt="boolean">1</HC>
+				<IO dt:dt="boolean">1</IO>
+				<LS dt:dt="boolean">1</LS>
+				<MA dt:dt="boolean">1</MA>
+				<MG dt:dt="boolean">1</MG>
+				<MR dt:dt="boolean">1</MR>
+				<MS dt:dt="boolean">1</MS>
+				<NM dt:dt="boolean">1</NM>
+				<OT dt:dt="boolean">1</OT>
+				<PT dt:dt="boolean">1</PT>
+				<PX dt:dt="boolean">1</PX>
+				<RF dt:dt="boolean">1</RF>
+				<RG dt:dt="boolean">1</RG>
+				<RT dt:dt="boolean">1</RT>
+				<SC dt:dt="boolean">1</SC>
+				<SM dt:dt="boolean">1</SM>
+				<ST dt:dt="boolean">1</ST>
+				<TG dt:dt="boolean">1</TG>
+				<US dt:dt="boolean">1</US>
+				<XA dt:dt="boolean">1</XA>
+				<XC dt:dt="boolean">1</XC>
+			</MODALITY>
+			<AUTOSELECT>
+				<BI dt:dt="boolean">0</BI>
+				<CD dt:dt="boolean">0</CD>
+				<CR dt:dt="boolean">0</CR>
+				<CT dt:dt="boolean">0</CT>
+				<DD dt:dt="boolean">0</DD>
+				<DG dt:dt="boolean">0</DG>
+				<DR dt:dt="boolean">0</DR>
+				<DX dt:dt="boolean">0</DX>
+				<ES dt:dt="boolean">0</ES>
+				<GM dt:dt="boolean">0</GM>
+				<HC dt:dt="boolean">0</HC>
+				<IO dt:dt="boolean">0</IO>
+				<LS dt:dt="boolean">0</LS>
+				<MA dt:dt="boolean">0</MA>
+				<MG dt:dt="boolean">0</MG>
+				<MR dt:dt="boolean">0</MR>
+				<MS dt:dt="boolean">0</MS>
+				<NM dt:dt="boolean">0</NM>
+				<OT dt:dt="boolean">0</OT>
+				<PT dt:dt="boolean">0</PT>
+				<PX dt:dt="boolean">0</PX>
+				<RF dt:dt="boolean">0</RF>
+				<RG dt:dt="boolean">0</RG>
+				<RT dt:dt="boolean">0</RT>
+				<SC dt:dt="boolean">0</SC>
+				<SM dt:dt="boolean">0</SM>
+				<ST dt:dt="boolean">0</ST>
+				<TG dt:dt="boolean">0</TG>
+				<US dt:dt="boolean">0</US>
+				<XA dt:dt="boolean">0</XA>
+				<XC dt:dt="boolean">0</XC>
+			</AUTOSELECT>	
+	</ITEM>
+	</TOOLBARCONFIGURATION>
+	<USERPREFERENCE />
+	<WINDOWLEVELPRESET>
+		<WLPRESETITEM FnKey="3" Window="350" Level="40" Preset="Chest" Modality="CT"/>
+		<WLPRESETITEM FnKey="4" Window="350" Level="40" Preset="Abdomen/Pelvis" Modality="CT"/>
+		<WLPRESETITEM FnKey="5" Window="1500" Level="-600" Preset="Lung" Modality="CT"/>
+		<WLPRESETITEM FnKey="6" Window="80" Level="40" Preset="Brain" Modality="CT"/>
+		<WLPRESETITEM FnKey="7" Window="2500" Level="480" Preset="Bone" Modality="CT"/>
+		<WLPRESETITEM FnKey="8" Window="350" Level="90" Preset="Head Neck" Modality="CT"/>
+		<WLPRESETITEM FnKey="3" Window="190" Level="80" Preset="Ultrasound [Low Contrast]" Modality="US"/>
+		<WLPRESETITEM FnKey="4" Window="160" Level="70" Preset="Ultrasound [Medium Contrast]" Modality="US"/>
+		<WLPRESETITEM FnKey="5" Window="120" Level="60" Preset="Ultrasound [High Contrast]" Modality="US"/>
+		<WLPRESETITEM FnKey="3" Window="500" Level="250" Preset="Brain T1" Modality="MR"/>
+		<WLPRESETITEM FnKey="4" Window="350" Level="150" Preset="Brain T2" Modality="MR"/>
+		<WLPRESETITEM FnKey="5" Window="300" Level="150" Preset="Sag T2" Modality="MR"/>
+		<WLPRESETITEM FnKey="6" Window="500" Level="250" Preset="Head/Neck" Modality="MR"/>
+		<WLPRESETITEM FnKey="7" Window="500" Level="250" Preset="Spine" Modality="MR"/>
+		<WLPRESETITEM FnKey="9" Window="590" Level="180" Preset="Abdomen/Pelvis T1" Modality="MR"/>
+		<WLPRESETITEM FnKey="10" Window="835" Level="145" Preset="Abdomen/Pelvis T2" Modality="MR"/>
+	</WINDOWLEVELPRESET>
+	<PROFILESETTING>
+		<HIDE_STATUS_BAR dt:dt="boolean">0</HIDE_STATUS_BAR>
+		<SEARCHLIST_POS dt:dt="string"></SEARCHLIST_POS>
+		<STUDYINFO_POS dt:dt="string"></STUDYINFO_POS>
+		<SCREENLAYOUT_POS dt:dt="string"></SCREENLAYOUT_POS>
+		<CINEBAR_POS dt:dt="string"></CINEBAR_POS>
+		<PROPERTIES_POS dt:dt="string"></PROPERTIES_POS>
+		<DISPLAY_STRING_FOR_NON_PRIMARY_STUDY dt:dt="string">Non-Primary Study</DISPLAY_STRING_FOR_NON_PRIMARY_STUDY>
+		<WLSENSITIVITY dt:dt="int">20</WLSENSITIVITY>
+		<HIDE_BOX dt:dt="boolean">0</HIDE_BOX>
+		<STEREOANGLE dt:dt="float">3.178</STEREOANGLE>
+		<STEREOOFFSET dt:dt="float">0.000</STEREOOFFSET>
+		<MPRSLICESEPARATION dt:dt="float">3.000</MPRSLICESEPARATION>
+		<FUSIONMETHOD dt:dt="int">2</FUSIONMETHOD>
+		<FUSIONALPHABLEND dt:dt="float">0.600</FUSIONALPHABLEND>
+		<FUSIONMAPPINGINDEX dt:dt="int">0</FUSIONMAPPINGINDEX>
+		<FUSIONCOLORHUE dt:dt="float">165.610</FUSIONCOLORHUE>
+		<FUSIONCOLORSATURATION dt:dt="float">213.000</FUSIONCOLORSATURATION>
+		<FUSIONCOLORVAULE dt:dt="float">127.500</FUSIONCOLORVAULE>
+		<FUSIONLOWSOV dt:dt="float">0.000</FUSIONLOWSOV>
+		<FUSIONHIGHSOV dt:dt="float">1.000</FUSIONHIGHSOV>
+		<WARN_IF_PG_NOT_VIEWED dt:dt="boolean">0</WARN_IF_PG_NOT_VIEWED>
+		<ZOOMLASTCUSTOM dt:dt="float">1.0</ZOOMLASTCUSTOM>
+	</PROFILESETTING>
+	<HangingProtocolSetting NumberPriors="0" Enabled="0"/>
+	<AutomaticallyPopupThumbnail Enabled="1"/>
+</TOOLBARS>

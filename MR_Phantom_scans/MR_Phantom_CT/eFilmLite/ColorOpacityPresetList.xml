@@ -1,0 +1,1328 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ColorOpacityPresetList>
+	<Preset>
+		<Modality>CT</Modality>
+		<BodyPart>HEAD</BodyPart>
+		<Name>Head_Bone</Name>
+		<ImageName></ImageName>
+		<ColorOpacityBands>
+			<Band>
+				<Hue>10.0000</Hue>
+				<Staturation>150.0000</Staturation>
+				<Luminance>128.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>-8.0000</Leftbound>
+				<Rightbound>809.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>20.1316</Hue>
+				<Staturation>95.9406</Staturation>
+				<Luminance>154.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>810.0000</Leftbound>
+				<Rightbound>1039.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue> 9.6724</Hue>
+				<Staturation>145.0000</Staturation>
+				<Luminance>127.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>1040.0000</Leftbound>
+				<Rightbound>1126.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>37.7778</Hue>
+				<Staturation>109.2857</Staturation>
+				<Luminance>244.5000</Luminance>
+				<Opacity>33.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>1127.0000</Leftbound>
+				<Rightbound>1957.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>206.0000</Hue>
+				<Staturation>150.0000</Staturation>
+				<Luminance>128.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>1958.0000</Leftbound>
+				<Rightbound>1998.0000</Rightbound>
+			</Band>
+		</ColorOpacityBands>
+	</Preset>
+	<Preset>
+		<Modality>CT</Modality>
+		<BodyPart>HEAD</BodyPart>
+		<Name>Head_Skin</Name>
+		<ImageName></ImageName>
+		<ColorOpacityBands>
+			<Band>
+				<Hue>10.0000</Hue>
+				<Staturation>150.0000</Staturation>
+				<Luminance>128.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>-8.0000</Leftbound>
+				<Rightbound>134.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>20.1316</Hue>
+				<Staturation>95.9406</Staturation>
+				<Luminance>154.0000</Luminance>
+				<Opacity>60.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>135.0000</Leftbound>
+				<Rightbound>1039.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue> 9.6724</Hue>
+				<Staturation>145.0000</Staturation>
+				<Luminance>127.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>1040.0000</Leftbound>
+				<Rightbound>1126.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>37.7778</Hue>
+				<Staturation>109.2857</Staturation>
+				<Luminance>244.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>1127.0000</Leftbound>
+				<Rightbound>1971.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>206.0000</Hue>
+				<Staturation>150.0000</Staturation>
+				<Luminance>128.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>1972.0000</Leftbound>
+				<Rightbound>1991.0000</Rightbound>
+			</Band>
+		</ColorOpacityBands>
+	</Preset>
+	<Preset>
+		<Modality>CT</Modality>
+		<BodyPart>CHEST</BodyPart>
+		<Name>Chest_Lung3</Name>
+		<ImageName></ImageName>
+		<ColorOpacityBands>
+			<Band>
+				<Hue>61.8100</Hue>
+				<Staturation>17.8600</Staturation>
+				<Luminance>176.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>27.0000</Leftbound>
+				<Rightbound>147.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>16.2200</Hue>
+				<Staturation>62.8900</Staturation>
+				<Luminance>143.5000</Luminance>
+				<Opacity>20.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>148.0000</Leftbound>
+				<Rightbound>857.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>44.3000</Hue>
+				<Staturation>178.8800</Staturation>
+				<Luminance>188.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>858.0000</Leftbound>
+				<Rightbound>1892.0000</Rightbound>
+			</Band>
+		</ColorOpacityBands>
+	</Preset>
+	<Preset>
+		<Modality>MR</Modality>
+		<BodyPart>HEAD</BodyPart>
+		<Name>Head_Bone</Name>
+		<ImageName></ImageName>
+		<ColorOpacityBands>
+			<Band>
+				<Hue>21.2500</Hue>
+				<Staturation> 6.9863</Staturation>
+				<Luminance>73.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>20.0000</Sharpness>
+				<Leftbound> 1.0000</Leftbound>
+				<Rightbound>125.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue> 2.2370</Hue>
+				<Staturation>33.4100</Staturation>
+				<Luminance>182.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>20.0000</Sharpness>
+				<Leftbound>126.0000</Leftbound>
+				<Rightbound>221.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue> 5.0230</Hue>
+				<Staturation>93.0000</Staturation>
+				<Luminance>127.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>20.0000</Sharpness>
+				<Leftbound>222.0000</Leftbound>
+				<Rightbound>372.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>125.1550</Hue>
+				<Staturation>145.0000</Staturation>
+				<Luminance>127.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>20.0000</Sharpness>
+				<Leftbound>373.0000</Leftbound>
+				<Rightbound>457.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>44.5700</Hue>
+				<Staturation>123.0000</Staturation>
+				<Luminance>212.5000</Luminance>
+				<Opacity>26.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>458.0000</Leftbound>
+				<Rightbound>1124.0000</Rightbound>
+			</Band>
+		</ColorOpacityBands>
+	</Preset>
+	<Preset>
+		<Modality>MR</Modality>
+		<BodyPart>ABDOMEN</BodyPart>
+		<Name>Abdomen_Bone_Tissue</Name>
+		<ImageName></ImageName>
+		<ColorOpacityBands>
+			<Band>
+				<Hue>21.2500</Hue>
+				<Staturation> 6.9863</Staturation>
+				<Luminance>73.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound> 1.0000</Leftbound>
+				<Rightbound>17.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue> 2.2370</Hue>
+				<Staturation>33.4100</Staturation>
+				<Luminance>182.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>18.0000</Leftbound>
+				<Rightbound>196.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue> 5.0230</Hue>
+				<Staturation>93.0000</Staturation>
+				<Luminance>127.5000</Luminance>
+				<Opacity>30.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>197.0000</Leftbound>
+				<Rightbound>305.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>125.1550</Hue>
+				<Staturation>145.0000</Staturation>
+				<Luminance>127.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>306.0000</Leftbound>
+				<Rightbound>449.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>44.5700</Hue>
+				<Staturation>123.0000</Staturation>
+				<Luminance>212.5000</Luminance>
+				<Opacity>20.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>450.0000</Leftbound>
+				<Rightbound>926.0000</Rightbound>
+			</Band>
+		</ColorOpacityBands>
+	</Preset>
+	<Preset>
+		<Modality>MR</Modality>
+		<BodyPart>ABDOMEN</BodyPart>
+		<Name>Abdomen_Tissue</Name>
+		<ImageName></ImageName>
+		<ColorOpacityBands>
+			<Band>
+				<Hue>21.2500</Hue>
+				<Staturation> 6.9863</Staturation>
+				<Luminance>73.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound> 1.0000</Leftbound>
+				<Rightbound>17.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue> 2.2370</Hue>
+				<Staturation>33.4100</Staturation>
+				<Luminance>182.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>18.0000</Leftbound>
+				<Rightbound>40.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue> 6.4674</Hue>
+				<Staturation>141.3253</Staturation>
+				<Luminance>172.0000</Luminance>
+				<Opacity>41.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>41.0000</Leftbound>
+				<Rightbound>190.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>125.1550</Hue>
+				<Staturation>145.0000</Staturation>
+				<Luminance>127.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>191.0000</Leftbound>
+				<Rightbound>891.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>44.5700</Hue>
+				<Staturation>123.0000</Staturation>
+				<Luminance>212.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>892.0000</Leftbound>
+				<Rightbound>926.0000</Rightbound>
+			</Band>
+		</ColorOpacityBands>
+	</Preset>
+	<Preset>
+		<Modality>CT</Modality>
+		<BodyPart>ABDOMEN</BodyPart>
+		<Name>Abdomen_bubble</Name>
+		<ImageName></ImageName>
+		<ColorOpacityBands>
+			<Band>
+				<Hue>10.0000</Hue>
+				<Staturation>150.0000</Staturation>
+				<Luminance>128.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>-8.0000</Leftbound>
+				<Rightbound>127.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>20.1316</Hue>
+				<Staturation>95.9406</Staturation>
+				<Luminance>154.0000</Luminance>
+				<Opacity>24.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>128.0000</Leftbound>
+				<Rightbound>897.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue> 9.6724</Hue>
+				<Staturation>145.0000</Staturation>
+				<Luminance>127.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>898.0000</Leftbound>
+				<Rightbound>1310.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>37.7778</Hue>
+				<Staturation>109.2857</Staturation>
+				<Luminance>244.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>1311.0000</Leftbound>
+				<Rightbound>1971.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>206.0000</Hue>
+				<Staturation>150.0000</Staturation>
+				<Luminance>128.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>1972.0000</Leftbound>
+				<Rightbound>1991.0000</Rightbound>
+			</Band>
+		</ColorOpacityBands>
+	</Preset>
+	<Preset>
+		<Modality>CT</Modality>
+		<BodyPart>ABDOMEN</BodyPart>
+		<Name>Abdomen_Skin</Name>
+		<ImageName></ImageName>
+		<ColorOpacityBands>
+			<Band>
+				<Hue>10.0000</Hue>
+				<Staturation>150.0000</Staturation>
+				<Luminance>128.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>-8.0000</Leftbound>
+				<Rightbound>891.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>20.1316</Hue>
+				<Staturation>95.9406</Staturation>
+				<Luminance>154.0000</Luminance>
+				<Opacity>24.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>892.0000</Leftbound>
+				<Rightbound>1000.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue> 9.6724</Hue>
+				<Staturation>145.0000</Staturation>
+				<Luminance>127.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>1001.0000</Leftbound>
+				<Rightbound>1310.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>37.7778</Hue>
+				<Staturation>109.2857</Staturation>
+				<Luminance>244.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>1311.0000</Leftbound>
+				<Rightbound>1971.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>206.0000</Hue>
+				<Staturation>150.0000</Staturation>
+				<Luminance>128.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>1972.0000</Leftbound>
+				<Rightbound>1991.0000</Rightbound>
+			</Band>
+		</ColorOpacityBands>
+	</Preset>
+	<Preset>
+		<Modality>CT</Modality>
+		<BodyPart>ABDOMEN</BodyPart>
+		<Name>Abdomen_Muscle</Name>
+		<ImageName></ImageName>
+		<ColorOpacityBands>
+			<Band>
+				<Hue>10.0000</Hue>
+				<Staturation>150.0000</Staturation>
+				<Luminance>128.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>912.0000</Leftbound>
+				<Rightbound>993.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue> 2.0565</Hue>
+				<Staturation>146.3889</Staturation>
+				<Luminance>201.0000</Luminance>
+				<Opacity>15.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>994.0000</Leftbound>
+				<Rightbound>1154.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue> 9.3750</Hue>
+				<Staturation>69.3600</Staturation>
+				<Luminance>130.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>1155.0000</Leftbound>
+				<Rightbound>1208.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>37.7778</Hue>
+				<Staturation>109.2857</Staturation>
+				<Luminance>244.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>1209.0000</Leftbound>
+				<Rightbound>1797.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>206.0000</Hue>
+				<Staturation>150.0000</Staturation>
+				<Luminance>128.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness> 3.0000</Sharpness>
+				<Leftbound>1798.0000</Leftbound>
+				<Rightbound>1991.0000</Rightbound>
+			</Band>
+		</ColorOpacityBands>
+	</Preset>
+	<Preset>
+		<Modality>CT</Modality>
+		<BodyPart>EXTREMITY</BodyPart>
+		<Name>Extremity_Skin_Bone</Name>
+		<ImageName></ImageName>
+		<ColorOpacityBands>
+			<Band>
+				<Hue> 9.4444</Hue>
+				<Staturation>153.0000</Staturation>
+				<Luminance> 7.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound> 0.0000</Leftbound>
+				<Rightbound>148.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>20.7979</Hue>
+				<Staturation>92.9070</Staturation>
+				<Luminance>190.5000</Luminance>
+				<Opacity>50.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>149.0000</Leftbound>
+				<Rightbound>797.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>13.7676</Hue>
+				<Staturation>71.0000</Staturation>
+				<Luminance>127.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>798.0000</Leftbound>
+				<Rightbound>904.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue> 2.1074</Hue>
+				<Staturation>121.0000</Staturation>
+				<Luminance>127.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>905.0000</Leftbound>
+				<Rightbound>1128.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>44.0179</Hue>
+				<Staturation>105.0000</Staturation>
+				<Luminance>221.0000</Luminance>
+				<Opacity>34.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>1129.0000</Leftbound>
+				<Rightbound>1905.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>45.3333</Hue>
+				<Staturation>78.0612</Staturation>
+				<Luminance>230.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>1906.0000</Leftbound>
+				<Rightbound>1997.0000</Rightbound>
+			</Band>
+		</ColorOpacityBands>
+	</Preset>
+	<Preset>
+		<Modality>CT</Modality>
+		<BodyPart>EXTREMITY</BodyPart>
+		<Name>Extremity_Whole</Name>
+		<ImageName></ImageName>
+		<ColorOpacityBands>
+			<Band>
+				<Hue> 9.4444</Hue>
+				<Staturation>153.0000</Staturation>
+				<Luminance> 7.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound> 0.0000</Leftbound>
+				<Rightbound>148.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>20.7979</Hue>
+				<Staturation>92.9070</Staturation>
+				<Luminance>190.5000</Luminance>
+				<Opacity>46.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>149.0000</Leftbound>
+				<Rightbound>797.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>13.7676</Hue>
+				<Staturation>71.0000</Staturation>
+				<Luminance>127.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>798.0000</Leftbound>
+				<Rightbound>904.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue> 2.1074</Hue>
+				<Staturation>121.0000</Staturation>
+				<Luminance>127.5000</Luminance>
+				<Opacity>49.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>905.0000</Leftbound>
+				<Rightbound>1128.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>44.0179</Hue>
+				<Staturation>105.0000</Staturation>
+				<Luminance>221.0000</Luminance>
+				<Opacity>34.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>1129.0000</Leftbound>
+				<Rightbound>1905.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>45.3333</Hue>
+				<Staturation>78.0612</Staturation>
+				<Luminance>230.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>1906.0000</Leftbound>
+				<Rightbound>1997.0000</Rightbound>
+			</Band>
+		</ColorOpacityBands>
+	</Preset>
+	<Preset>
+		<Modality>CT</Modality>
+		<BodyPart>NECK</BodyPart>
+		<Name>Neck_Skin</Name>
+		<ImageName></ImageName>
+		<ColorOpacityBands>
+			<Band>
+				<Hue>10.6250</Hue>
+				<Staturation>159.3750</Staturation>
+				<Luminance>16.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>171.0000</Leftbound>
+				<Rightbound>244.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>17.8947</Hue>
+				<Staturation>75.7031</Staturation>
+				<Luminance>191.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness> 2.0000</Sharpness>
+				<Leftbound>245.0000</Leftbound>
+				<Rightbound>278.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>13.0769</Hue>
+				<Staturation>48.0435</Staturation>
+				<Luminance>186.0000</Luminance>
+				<Opacity>33.0000</Opacity>
+				<Sharpness> 7.0000</Sharpness>
+				<Leftbound>279.0000</Leftbound>
+				<Rightbound>1190.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>12.9470</Hue>
+				<Staturation>151.0000</Staturation>
+				<Luminance>127.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>1191.0000</Leftbound>
+				<Rightbound>1332.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>39.6667</Hue>
+				<Staturation>98.0769</Staturation>
+				<Luminance>235.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness> 4.0000</Sharpness>
+				<Leftbound>1333.0000</Leftbound>
+				<Rightbound>2170.0000</Rightbound>
+			</Band>
+		</ColorOpacityBands>
+	</Preset>
+	<Preset>
+		<Modality>CT</Modality>
+		<BodyPart>NECK</BodyPart>
+		<Name>Neck_Bone_Vein</Name>
+		<ImageName></ImageName>
+		<ColorOpacityBands>
+			<Band>
+				<Hue>10.6250</Hue>
+				<Staturation>159.3750</Staturation>
+				<Luminance>16.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>171.0000</Leftbound>
+				<Rightbound>264.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>17.8947</Hue>
+				<Staturation>75.7031</Staturation>
+				<Luminance>191.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>265.0000</Leftbound>
+				<Rightbound>967.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>17.0794</Hue>
+				<Staturation>107.0000</Staturation>
+				<Luminance>127.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>968.0000</Leftbound>
+				<Rightbound>1291.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue> 5.4839</Hue>
+				<Staturation>158.1000</Staturation>
+				<Luminance>205.0000</Luminance>
+				<Opacity>19.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>1292.0000</Leftbound>
+				<Rightbound>1568.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>39.6667</Hue>
+				<Staturation>98.0769</Staturation>
+				<Luminance>235.5000</Luminance>
+				<Opacity>64.0000</Opacity>
+				<Sharpness> 4.0000</Sharpness>
+				<Leftbound>1569.0000</Leftbound>
+				<Rightbound>2170.0000</Rightbound>
+			</Band>
+		</ColorOpacityBands>
+	</Preset>
+	<Preset>
+		<Modality>CT</Modality>
+		<BodyPart>NECK</BodyPart>
+		<Name>Neck_Bone</Name>
+		<ImageName></ImageName>
+		<ColorOpacityBands>
+			<Band>
+				<Hue>10.6250</Hue>
+				<Staturation>159.3750</Staturation>
+				<Luminance>16.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>171.0000</Leftbound>
+				<Rightbound>264.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>17.8947</Hue>
+				<Staturation>75.7031</Staturation>
+				<Luminance>191.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>265.0000</Leftbound>
+				<Rightbound>1095.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>17.0794</Hue>
+				<Staturation>107.0000</Staturation>
+				<Luminance>127.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>1096.0000</Leftbound>
+				<Rightbound>1163.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>12.9470</Hue>
+				<Staturation>151.0000</Staturation>
+				<Luminance>127.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>1164.0000</Leftbound>
+				<Rightbound>1332.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>39.6667</Hue>
+				<Staturation>98.0769</Staturation>
+				<Luminance>235.5000</Luminance>
+				<Opacity>29.0000</Opacity>
+				<Sharpness> 4.0000</Sharpness>
+				<Leftbound>1333.0000</Leftbound>
+				<Rightbound>2170.0000</Rightbound>
+			</Band>
+		</ColorOpacityBands>
+	</Preset>
+	<Preset>
+		<Modality>MR</Modality>
+		<BodyPart>HEAD</BodyPart>
+		<Name>Head_Bone_Tissue</Name>
+		<ImageName></ImageName>
+		<ColorOpacityBands>
+			<Band>
+				<Hue>21.2500</Hue>
+				<Staturation> 6.9863</Staturation>
+				<Luminance>73.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>20.0000</Sharpness>
+				<Leftbound> 1.0000</Leftbound>
+				<Rightbound>125.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue> 2.2370</Hue>
+				<Staturation>33.4100</Staturation>
+				<Luminance>182.5000</Luminance>
+				<Opacity>22.0000</Opacity>
+				<Sharpness>20.0000</Sharpness>
+				<Leftbound>126.0000</Leftbound>
+				<Rightbound>348.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue> 5.0230</Hue>
+				<Staturation>93.0000</Staturation>
+				<Luminance>127.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>20.0000</Sharpness>
+				<Leftbound>349.0000</Leftbound>
+				<Rightbound>391.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>125.1550</Hue>
+				<Staturation>145.0000</Staturation>
+				<Luminance>127.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>20.0000</Sharpness>
+				<Leftbound>392.0000</Leftbound>
+				<Rightbound>457.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>44.5700</Hue>
+				<Staturation>123.0000</Staturation>
+				<Luminance>212.5000</Luminance>
+				<Opacity>26.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>458.0000</Leftbound>
+				<Rightbound>1124.0000</Rightbound>
+			</Band>
+		</ColorOpacityBands>
+	</Preset>
+	<Preset>
+		<Modality>CT</Modality>
+		<BodyPart>CHEST</BodyPart>
+		<Name>Chest_Lung_Bubble</Name>
+		<ImageName></ImageName>
+		<ColorOpacityBands>
+			<Band>
+				<Hue>61.8100</Hue>
+				<Staturation>17.8600</Staturation>
+				<Luminance>176.5000</Luminance>
+				<Opacity>21.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>171.0000</Leftbound>
+				<Rightbound>362.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>16.2200</Hue>
+				<Staturation>62.8900</Staturation>
+				<Luminance>143.5000</Luminance>
+				<Opacity>20.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>363.0000</Leftbound>
+				<Rightbound>848.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>44.3000</Hue>
+				<Staturation>178.8800</Staturation>
+				<Luminance>188.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>849.0000</Leftbound>
+				<Rightbound>1892.0000</Rightbound>
+			</Band>
+		</ColorOpacityBands>
+	</Preset>
+	<Preset>
+		<Modality>CT</Modality>
+		<BodyPart>EXTREMITY</BodyPart>
+		<Name>Extremity_Bone</Name>
+		<ImageName></ImageName>
+		<ColorOpacityBands>
+			<Band>
+				<Hue> 9.4444</Hue>
+				<Staturation>153.0000</Staturation>
+				<Luminance> 7.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound> 0.0000</Leftbound>
+				<Rightbound>148.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>20.7979</Hue>
+				<Staturation>92.9070</Staturation>
+				<Luminance>190.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>149.0000</Leftbound>
+				<Rightbound>797.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>13.7676</Hue>
+				<Staturation>71.0000</Staturation>
+				<Luminance>127.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>798.0000</Leftbound>
+				<Rightbound>904.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue> 2.1074</Hue>
+				<Staturation>121.0000</Staturation>
+				<Luminance>127.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>905.0000</Leftbound>
+				<Rightbound>1228.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>44.0179</Hue>
+				<Staturation>105.0000</Staturation>
+				<Luminance>221.0000</Luminance>
+				<Opacity>28.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>1229.0000</Leftbound>
+				<Rightbound>1985.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>45.3333</Hue>
+				<Staturation>78.0612</Staturation>
+				<Luminance>230.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>1986.0000</Leftbound>
+				<Rightbound>1997.0000</Rightbound>
+			</Band>
+		</ColorOpacityBands>
+	</Preset>
+	<Preset>
+		<Modality>MR</Modality>
+		<BodyPart>CHEST</BodyPart>
+		<Name>Chest_Bone</Name>
+		<ImageName></ImageName>
+		<ColorOpacityBands>
+			<Band>
+				<Hue>10.0000</Hue>
+				<Staturation>150.0000</Staturation>
+				<Luminance>128.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound> 0.0000</Leftbound>
+				<Rightbound>120.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>59.0000</Hue>
+				<Staturation>150.0000</Staturation>
+				<Luminance>128.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>121.0000</Leftbound>
+				<Rightbound>154.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>108.0000</Hue>
+				<Staturation>150.0000</Staturation>
+				<Luminance>128.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>155.0000</Leftbound>
+				<Rightbound>215.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>157.0000</Hue>
+				<Staturation>150.0000</Staturation>
+				<Luminance>128.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>216.0000</Leftbound>
+				<Rightbound>269.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>49.1406</Hue>
+				<Staturation>107.3684</Staturation>
+				<Luminance>217.0000</Luminance>
+				<Opacity>24.0000</Opacity>
+				<Sharpness> 3.0000</Sharpness>
+				<Leftbound>270.0000</Leftbound>
+				<Rightbound>1912.0000</Rightbound>
+			</Band>
+		</ColorOpacityBands>
+	</Preset>
+	<Preset>
+		<Modality>MR</Modality>
+		<BodyPart>HEAD</BodyPart>
+		<Name>Head_Whole</Name>
+		<ImageName></ImageName>
+		<ColorOpacityBands>
+			<Band>
+				<Hue>21.2500</Hue>
+				<Staturation> 6.9863</Staturation>
+				<Luminance>73.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>20.0000</Sharpness>
+				<Leftbound> 1.0000</Leftbound>
+				<Rightbound>61.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue> 2.2370</Hue>
+				<Staturation>33.4100</Staturation>
+				<Luminance>182.5000</Luminance>
+				<Opacity>22.0000</Opacity>
+				<Sharpness>20.0000</Sharpness>
+				<Leftbound>62.0000</Leftbound>
+				<Rightbound>180.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue> 5.0230</Hue>
+				<Staturation>93.0000</Staturation>
+				<Luminance>127.5000</Luminance>
+				<Opacity>26.0000</Opacity>
+				<Sharpness>20.0000</Sharpness>
+				<Leftbound>181.0000</Leftbound>
+				<Rightbound>316.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>125.1550</Hue>
+				<Staturation>145.0000</Staturation>
+				<Luminance>127.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>20.0000</Sharpness>
+				<Leftbound>317.0000</Leftbound>
+				<Rightbound>331.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>44.5700</Hue>
+				<Staturation>123.0000</Staturation>
+				<Luminance>212.5000</Luminance>
+				<Opacity>30.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>332.0000</Leftbound>
+				<Rightbound>1090.0000</Rightbound>
+			</Band>
+		</ColorOpacityBands>
+	</Preset>
+	<Preset>
+		<Modality>MR</Modality>
+		<BodyPart>EXTREMITY</BodyPart>
+		<Name>Extremity_Bone</Name>
+		<ImageName></ImageName>
+		<ColorOpacityBands>
+			<Band>
+				<Hue> 9.4444</Hue>
+				<Staturation>153.0000</Staturation>
+				<Luminance> 7.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound> 0.0000</Leftbound>
+				<Rightbound>102.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>20.7979</Hue>
+				<Staturation>92.9070</Staturation>
+				<Luminance>190.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>103.0000</Leftbound>
+				<Rightbound>142.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>13.7676</Hue>
+				<Staturation>71.0000</Staturation>
+				<Luminance>127.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>143.0000</Leftbound>
+				<Rightbound>332.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>48.5714</Hue>
+				<Staturation>91.5385</Staturation>
+				<Luminance>216.0000</Luminance>
+				<Opacity>20.0000</Opacity>
+				<Sharpness>-3.0000</Sharpness>
+				<Leftbound>333.0000</Leftbound>
+				<Rightbound>1885.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>46.3636</Hue>
+				<Staturation>121.9565</Staturation>
+				<Luminance>11.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness> 3.0000</Sharpness>
+				<Leftbound>1886.0000</Leftbound>
+				<Rightbound>1905.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>45.3333</Hue>
+				<Staturation>78.0612</Staturation>
+				<Luminance>230.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>1986.0000</Leftbound>
+				<Rightbound>1997.0000</Rightbound>
+			</Band>
+		</ColorOpacityBands>
+	</Preset>
+	<Preset>
+		<Modality>CT</Modality>
+		<BodyPart>ABDOMEN</BodyPart>
+		<Name>Abdomen_Bone_Vein</Name>
+		<ImageName></ImageName>
+		<ColorOpacityBands>
+			<Band>
+				<Hue>10.0000</Hue>
+				<Staturation>150.0000</Staturation>
+				<Luminance>128.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>-8.0000</Leftbound>
+				<Rightbound>1040.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>20.1316</Hue>
+				<Staturation>95.9406</Staturation>
+				<Luminance>154.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>1041.0000</Leftbound>
+				<Rightbound>1154.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>14.0250</Hue>
+				<Staturation>130.1021</Staturation>
+				<Luminance>157.0000</Luminance>
+				<Opacity>14.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>1155.0000</Leftbound>
+				<Rightbound>1262.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>37.7778</Hue>
+				<Staturation>109.2857</Staturation>
+				<Luminance>244.5000</Luminance>
+				<Opacity>24.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>1263.0000</Leftbound>
+				<Rightbound>1864.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>206.0000</Hue>
+				<Staturation>150.0000</Staturation>
+				<Luminance>128.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>1865.0000</Leftbound>
+				<Rightbound>1991.0000</Rightbound>
+			</Band>
+		</ColorOpacityBands>
+	</Preset>
+	<Preset>
+		<Modality>CT</Modality>
+		<BodyPart>CHEST</BodyPart>
+		<Name>Chest_Bone_Vein</Name>
+		<ImageName></ImageName>
+		<ColorOpacityBands>
+			<Band>
+				<Hue>10.0000</Hue>
+				<Staturation>150.0000</Staturation>
+				<Luminance>128.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>-8.0000</Leftbound>
+				<Rightbound>1040.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>20.1316</Hue>
+				<Staturation>95.9406</Staturation>
+				<Luminance>154.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>1041.0000</Leftbound>
+				<Rightbound>1154.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>14.0250</Hue>
+				<Staturation>130.1021</Staturation>
+				<Luminance>157.0000</Luminance>
+				<Opacity>21.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>1155.0000</Leftbound>
+				<Rightbound>1262.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>37.7778</Hue>
+				<Staturation>109.2857</Staturation>
+				<Luminance>244.5000</Luminance>
+				<Opacity>25.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>1263.0000</Leftbound>
+				<Rightbound>1864.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>206.0000</Hue>
+				<Staturation>150.0000</Staturation>
+				<Luminance>128.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>1865.0000</Leftbound>
+				<Rightbound>1991.0000</Rightbound>
+			</Band>
+		</ColorOpacityBands>
+	</Preset>
+	<Preset>
+		<Modality>CT</Modality>
+		<BodyPart>ABDOMEN</BodyPart>
+		<Name>Abdomen_Muscle_Fat_Bone</Name>
+		<ImageName></ImageName>
+		<ColorOpacityBands>
+			<Band>
+				<Hue>10.0000</Hue>
+				<Staturation>150.0000</Staturation>
+				<Luminance>128.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>-8.0000</Leftbound>
+				<Rightbound>809.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>20.1316</Hue>
+				<Staturation>95.9406</Staturation>
+				<Luminance>154.0000</Luminance>
+				<Opacity>20.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>810.0000</Leftbound>
+				<Rightbound>1039.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue> 9.6724</Hue>
+				<Staturation>145.0000</Staturation>
+				<Luminance>127.5000</Luminance>
+				<Opacity>16.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>1040.0000</Leftbound>
+				<Rightbound>1126.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>37.7778</Hue>
+				<Staturation>109.2857</Staturation>
+				<Luminance>244.5000</Luminance>
+				<Opacity>20.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>1127.0000</Leftbound>
+				<Rightbound>1971.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>206.0000</Hue>
+				<Staturation>150.0000</Staturation>
+				<Luminance>128.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>1972.0000</Leftbound>
+				<Rightbound>1991.0000</Rightbound>
+			</Band>
+		</ColorOpacityBands>
+	</Preset>
+	<Preset>
+		<Modality>CT</Modality>
+		<BodyPart>CHEST</BodyPart>
+		<Name>Chest_Bone</Name>
+		<ImageName></ImageName>
+		<ColorOpacityBands>
+			<Band>
+				<Hue>21.2500</Hue>
+				<Staturation> 6.9863</Staturation>
+				<Luminance>73.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>-800.0000</Leftbound>
+				<Rightbound>-136.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue> 2.2370</Hue>
+				<Staturation>33.4100</Staturation>
+				<Luminance>182.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>-135.0000</Leftbound>
+				<Rightbound>300.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue> 5.0230</Hue>
+				<Staturation>93.0000</Staturation>
+				<Luminance>127.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>301.0000</Leftbound>
+				<Rightbound>640.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>125.1550</Hue>
+				<Staturation>145.0000</Staturation>
+				<Luminance>127.5000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>641.0000</Leftbound>
+				<Rightbound>1140.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>44.5700</Hue>
+				<Staturation>123.0000</Staturation>
+				<Luminance>212.5000</Luminance>
+				<Opacity>27.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>1141.0000</Leftbound>
+				<Rightbound>1841.0000</Rightbound>
+			</Band>
+		</ColorOpacityBands>
+	</Preset>
+	<Preset>
+		<Modality>CT</Modality>
+		<BodyPart>ABDOMEN</BodyPart>
+		<Name>Knee_Bone_Vein</Name>
+		<ImageName> </ImageName>
+		<ColorOpacityBands>
+			<Band>
+				<Hue>10.0000</Hue>
+				<Staturation>150.0000</Staturation>
+				<Luminance>128.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>95.0000</Leftbound>
+				<Rightbound>805.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>20.1316</Hue>
+				<Staturation>95.9406</Staturation>
+				<Luminance>154.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>806.0000</Leftbound>
+				<Rightbound>1152.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>14.0250</Hue>
+				<Staturation>130.1021</Staturation>
+				<Luminance>157.0000</Luminance>
+				<Opacity> 5.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>1153.0000</Leftbound>
+				<Rightbound>1318.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>37.7778</Hue>
+				<Staturation>109.2857</Staturation>
+				<Luminance>244.5000</Luminance>
+				<Opacity>56.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>1319.0000</Leftbound>
+				<Rightbound>1864.0000</Rightbound>
+			</Band>
+			<Band>
+				<Hue>206.0000</Hue>
+				<Staturation>150.0000</Staturation>
+				<Luminance>128.0000</Luminance>
+				<Opacity> 0.0000</Opacity>
+				<Sharpness>10.0000</Sharpness>
+				<Leftbound>1865.0000</Leftbound>
+				<Rightbound>2062.0000</Rightbound>
+			</Band>
+		</ColorOpacityBands>
+	</Preset>
+</ColorOpacityPresetList>

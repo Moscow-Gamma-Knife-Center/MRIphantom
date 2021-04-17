@@ -224,14 +224,29 @@ def plotContours(contour_dataset, image, zcoord):
 
     return img_arr, contour_arr, img_ID, CTX, CTY, T1X, T1Y, T2X, T2Y, CTXPoints, CTYPoints, T1XPoints, T1YPoints, T2XPoints, T2YPoints,
 
+def findPossibleZ(contour_dataset):
+    print("Possible slices: ")
+    possibleZ = []
+    for q in range(0, len(contour_dataset.ROIContourSequence)):
+        for p in range(0, len(contour_dataset.ROIContourSequence[q].ContourSequence)):
+            contour_coordinates = contour_dataset.ROIContourSequence[q].ContourSequence[p].ContourData
+            for i in range(0, len(contour_coordinates), 3):
+                z = contour_coordinates[i + 2]
+                possibleZ.append(z)
+    possibleZ = list(set(possibleZ))
+    possibleZ.sort()
+    for x in possibleZ: print(x)
+    return possibleZ
+
 
 if __name__ == "__main__":
-    path = 'DICOM/'  # path of the folder with the files
+    path = 'MR_Phantom_scans/DICOM_MR_contour/'  # path of the folder with the files
     filename = 'RTSS.dcm'  # the name of file
     image = 'IMG0000000100.dcm'  # corresponding image
     ds = dcmread(path + filename)  # get the structures data
     image = dcmread(path + image)  # get the image data
 
+    zinterest = findPossibleZ(ds)
     zcurrent = float(input("Введите координату z: "))
     # centerIndex = int(input("Введите индекс центров: "))
     plotdata = plotContours(ds, image, zcurrent)

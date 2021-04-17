@@ -4,9 +4,10 @@ import numpy as np
 from pydicom import dcmread
 
 # open image from a folder
-path = 'C:\\Users\\bzavo\\PycharmProjects\\MainProject\\DICOM\\'
-image = 'IMG0000000110.dcm'
-img = dcmread(path + image)
+path = input("Enter the absolute path of the image:\n")
+# path = 'C:\\Users\\bzavo\\PycharmProjects\\MainProject\\DICOM\\'
+# image = 'IMG0000000110.dcm'
+img = dcmread(path)
 
 #save image of a slice and open it in opencv
 plt.imsave('imagetotal.png', img.pixel_array) #saving the initial image
