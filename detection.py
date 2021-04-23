@@ -2,85 +2,134 @@ import cv2
 import matplotlib.pyplot as plt
 import numpy as np
 from pydicom import dcmread
+import math
 
-# open image from a folder
-path = input("Enter the absolute path of the image:\n")
-# path = 'C:\\Users\\bzavo\\PycharmProjects\\MainProject\\DICOM\\'
-# image = 'IMG0000000110.dcm'
-img = dcmread(path)
+def maskROI(img, modality):
+    # detect ROI circle
+    if "MR" in modality:
+        ROIcircle = cv2.HoughCircles(img, cv2.HOUGH_GRADIENT, 1, 1000,
+                                     param1=30, param2=40, minRadius=1000, maxRadius=1600)
+        if ROIcircle is not None:
+            ROIcircle = np.uint16(np.around(ROIcircle))
+            mask = np.zeros_like(img)
+            for i in ROIcircle[0, :]:
+                # draw the outer circle
+                mask = cv2.circle(mask, (i[0], i[1]), (i[2] - 30), (255, 255, 0), -1)
+            maskedimg = cv2.bitwise_and(img, mask)
+            return maskedimg
+        else:
+            print("No visible contours on this slice!")
+            return None
+    if "CT" in modality:
+        ROIcircle = cv2.HoughCircles(img, cv2.HOUGH_GRADIENT, 1, 1000,
+                                 param1=50, param2=40, minRadius=1000, maxRadius=1600)
+        if ROIcircle is not None:
+            ROIcircle = np.uint16(np.around(ROIcircle))
+            mask = np.zeros_like(img)
+            for i in ROIcircle[0, :]:
+                # draw the outer circle
+                mask = cv2.circle(mask, (i[0], i[1]), (i[2] - 80), (255, 255, 0), -1)
+            maskedimg = cv2.bitwise_and(img, mask)
+            return maskedimg
+    else:
+        print("No visible contours on this slice!")
+        return None
 
-#save image of a slice and open it in opencv
-plt.imsave('imagetotal.png', img.pixel_array) #saving the initial image
-img = cv2.imread('imagetotal.png', 0)
+def drawCircles(img, circles):
+    # draw circles, centers and their number
+    counter = 1
+    for i in circles[0, :]:
+        # draw the outer circle
+        cv2.circle(img, (i[0], i[1]), i[2], (0, 255, 0), 2)
+        # draw the center of the circle
+        cv2.circle(img, (i[0], i[1]), 2, (0, 0, 255), 3)
+        # print(i[0] * 100 / scale_percent, i[1] * 100 / scale_percent)
+        cv2.putText(img, f'{counter}', (int(i[0]), int(i[1])), cv2.FONT_HERSHEY_PLAIN, 4, (255, 255, 255), 2,
+                    cv2.LINE_AA)
+        counter += 1
+    return img
 
-#upscale the image for better processing
-scale_percent = 1000  # percent of the original size
-width = int(img.shape[1] * scale_percent / 100)
-height = int(img.shape[0] * scale_percent / 100)
-dim = (width, height)
-img = cv2.resize(img, dim, interpolation = cv2.INTER_AREA)
+def upscaleImage(img, scale_percent):
+    # upscale the image for better processing
+    width = int(img.shape[1] * scale_percent / 100)
+    height = int(img.shape[0] * scale_percent / 100)
+    dim = (width, height)
+    img = cv2.resize(img, dim, interpolation=cv2.INTER_AREA)
+    return img
 
-#blacken everything outside of ROI
-myROI1 = [(0, 0), (0, 1375), (5115, 1375), (5115, 0)]
-cv2.fillPoly(img, [np.array(myROI1)], 0)
-myROI2 = [(0, 1375), (1255, 1375), (1255, 5119), (0, 5119)]
-cv2.fillPoly(img, [np.array(myROI2)], 0)
-myROI3 = [(0, 3839), (5115, 3839), (5115, 5119), (0, 5119)]
-cv2.fillPoly(img, [np.array(myROI3)], 0)
-myROI3 = [(0, 3839), (5115, 3839), (5115, 5119), (0, 5119)]
-cv2.fillPoly(img, [np.array(myROI3)], 0)
-myROI4 = [(3776, 0), (5115, 0), (5115, 5119), (3776, 5119)]
-cv2.fillPoly(img, [np.array(myROI4)], 0)
-myROI5 = [(2803, 1371), (2803, 1634), (5115, 1634), (5115, 1371)]
-cv2.fillPoly(img, [np.array(myROI5)], 0)
-myROI6 = [(3275, 1634), (3275, 1870), (5115, 1870), (5115, 1634)]
-cv2.fillPoly(img, [np.array(myROI6)], 0)
-myROI7 = [(3500, 1850), (3500, 2320), (5115, 2320), (5115, 1850)]
-cv2.fillPoly(img, [np.array(myROI7)], 0)
-myROI8 = [(3500, 2930), (3500, 3852), (5115, 3852), (5115, 2930)]
-cv2.fillPoly(img, [np.array(myROI8)], 0)
-myROI9 = [(3280, 3382), (3280, 3852), (5115, 3852), (5115, 3382)]
-cv2.fillPoly(img, [np.array(myROI9)], 0)
-myROI10 = [(2830, 3640), (2830, 3900), (5115, 3900), (5115, 3640)]
-cv2.fillPoly(img, [np.array(myROI10)], 0)
-myROI11= [(2180, 3640), (2180, 3900), (0, 3900), (0, 3640)]
-cv2.fillPoly(img, [np.array(myROI11)], 0)
-myROI11= [(1755, 3370), (1755, 3670), (0, 3670), (0, 3370)]
-cv2.fillPoly(img, [np.array(myROI11)], 0)
-myROI12= [(1500, 2900), (1500, 3400), (0, 3400), (0, 2900)]
-cv2.fillPoly(img, [np.array(myROI12)], 0)
-myROI13= [(1500, 2320), (1500, 1340), (0, 1340), (0, 2320)]
-cv2.fillPoly(img, [np.array(myROI13)], 0)
-myROI14= [(1740, 1840), (1740, 1200), (0, 1200), (0, 1840)]
-cv2.fillPoly(img, [np.array(myROI14)], 0)
-myROI15= [(2200, 1590), (2200, 1300), (0, 1300), (0, 1590)]
-cv2.fillPoly(img, [np.array(myROI15)], 0)
+def detectCircles(img, modality):
+    if img is not None:
+        if "MR" in modality:
+            cimg = cv2.cvtColor(img, cv2.COLOR_GRAY2BGR)
+            # detect circles
+            circles = cv2.HoughCircles(img, cv2.HOUGH_GRADIENT, 1, 225,
+                                       param1=20, param2=1, minRadius=20, maxRadius=28)
+            circles = np.uint16(np.around(circles))
+            print(circles.shape[1], " centers detected!")
+            cimg = drawCircles(cimg, circles)
+            return cimg, circles
+        if "CT" in modality:
+            cimg = cv2.cvtColor(img, cv2.COLOR_GRAY2BGR)
+            # detect circles
+            circles = cv2.HoughCircles(img, cv2.HOUGH_GRADIENT, 1, 225,
+                                       param1=1, param2=8, minRadius=20, maxRadius=34)
+            circles = np.uint16(np.around(circles))
+            print(circles.shape[1], " centers detected!")
+            cimg = drawCircles(cimg, circles)
+            return cimg, circles
+    else:
+        print("Received None!")
+        return None
 
-cimg = cv2.cvtColor(img, cv2.COLOR_GRAY2BGR)
-hsv = cv2.cvtColor(cimg, cv2.COLOR_BGR2HSV)
-mask = cv2.inRange(hsv, (150, 150, 150), (190, 190, 190))
+def countOnSlice(CTcenters, T1centers):
+    CTT1 = []
+    CTT2 = []
+    for CT in CTcenters[0]:
+        for T1 in T1centers[0]:
+            dist = math.sqrt((CT[0] - T1[0]) ** 2 + (CT[1] - T1[1]) ** 2)
+            if dist < 10:
+                CTT1.append(dist)
+    return CTT1, CTT2
 
-#detect circles
-circles = cv2.HoughCircles(img, cv2.HOUGH_GRADIENT, 1, 200,
-                            param1 = 1, param2 = 8, minRadius = 20, maxRadius = 30)
-circles = np.uint16(np.around(circles))
 
-#draw circles, centers and their number
-counter = 1
-for i in circles[0,:]:
-    # draw the outer circle
-    cv2.circle(cimg, (i[0], i[1]), i[2], (0, 255, 0), 2)
-    # draw the center of the circle
-    cv2.circle(cimg, (i[0], i[1]), 2, (0, 0, 255), 3)
-    print(i[0] * 100 / scale_percent, i[1] * 100 / scale_percent)
-    cv2.putText(cimg, f'{counter}', (int(i[0]), int(i[1])), cv2.FONT_HERSHEY_PLAIN, 4, (255, 255, 255), 2, cv2.LINE_AA)
-    counter += 1
+pathCT = input("Enter the absolute path of the CT image:\n")
+imageCT = dcmread(pathCT)
+pathMR = input("Enter the absolute path of the MR image:\n")
+imageMR = dcmread(pathMR)
+imagemodalityCT = imageCT.Modality
+imagemodalityMR = imageMR.Modality
+plt.imsave('imagetotalCT.png', imageCT.pixel_array)
+plt.imsave('imagetotalMR.png', imageMR.pixel_array)
+imgCT = cv2.imread('imagetotal.png', 0)
+imgMR = cv2.imread('imagetotal.png', 0)
 
-plt.imshow(cimg)
-plt.show()
-#save processed images
-cv2.imwrite('detectedcircles.png', cimg)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+scale_percent = 100
+if "CT" in imagemodalityCT:
+    print("Received CT image!")
+    scale_percent = 1000
+    img = upscaleImage(imgCT, scale_percent)
+if "MR" in imagemodalityMR:
+    print("Received MR image!")
+    scale_percent = 1500
+    img = upscaleImage(imgMR, scale_percent)
+
+maskedimgCT = maskROI(imgCT, imagemodalityCT)
+maskedimgMR = maskROI(imgMR, imagemodalityMR)
+detectionCT = detectCircles(maskedimgCT, imagemodalityCT)
+detectionMR = detectCircles(maskedimgMR, imagemodalityMR)
+
+if detectionCT is not None:
+    CTcenters = detectionCT[0]
+    if detectionMR is not None:
+        T1centers = detectionMR[1]
+    CTT1discrepancies = countOnSlice(CTcenters, T1centers)
+    print(CTT1discrepancies[0])
+    cimg = detectionCT[0]
+    if cimg is not None:
+        plt.imshow(cimg)
+        plt.show()
+        cv2.imwrite('detectedcircles.png', cimg)
+        cv2.waitKey(0)
+        cv2.destroyAllWindows()
 
 
