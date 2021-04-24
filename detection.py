@@ -10,6 +10,7 @@ def maskROI(img, modality):
         ROIcircle = cv2.HoughCircles(img, cv2.HOUGH_GRADIENT, 1, 1000,
                                      param1=30, param2=40, minRadius=1000, maxRadius=1600)
         if ROIcircle is not None:
+            # retval, img = cv2.threshold(img, 60, 255, cv2.THRESH_BINARY)
             ROIcircle = np.uint16(np.around(ROIcircle))
             mask = np.zeros_like(img)
             for i in ROIcircle[0, :]:
@@ -60,6 +61,11 @@ def detectCircles(img, modality, ROIcenter):
         if "MR" in modality:
             print("detecting circles on MRI...")
             cimg = cv2.cvtColor(img, cv2.COLOR_GRAY2BGR) # we use cimg for final render
+            distant = 210
+            p1 = 40
+            p2 = 2
+            minR = 20
+            maxR = 28
 
             img_copy = img
             ROIcenter = np.uint16(np.around(ROIcenter))
@@ -68,16 +74,14 @@ def detectCircles(img, modality, ROIcenter):
                 cx = int(i[0])
                 cy = int(i[1])
                 r = int(i[2])
-                mask = cv2.rectangle(mask , (0, cy - r), (cx + r, cy - int((4.5/5) * r)), (255, 255, 0), -1)
+                mask = cv2.rectangle(mask , (cx - int((1.2 / 5) * r), cy - r), (cx + int((1.2 / 5) * r), cy - int((4.5/5) * r)), (255, 255, 0), -1)
             maskedimg = cv2.bitwise_and(img_copy, mask)
-            plt.imshow(maskedimg)
-            plt.show()
             # detect circles
-            circles = cv2.HoughCircles(maskedimg, cv2.HOUGH_GRADIENT, 1, 225,
-                                       param1=2, param2=5, minRadius=20, maxRadius=28)
-            circles = np.uint16(np.around(circles))
-            print(circles.shape[1], " centers detected!")
-            print(circles)
+            circles1 = cv2.HoughCircles(maskedimg, cv2.HOUGH_GRADIENT, 1, distant,
+                                       param1=p1, param2=p2, minRadius=minR, maxRadius=maxR)
+            circles1 = np.uint16(np.around(circles1))
+            circles1[0] = circles1[0][circles1[0][:, 0].argsort()]
+            circles = circles1
 
             img_copy = img
             ROIcenter = np.uint16(np.around(ROIcenter))
@@ -86,16 +90,14 @@ def detectCircles(img, modality, ROIcenter):
                 cx = int(i[0])
                 cy = int(i[1])
                 r = int(i[2])
-                mask = cv2.rectangle(mask, (0, cy - int((4 / 5) * r)), (cx + r, cy - int((3.3 / 5) * r)), (255, 255, 0), -1)
+                mask = cv2.rectangle(mask, (cx - int((3 / 5) * r), cy - int((3.9 / 5) * r)), (cx + int((3 / 5) * r), cy - int((3.55 / 5) * r)), (255, 255, 0), -1)
             maskedimg = cv2.bitwise_and(img_copy, mask)
-            plt.imshow(maskedimg)
-            plt.show()
             # detect circles
-            circles2 = (cv2.HoughCircles(maskedimg, cv2.HOUGH_GRADIENT, 1, 225,
-                                       param1=2, param2=5, minRadius=20, maxRadius=28))
+            circles2 = (cv2.HoughCircles(maskedimg, cv2.HOUGH_GRADIENT, 1, distant,
+                                       param1=p1, param2=p2, minRadius=minR, maxRadius=maxR))
             circles2 = np.uint16(np.around(circles2))
-            print(circles2.shape[1], " centers detected!")
-            print(circles2)
+            circles2[0] = circles2[0][circles2[0][:, 0].argsort()]
+            circles = np.append(circles, circles2, axis=1)
 
             img_copy = img
             ROIcenter = np.uint16(np.around(ROIcenter))
@@ -104,17 +106,15 @@ def detectCircles(img, modality, ROIcenter):
                 cx = int(i[0])
                 cy = int(i[1])
                 r = int(i[2])
-                mask = cv2.rectangle(mask, (0, cy - int((3 / 5) * r)), (cx + r, cy - int((2.3 / 5) * r)), (255, 255, 0),
+                mask = cv2.rectangle(mask, (cx - int((4 / 5) * r), cy - int((3 / 5) * r)), (cx + int((4 / 5) * r), cy - int((2.65 / 5) * r)), (255, 255, 0),
                                      -1)
             maskedimg = cv2.bitwise_and(img_copy, mask)
-            plt.imshow(maskedimg)
-            plt.show()
             # detect circles
-            circles3 = (cv2.HoughCircles(maskedimg, cv2.HOUGH_GRADIENT, 1, 225,
-                                         param1=2, param2=5, minRadius=20, maxRadius=28))
+            circles3 = (cv2.HoughCircles(maskedimg, cv2.HOUGH_GRADIENT, 1, distant,
+                                         param1=p1, param2=p2, minRadius=minR, maxRadius=maxR))
             circles3 = np.uint16(np.around(circles3))
-            print(circles3.shape[1], " centers detected!")
-            print(circles3)
+            circles3[0] = circles3[0][circles3[0][:, 0].argsort()]
+            circles = np.append(circles, circles3, axis=1)
 
             img_copy = img
             ROIcenter = np.uint16(np.around(ROIcenter))
@@ -123,17 +123,15 @@ def detectCircles(img, modality, ROIcenter):
                 cx = int(i[0])
                 cy = int(i[1])
                 r = int(i[2])
-                mask = cv2.rectangle(mask, (0, cy - int((2.3 / 5) * r)), (cx + r, cy - int((1.3 / 5) * r)), (255, 255, 0),
+                mask = cv2.rectangle(mask, (cx - int((4 / 5) * r), cy - int((2.1 / 5) * r)), (cx + int((4 / 5) * r), cy - int((1.65 / 5) * r)), (255, 255, 0),
                                      -1)
             maskedimg = cv2.bitwise_and(img_copy, mask)
-            plt.imshow(maskedimg)
-            plt.show()
             # detect circles
-            circles4 = (cv2.HoughCircles(maskedimg, cv2.HOUGH_GRADIENT, 1, 225,
-                                         param1=2, param2=5, minRadius=20, maxRadius=28))
+            circles4 = (cv2.HoughCircles(maskedimg, cv2.HOUGH_GRADIENT, 1, distant,
+                                         param1=p1, param2=p2, minRadius=minR, maxRadius=maxR))
             circles4 = np.uint16(np.around(circles4))
-            print(circles4.shape[1], " centers detected!")
-            print(circles4)
+            circles4[0] = circles4[0][circles4[0][:, 0].argsort()]
+            circles = np.append(circles, circles4, axis=1)
 
             img_copy = img
             ROIcenter = np.uint16(np.around(ROIcenter))
@@ -142,18 +140,16 @@ def detectCircles(img, modality, ROIcenter):
                 cx = int(i[0])
                 cy = int(i[1])
                 r = int(i[2])
-                mask = cv2.rectangle(mask, (0, cy - int((1.3 / 5) * r)), (cx + r, cy - int((0.3 / 5) * r)),
+                mask = cv2.rectangle(mask, (cx - int((4.8 / 5) * r), cy - int((1.15 / 5) * r)), (cx + int((4.8 / 5) * r), cy - int((0.6 / 5) * r)),
                                      (255, 255, 0),
                                      -1)
             maskedimg = cv2.bitwise_and(img_copy, mask)
-            plt.imshow(maskedimg)
-            plt.show()
             # detect circles
-            circles5 = (cv2.HoughCircles(maskedimg, cv2.HOUGH_GRADIENT, 1, 225,
-                                         param1=2, param2=5, minRadius=20, maxRadius=28))
+            circles5 = (cv2.HoughCircles(maskedimg, cv2.HOUGH_GRADIENT, 1, distant,
+                                         param1=p1, param2=p2, minRadius=minR, maxRadius=maxR))
             circles5 = np.uint16(np.around(circles5))
-            print(circles5.shape[1], " centers detected!")
-            print(circles5)
+            circles5[0] = circles5[0][circles5[0][:, 0].argsort()]
+            circles = np.append(circles, circles5, axis=1)
 
             img_copy = img
             ROIcenter = np.uint16(np.around(ROIcenter))
@@ -162,18 +158,16 @@ def detectCircles(img, modality, ROIcenter):
                 cx = int(i[0])
                 cy = int(i[1])
                 r = int(i[2])
-                mask = cv2.rectangle(mask, (0, cy - int((0.3 / 5) * r)), (cx + r, cy + int((0.8 / 5) * r)),
+                mask = cv2.rectangle(mask, (cx - int((4.8 / 5) * r), cy - int((0.25 / 5) * r)), (cx + int((4.8 / 5) * r), cy + int((0.3 / 5) * r)),
                                      (255, 255, 0),
                                      -1)
             maskedimg = cv2.bitwise_and(img_copy, mask)
-            plt.imshow(maskedimg)
-            plt.show()
             # detect circles
-            circles6 = (cv2.HoughCircles(maskedimg, cv2.HOUGH_GRADIENT, 1, 225,
-                                         param1=2, param2=5, minRadius=20, maxRadius=28))
+            circles6 = (cv2.HoughCircles(maskedimg, cv2.HOUGH_GRADIENT, 1, distant,
+                                         param1=p1, param2=p2, minRadius=minR, maxRadius=maxR))
             circles6 = np.uint16(np.around(circles6))
-            print(circles6.shape[1], " centers detected!")
-            print(circles6)
+            circles6[0] = circles6[0][circles6[0][:, 0].argsort()]
+            circles = np.append(circles, circles6, axis=1)
 
             img_copy = img
             ROIcenter = np.uint16(np.around(ROIcenter))
@@ -182,18 +176,16 @@ def detectCircles(img, modality, ROIcenter):
                 cx = int(i[0])
                 cy = int(i[1])
                 r = int(i[2])
-                mask = cv2.rectangle(mask, (0, cy + int((0.6 / 5) * r)), (cx + r, cy + int((1.3 / 5) * r)),
+                mask = cv2.rectangle(mask, (cx - int((4.8 / 5) * r), cy + int((0.7 / 5) * r)), (cx + int((4.8 / 5) * r), cy + int((1.2 / 5) * r)),
                                      (255, 255, 0),
                                      -1)
             maskedimg = cv2.bitwise_and(img_copy, mask)
-            plt.imshow(maskedimg)
-            plt.show()
             # detect circles
-            circles7 = (cv2.HoughCircles(maskedimg, cv2.HOUGH_GRADIENT, 1, 225,
-                                         param1=2, param2=5, minRadius=20, maxRadius=28))
+            circles7 = (cv2.HoughCircles(maskedimg, cv2.HOUGH_GRADIENT, 1, distant,
+                                         param1=p1, param2=p2, minRadius=minR, maxRadius=maxR))
             circles7 = np.uint16(np.around(circles7))
-            print(circles7.shape[1], " centers detected!")
-            print(circles7)
+            circles7[0] = circles7[0][circles7[0][:, 0].argsort()]
+            circles = np.append(circles, circles7, axis=1)
 
             img_copy = img
             ROIcenter = np.uint16(np.around(ROIcenter))
@@ -202,18 +194,16 @@ def detectCircles(img, modality, ROIcenter):
                 cx = int(i[0])
                 cy = int(i[1])
                 r = int(i[2])
-                mask = cv2.rectangle(mask, (0, cy + int((1.3 / 5) * r)), (cx + r, cy + int((2.5 / 5) * r)),
+                mask = cv2.rectangle(mask, (cx - int((4 / 5) * r), cy + int((1.6 / 5) * r)), (cx + int((4 / 5) * r), cy + int((2.1 / 5) * r)),
                                      (255, 255, 0),
                                      -1)
             maskedimg = cv2.bitwise_and(img_copy, mask)
-            plt.imshow(maskedimg)
-            plt.show()
             # detect circles
-            circles8 = (cv2.HoughCircles(maskedimg, cv2.HOUGH_GRADIENT, 1, 225,
-                                         param1=2, param2=5, minRadius=20, maxRadius=28))
+            circles8 = (cv2.HoughCircles(maskedimg, cv2.HOUGH_GRADIENT, 1, distant,
+                                         param1=p1, param2=p2, minRadius=minR, maxRadius=maxR))
             circles8 = np.uint16(np.around(circles8))
-            print(circles8.shape[1], " centers detected!")
-            print(circles8)
+            circles8[0] = circles8[0][circles8[0][:, 0].argsort()]
+            circles = np.append(circles, circles8, axis=1)
 
             img_copy = img
             ROIcenter = np.uint16(np.around(ROIcenter))
@@ -222,18 +212,16 @@ def detectCircles(img, modality, ROIcenter):
                 cx = int(i[0])
                 cy = int(i[1])
                 r = int(i[2])
-                mask = cv2.rectangle(mask, (0, cy + int((2.4 / 5) * r)), (cx + r, cy + int((3.2 / 5) * r)),
+                mask = cv2.rectangle(mask, (cx - int((4 / 5) * r), cy + int((2.55 / 5) * r)), (cx + int((4 / 5) * r), cy + int((3.05 / 5) * r)),
                                      (255, 255, 0),
                                      -1)
             maskedimg = cv2.bitwise_and(img_copy, mask)
-            plt.imshow(maskedimg)
-            plt.show()
             # detect circles
-            circles9 = (cv2.HoughCircles(maskedimg, cv2.HOUGH_GRADIENT, 1, 225,
-                                         param1=2, param2=5, minRadius=20, maxRadius=28))
+            circles9 = (cv2.HoughCircles(maskedimg, cv2.HOUGH_GRADIENT, 1, distant,
+                                         param1=p1, param2=p2, minRadius=minR, maxRadius=maxR))
             circles9 = np.uint16(np.around(circles9))
-            print(circles9.shape[1], " centers detected!")
-            print(circles9)
+            circles9[0] = circles9[0][circles9[0][:, 0].argsort()]
+            circles = np.append(circles, circles9, axis=1)
 
             img_copy = img
             ROIcenter = np.uint16(np.around(ROIcenter))
@@ -242,18 +230,16 @@ def detectCircles(img, modality, ROIcenter):
                 cx = int(i[0])
                 cy = int(i[1])
                 r = int(i[2])
-                mask = cv2.rectangle(mask, (0, cy + int((3.2 / 5) * r)), (cx + r, cy + int((4.2 / 5) * r)),
+                mask = cv2.rectangle(mask, (cx - int((3 / 5) * r), cy + int((3.5 / 5) * r)), (cx + int((3 / 5) * r), cy + int((3.95 / 5) * r)),
                                      (255, 255, 0),
                                      -1)
             maskedimg = cv2.bitwise_and(img_copy, mask)
-            plt.imshow(maskedimg)
-            plt.show()
             # detect circles
-            circles10 = (cv2.HoughCircles(maskedimg, cv2.HOUGH_GRADIENT, 1, 225,
-                                         param1=2, param2=5, minRadius=20, maxRadius=28))
+            circles10 = (cv2.HoughCircles(maskedimg, cv2.HOUGH_GRADIENT, 1, distant,
+                                         param1=p1, param2=p2, minRadius=minR, maxRadius=maxR))
             circles10 = np.uint16(np.around(circles10))
-            print(circles10.shape[1], " centers detected!")
-            print(circles10)
+            circles10[0] = circles10[0][circles10[0][:, 0].argsort()]
+            circles = np.append(circles, circles10, axis=1)
 
             img_copy = img
             ROIcenter = np.uint16(np.around(ROIcenter))
@@ -262,30 +248,236 @@ def detectCircles(img, modality, ROIcenter):
                 cx = int(i[0])
                 cy = int(i[1])
                 r = int(i[2])
-                mask = cv2.rectangle(mask, (0, cy + int((4.2 / 5) * r)), (cx + r, cy + int((5.2 / 5) * r)),
+                mask = cv2.rectangle(mask, (cx - int((1.2 / 5) * r), cy + int((4.45 / 5) * r)), (cx + int((1.2 / 5) * r), cy + int((5.1 / 5) * r)),
                                      (255, 255, 0),
                                      -1)
             maskedimg = cv2.bitwise_and(img_copy, mask)
-            plt.imshow(maskedimg)
-            plt.show()
             # detect circles
-            circles11 = (cv2.HoughCircles(maskedimg, cv2.HOUGH_GRADIENT, 1, 225,
-                                         param1=2, param2=5, minRadius=20, maxRadius=28))
+            circles11 = (cv2.HoughCircles(maskedimg, cv2.HOUGH_GRADIENT, 1, distant,
+                                         param1=p1, param2=p2, minRadius=minR, maxRadius=maxR))
             circles11 = np.uint16(np.around(circles11))
-            print(circles11.shape[1], " centers detected!")
-            print(circles11)
+            circles11[0] = circles11[0][circles11[0][:, 0].argsort()]
+            circles = np.append(circles, circles11, axis=1)
 
             cimg = drawCircles(cimg, circles)
+            plt.imshow(cimg)
+            plt.show()
             return cimg, circles
         if "CT" in modality:
             print("detecting circles on CT...")
             cimg = cv2.cvtColor(img, cv2.COLOR_GRAY2BGR)
+            distant = 225
+            p1 = 20
+            p2 = 1
+            minR = 20
+            maxR = 32
+
+            img_copy = img
+            ROIcenter = np.uint16(np.around(ROIcenter))
+            mask = np.zeros_like(img_copy)
+            for i in ROIcenter[0, :]:
+                cx = int(i[0])
+                cy = int(i[1])
+                r = int(i[2])
+                mask = cv2.rectangle(mask, (cx - int((1.2 / 5) * r), cy - r),
+                                     (cx + int((1.2 / 5) * r), cy - int((4.5 / 5) * r)), (255, 255, 0), -1)
+            maskedimg = cv2.bitwise_and(img_copy, mask)
             # detect circles
-            circles = cv2.HoughCircles(img, cv2.HOUGH_GRADIENT, 1, 225,
-                                       param1=1, param2=8, minRadius=20, maxRadius=34)
-            circles = np.uint16(np.around(circles))
-            print(circles.shape[1], " centers detected!")
+            circles1 = cv2.HoughCircles(maskedimg, cv2.HOUGH_GRADIENT, 1, distant,
+                                        param1=p1, param2=p2, minRadius=minR, maxRadius=maxR)
+            circles1 = np.uint16(np.around(circles1))
+            circles1[0] = circles1[0][circles1[0][:, 0].argsort()]
+            circles = circles1
+
+            img_copy = img
+            ROIcenter = np.uint16(np.around(ROIcenter))
+            mask = np.zeros_like(img_copy)
+            for i in ROIcenter[0, :]:
+                cx = int(i[0])
+                cy = int(i[1])
+                r = int(i[2])
+                mask = cv2.rectangle(mask, (cx - int((3 / 5) * r), cy - int((3.9 / 5) * r)),
+                                     (cx + int((3 / 5) * r), cy - int((3.55 / 5) * r)), (255, 255, 0), -1)
+            maskedimg = cv2.bitwise_and(img_copy, mask)
+            # detect circles
+            circles2 = (cv2.HoughCircles(maskedimg, cv2.HOUGH_GRADIENT, 1, distant,
+                                         param1=p1, param2=p2, minRadius=minR, maxRadius=maxR))
+            circles2 = np.uint16(np.around(circles2))
+            circles2[0] = circles2[0][circles2[0][:, 0].argsort()]
+            circles = np.append(circles, circles2, axis=1)
+
+            img_copy = img
+            ROIcenter = np.uint16(np.around(ROIcenter))
+            mask = np.zeros_like(img_copy)
+            for i in ROIcenter[0, :]:
+                cx = int(i[0])
+                cy = int(i[1])
+                r = int(i[2])
+                mask = cv2.rectangle(mask, (cx - int((4 / 5) * r), cy - int((3 / 5) * r)),
+                                     (cx + int((4 / 5) * r), cy - int((2.65 / 5) * r)), (255, 255, 0),
+                                     -1)
+            maskedimg = cv2.bitwise_and(img_copy, mask)
+            # detect circles
+            circles3 = (cv2.HoughCircles(maskedimg, cv2.HOUGH_GRADIENT, 1, distant,
+                                         param1=p1, param2=p2, minRadius=minR, maxRadius=maxR))
+            circles3 = np.uint16(np.around(circles3))
+            circles3[0] = circles3[0][circles3[0][:, 0].argsort()]
+            circles = np.append(circles, circles3, axis=1)
+
+            img_copy = img
+            ROIcenter = np.uint16(np.around(ROIcenter))
+            mask = np.zeros_like(img_copy)
+            for i in ROIcenter[0, :]:
+                cx = int(i[0])
+                cy = int(i[1])
+                r = int(i[2])
+                mask = cv2.rectangle(mask, (cx - int((4 / 5) * r), cy - int((2.1 / 5) * r)),
+                                     (cx + int((4 / 5) * r), cy - int((1.65 / 5) * r)), (255, 255, 0),
+                                     -1)
+            maskedimg = cv2.bitwise_and(img_copy, mask)
+            # detect circles
+            circles4 = (cv2.HoughCircles(maskedimg, cv2.HOUGH_GRADIENT, 1, distant,
+                                         param1=p1, param2=p2, minRadius=minR, maxRadius=maxR))
+            circles4 = np.uint16(np.around(circles4))
+            circles4[0] = circles4[0][circles4[0][:, 0].argsort()]
+            circles = np.append(circles, circles4, axis=1)
+
+            img_copy = img
+            ROIcenter = np.uint16(np.around(ROIcenter))
+            mask = np.zeros_like(img_copy)
+            for i in ROIcenter[0, :]:
+                cx = int(i[0])
+                cy = int(i[1])
+                r = int(i[2])
+                mask = cv2.rectangle(mask, (cx - int((4.8 / 5) * r), cy - int((1.15 / 5) * r)),
+                                     (cx + int((4.8 / 5) * r), cy - int((0.6 / 5) * r)),
+                                     (255, 255, 0),
+                                     -1)
+            maskedimg = cv2.bitwise_and(img_copy, mask)
+            # detect circles
+            circles5 = (cv2.HoughCircles(maskedimg, cv2.HOUGH_GRADIENT, 1, distant,
+                                         param1=p1, param2=p2, minRadius=minR, maxRadius=maxR))
+            circles5 = np.uint16(np.around(circles5))
+            circles5[0] = circles5[0][circles5[0][:, 0].argsort()]
+            circles = np.append(circles, circles5, axis=1)
+
+            img_copy = img
+            ROIcenter = np.uint16(np.around(ROIcenter))
+            mask = np.zeros_like(img_copy)
+            for i in ROIcenter[0, :]:
+                cx = int(i[0])
+                cy = int(i[1])
+                r = int(i[2])
+                mask = cv2.rectangle(mask, (cx - int((4.8 / 5) * r), cy - int((0.25 / 5) * r)),
+                                     (cx + int((4.8 / 5) * r), cy + int((0.3 / 5) * r)),
+                                     (255, 255, 0),
+                                     -1)
+            maskedimg = cv2.bitwise_and(img_copy, mask)
+            # detect circles
+            circles6 = (cv2.HoughCircles(maskedimg, cv2.HOUGH_GRADIENT, 1, distant,
+                                         param1=p1, param2=p2, minRadius=minR, maxRadius=maxR))
+            circles6 = np.uint16(np.around(circles6))
+            circles6[0] = circles6[0][circles6[0][:, 0].argsort()]
+            circles = np.append(circles, circles6, axis=1)
+
+            img_copy = img
+            ROIcenter = np.uint16(np.around(ROIcenter))
+            mask = np.zeros_like(img_copy)
+            for i in ROIcenter[0, :]:
+                cx = int(i[0])
+                cy = int(i[1])
+                r = int(i[2])
+                mask = cv2.rectangle(mask, (cx - int((4.8 / 5) * r), cy + int((0.7 / 5) * r)),
+                                     (cx + int((4.8 / 5) * r), cy + int((1.2 / 5) * r)),
+                                     (255, 255, 0),
+                                     -1)
+            maskedimg = cv2.bitwise_and(img_copy, mask)
+            # detect circles
+            circles7 = (cv2.HoughCircles(maskedimg, cv2.HOUGH_GRADIENT, 1, distant,
+                                         param1=p1, param2=p2, minRadius=minR, maxRadius=maxR))
+            circles7 = np.uint16(np.around(circles7))
+            circles7[0] = circles7[0][circles7[0][:, 0].argsort()]
+            circles = np.append(circles, circles7, axis=1)
+
+            img_copy = img
+            ROIcenter = np.uint16(np.around(ROIcenter))
+            mask = np.zeros_like(img_copy)
+            for i in ROIcenter[0, :]:
+                cx = int(i[0])
+                cy = int(i[1])
+                r = int(i[2])
+                mask = cv2.rectangle(mask, (cx - int((4 / 5) * r), cy + int((1.6 / 5) * r)),
+                                     (cx + int((4 / 5) * r), cy + int((2.1 / 5) * r)),
+                                     (255, 255, 0),
+                                     -1)
+            maskedimg = cv2.bitwise_and(img_copy, mask)
+            # detect circles
+            circles8 = (cv2.HoughCircles(maskedimg, cv2.HOUGH_GRADIENT, 1, distant,
+                                         param1=p1, param2=p2, minRadius=minR, maxRadius=maxR))
+            circles8 = np.uint16(np.around(circles8))
+            circles8[0] = circles8[0][circles8[0][:, 0].argsort()]
+            circles = np.append(circles, circles8, axis=1)
+
+            img_copy = img
+            ROIcenter = np.uint16(np.around(ROIcenter))
+            mask = np.zeros_like(img_copy)
+            for i in ROIcenter[0, :]:
+                cx = int(i[0])
+                cy = int(i[1])
+                r = int(i[2])
+                mask = cv2.rectangle(mask, (cx - int((4 / 5) * r), cy + int((2.55 / 5) * r)),
+                                     (cx + int((4 / 5) * r), cy + int((3.05 / 5) * r)),
+                                     (255, 255, 0),
+                                     -1)
+            maskedimg = cv2.bitwise_and(img_copy, mask)
+            # detect circles
+            circles9 = (cv2.HoughCircles(maskedimg, cv2.HOUGH_GRADIENT, 1, distant,
+                                         param1=p1, param2=p2, minRadius=minR, maxRadius=maxR))
+            circles9 = np.uint16(np.around(circles9))
+            circles9[0] = circles9[0][circles9[0][:, 0].argsort()]
+            circles = np.append(circles, circles9, axis=1)
+
+            img_copy = img
+            ROIcenter = np.uint16(np.around(ROIcenter))
+            mask = np.zeros_like(img_copy)
+            for i in ROIcenter[0, :]:
+                cx = int(i[0])
+                cy = int(i[1])
+                r = int(i[2])
+                mask = cv2.rectangle(mask, (cx - int((3 / 5) * r), cy + int((3.5 / 5) * r)),
+                                     (cx + int((3 / 5) * r), cy + int((3.95 / 5) * r)),
+                                     (255, 255, 0),
+                                     -1)
+            maskedimg = cv2.bitwise_and(img_copy, mask)
+            # detect circles
+            circles10 = (cv2.HoughCircles(maskedimg, cv2.HOUGH_GRADIENT, 1, distant,
+                                          param1=p1, param2=p2, minRadius=minR, maxRadius=maxR))
+            circles10 = np.uint16(np.around(circles10))
+            circles10[0] = circles10[0][circles10[0][:, 0].argsort()]
+            circles = np.append(circles, circles10, axis=1)
+
+            img_copy = img
+            ROIcenter = np.uint16(np.around(ROIcenter))
+            mask = np.zeros_like(img_copy)
+            for i in ROIcenter[0, :]:
+                cx = int(i[0])
+                cy = int(i[1])
+                r = int(i[2])
+                mask = cv2.rectangle(mask, (cx - int((1.2 / 5) * r), cy + int((4.45 / 5) * r)),
+                                     (cx + int((1.2 / 5) * r), cy + int((5.1 / 5) * r)),
+                                     (255, 255, 0),
+                                     -1)
+            maskedimg = cv2.bitwise_and(img_copy, mask)
+            # detect circles
+            circles11 = (cv2.HoughCircles(maskedimg, cv2.HOUGH_GRADIENT, 1, distant,
+                                          param1=p1, param2=p2, minRadius=minR, maxRadius=maxR))
+            circles11 = np.uint16(np.around(circles11))
+            circles11[0] = circles11[0][circles11[0][:, 0].argsort()]
+            circles = np.append(circles, circles11, axis=1)
+
             cimg = drawCircles(cimg, circles)
+            plt.imshow(cimg)
+            plt.show()
             return cimg, circles
     else:
         print("Received None!")
@@ -300,11 +492,6 @@ def countOnSlice(CTcenters, T1centers, scale_percent_CT, scale_percent_MR):
             x2 = T1[0] / scale_percent_MR * 100
             y1 = CT[1] / scale_percent_CT * 100
             y2 = T1[1] / scale_percent_MR * 100
-            # print(x1)
-            # print(x2)
-            # print()
-            # print(y1)
-            # print(y2)
             dist = math.sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
             # if dist < 100:
             CTT1.append(dist)
