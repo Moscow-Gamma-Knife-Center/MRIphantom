@@ -4,30 +4,10 @@
 ## _The software for automatic assessment of stereotactic MRI spatial accuracy_
 These are python scripts for automatic evaluation of stereotactic MRI spacial accuracy. They help to calculate exact magnitudes of discrepancies and allow to visualize slice-to-slice 2D representations of differences between MRI and CT images.
 
-## Getting Started
+## Documentation
 
-These instructions will get you a copy of the project up and running on your local machine.
+https://mriphantom.readthedocs.io/en/latest/
 
-### Installation
-
-What things you need to install and run the software
-
-To run this program, Python 3 and the following packages are required:
-
-1) Pydicom
-2) Numpy
-3) Scipy
-4) Matplotlib
-5) Pandas
-
-To install pip3 on ubuntu, run:
-```
-$ sudo apt-get install python3-pip
-```
-After that you need to install all the necessary packages:
-```
-$ pip3 install -r requirements.txt
-```
 ## Run
 
 Now you can run the program
